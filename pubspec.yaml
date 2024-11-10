@@ -61,7 +61,7 @@ dependencies:
   share_plus: ^10.0.1 # 文字分享
 
   # 视图展示
-  tolyui: 0.0.2+19   # tolyui
+  tolyui: ^0.0.2+20   # tolyui
   refresh: ^1.0.1 # 下拉刷新
   dash_painter: ^1.0.2 # 虚线
   flutter_star: ^1.0.2 # 星星组件
@@ -78,7 +78,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 dependency_overrides:
   web: ^1.0.0
