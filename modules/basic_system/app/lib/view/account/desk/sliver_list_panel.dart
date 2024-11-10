@@ -12,17 +12,17 @@ class SliverListPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> items = [
-      InfoPanel(
+      const InfoPanel(
         title: '开源不易，请我喝咖啡 ~',
         info: 'Flutter Unit 是一个非盈利性的开源项目，'
             '旨在提供全面的 Flutter 学习指南及编程者的交流技术的接口。'
             '由【张风捷特烈】提供技术支持和全权维护。唯一开源网站网址:\n '
             'https://github.com/toly1994328/FlutterUnit',
       ),
-      Divider(
+      const Divider(
         height: 20,
       ),
-      InfoPanel(
+      const InfoPanel(
         title: 'Flutter Unit 1.0',
         info: 'Flutter Unit 1.0 核心计划是收录widget，即widget集录。'
             '目前收录组件 283 个，均可在 app 中进行查看。'
@@ -34,10 +34,10 @@ class SliverListPanel extends StatelessWidget {
             '○  主题、字体设置，代码风格等全局状态管理。\n'
             '○  搜索功能和组件星级分类。',
       ),
-      Divider(
+      const Divider(
         height: 20,
       ),
-      InfoPanel(
+      const InfoPanel(
           title: 'Flutter Unit 2.0 ',
           info: '○  317 个 Flutter 组件收录和详情介绍。\n'
               '○  绘制集录用于收录绘制相关的优秀示例。\n'
@@ -55,11 +55,11 @@ class SliverListPanel extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Circle(color: Theme.of(context).primaryColor),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15, top: 15, bottom: 15),
+                const Padding(
+                  padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
                   child: Text(
                     '开源不易，请我喝咖啡 ~',
-                    style: const TextStyle(
+                    style: TextStyle(
                         fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 ),

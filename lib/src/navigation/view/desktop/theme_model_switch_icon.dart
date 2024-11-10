@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ThemeModelSwitchIcon extends StatelessWidget {
 
-  const ThemeModelSwitchIcon({Key? key}) : super(key: key);
+  const ThemeModelSwitchIcon({super.key});
 
   @override
   Widget build(BuildContext context) {

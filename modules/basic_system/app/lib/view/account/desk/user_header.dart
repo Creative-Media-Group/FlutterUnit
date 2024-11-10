@@ -22,10 +22,10 @@ class UserHeader extends StatelessWidget {
             ),
             Container(
               alignment: Alignment.topLeft,
-              padding: EdgeInsets.only(left: 32 + 100 + 16, top: 12),
-              color: isDark?Color(0xff2C3036):Colors.white,
+              padding: const EdgeInsets.only(left: 32 + 100 + 16, top: 12),
+              color: isDark?const Color(0xff2C3036):Colors.white,
               height: 86,
-              child: Row(
+              child: const Row(
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

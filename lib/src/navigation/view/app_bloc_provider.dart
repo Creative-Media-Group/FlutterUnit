@@ -14,7 +14,7 @@ import 'package:widget_module/widget_module.dart';
 class AppBlocProvider extends StatefulWidget {
   final Widget child;
 
-  const AppBlocProvider({Key? key, required this.child}) : super(key: key);
+  const AppBlocProvider({super.key, required this.child});
 
   @override
   State createState() => _AppBlocProviderState();

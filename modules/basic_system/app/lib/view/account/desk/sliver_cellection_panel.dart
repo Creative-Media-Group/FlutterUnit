@@ -8,7 +8,7 @@ class SliverCollectionPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> items = [
-      InfoPanel(
+      const InfoPanel(
         title: '项目简介',
         info: 'Flutter Unit 是一个非盈利性的开源项目，'
             '旨在提供全面的 Flutter 学习指南及编程者的交流技术的接口。'
@@ -16,7 +16,7 @@ class SliverCollectionPanel extends StatelessWidget {
             'https://github.com/toly1994328/FlutterUnit',
       ),
       const SizedBox(height: 10,),
-      InfoPanel(
+      const InfoPanel(
         title: 'Flutter Unit 1.0',
         info: 'Flutter Unit 1.0 核心计划是收录widget，即widget集录。'
             '目前收录组件 283 个，均可在 app 中进行查看。'
@@ -29,7 +29,7 @@ class SliverCollectionPanel extends StatelessWidget {
             '○  搜索功能和组件星级分类。',
       ),
       const SizedBox(height: 10,),
-      InfoPanel(
+      const InfoPanel(
           title: 'Flutter Unit 2.0 ',
           info:
           '○  317 个 Flutter 组件收录和详情介绍。\n'
@@ -39,7 +39,7 @@ class SliverCollectionPanel extends StatelessWidget {
               '○  实现应用内更新功能，方便使用者及时更新到最新版体验。'
       ),
       const SizedBox(height: 10,),
-      InfoPanel(
+      const InfoPanel(
           title: 'Flutter Unit 3.0 ',
           info:
           '○  335 个 Flutter 组件收录和详情介绍。\n'

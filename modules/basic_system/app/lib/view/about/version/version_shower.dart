@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 class VersionShower extends StatefulWidget {
-  const VersionShower({Key? key}) : super(key: key);
+  const VersionShower({super.key});
 
   @override
   _VersionShowerState createState() => _VersionShowerState();

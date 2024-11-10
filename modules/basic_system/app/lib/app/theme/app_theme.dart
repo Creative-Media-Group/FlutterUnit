@@ -22,14 +22,14 @@ class AppTheme {
         TargetPlatform.windows: FadePageTransitionsBuilder(),
         TargetPlatform.linux: FadePageTransitionsBuilder(),
       }),
-      tabBarTheme: TabBarTheme(
+      tabBarTheme: const TabBarTheme(
         dividerColor:  Colors.transparent,
       ),
       fontFamily: state.fontFamily,
         useMaterial3:true,
       brightness: Brightness.dark,
       primaryColor: const Color(0xff4699FB),
-        listTileTheme: ListTileThemeData(
+        listTileTheme: const ListTileThemeData(
           tileColor: Color(0xff181818),
           textColor: Color(0xffD6D6D6),
         ),
@@ -37,11 +37,11 @@ class AppTheme {
     systemOverlayStyle: overlayStyle,
     elevation: 0,
     centerTitle: true,
-    backgroundColor: Color(0xff181818),
+    backgroundColor: const Color(0xff181818),
 
-    iconTheme: IconThemeData(color:  Color(0xffCCCCCC)),
+    iconTheme: const IconThemeData(color:  Color(0xffCCCCCC)),
 
-    titleTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Color(0xffCCCCCC))),
+    titleTextStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Color(0xffCCCCCC))),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
           foregroundColor: Colors.white, backgroundColor: Color(0xff4699FB)),
         dividerTheme: DividerThemeData(
@@ -65,11 +65,11 @@ class AppTheme {
     return ThemeData(
       fontFamily: '宋体',
       primaryColor: state.themeColor.color,
-      scaffoldBackgroundColor: Color(0xffF3F4F6),
+      scaffoldBackgroundColor: const Color(0xffF3F4F6),
       useMaterial3: true,
       // Android 使用 Material3
-      chipTheme: ChipThemeData(padding: EdgeInsets.symmetric(horizontal: 10)),
-      listTileTheme: ListTileThemeData(
+      chipTheme: const ChipThemeData(padding: EdgeInsets.symmetric(horizontal: 10)),
+      listTileTheme: const ListTileThemeData(
         tileColor: Colors.white,
       ),
       dividerTheme: DividerThemeData(
@@ -87,9 +87,9 @@ class AppTheme {
       tabBarTheme: TabBarTheme(
         dividerColor:  Colors.transparent,
         splashFactory: NoSplash.splashFactory,
-        overlayColor: MaterialStateProperty.resolveWith<Color?>(
-              (Set<MaterialState> states) {
-            return states.contains(MaterialState.focused) ? null : Colors.transparent;
+        overlayColor: WidgetStateProperty.resolveWith<Color?>(
+              (Set<WidgetState> states) {
+            return states.contains(WidgetState.focused) ? null : Colors.transparent;
           },
         ),
       ),
@@ -100,7 +100,7 @@ class AppTheme {
           elevation: 0,
           centerTitle: true,
           backgroundColor: Colors.white,
-          titleTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.black),
+          titleTextStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.black),
       ),
     );
   }

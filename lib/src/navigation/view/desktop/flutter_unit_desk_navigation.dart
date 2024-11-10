@@ -2,7 +2,6 @@ import 'package:app/app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_unit/src/l10n/gen/app_l10n.dart';
 import 'package:flutter_unit/src/navigation/model/app_tab.dart';
-import 'package:go_router/go_router.dart';
 import 'package:tolyui_navigation/tolyui_navigation.dart';
 import 'menu_bar_leading.dart';
 import 'menu_bar_tail.dart';

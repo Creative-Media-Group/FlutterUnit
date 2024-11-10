@@ -12,7 +12,7 @@ void showAppStyleSelectDialog(BuildContext context) {
   // List<String> data = Cons.kAppStyleStringMap.values.toList();
   showCupertinoModalPopup(
       context: context,
-      builder: (context) => AppThemeSettingDialog(
+      builder: (context) => const AppThemeSettingDialog(
         data: [],
       ));
 }
@@ -21,7 +21,7 @@ class AppThemeSettingDialog extends StatelessWidget {
   final List<String> data;
 
 
-  const AppThemeSettingDialog({Key? key,required this.data}) : super(key: key);
+  const AppThemeSettingDialog({super.key,required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +55,8 @@ class AppThemeSettingDialog extends StatelessWidget {
   }
 
   Widget? _buildItem(BuildContext context, int index) {
+    return null;
+  
     // AppStyle locale = Cons.kAppStyleStringMap.keys.toList()[index];
     // AppStyle style = BlocProvider.of<AppBloc>(context).state.appStyle;
     // bool checked = style == locale;

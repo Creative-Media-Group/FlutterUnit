@@ -1,6 +1,7 @@
 /// create by 张风捷特烈 on 2020-04-13
 /// contact me by email 1981462002@qq.com
 /// 说明: ...
+library;
 import 'package:app/app.dart';
 import 'package:flutter/material.dart';
 import 'package:toly_ui/toly_ui.dart';
@@ -8,7 +9,7 @@ import 'package:toly_ui/toly_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutMePage extends StatelessWidget {
-  const AboutMePage({Key? key}) : super(key: key);
+  const AboutMePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -146,10 +147,10 @@ class AboutMePage extends StatelessWidget {
         FeedbackWidget(
             onPressed: () =>
                 _launchURL("https://juejin.im/user/5b42c0656fb9a04fe727eb37"),
-            child: Wrap(
+            child: const Wrap(
               direction: Axis.vertical,
               crossAxisAlignment: WrapCrossAlignment.center,
-              children:const [
+              children:[
                 Icon(
                   TolyIcon.icon_juejin,
                   size: 35,
@@ -161,10 +162,10 @@ class AboutMePage extends StatelessWidget {
         FeedbackWidget(
             onPressed: () =>
                 _launchURL("https://github.com/toly1994328"),
-            child: Wrap(
+            child: const Wrap(
               direction: Axis.vertical,
               crossAxisAlignment: WrapCrossAlignment.center,
-              children: const[
+              children: [
                 Icon(
                   TolyIcon.icon_github,
                   size: 35,

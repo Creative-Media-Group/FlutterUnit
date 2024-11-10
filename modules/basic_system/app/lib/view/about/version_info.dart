@@ -16,7 +16,7 @@ import 'version/version_shower.dart';
 /// 说明: 
 
 class VersionInfo extends StatelessWidget {
-  const VersionInfo({Key? key}) : super(key: key);
+  const VersionInfo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,11 +56,11 @@ class VersionInfo extends StatelessWidget {
   }
 
   Widget _buildTop() {
-    return Wrap(
+    return const Wrap(
       direction: Axis.vertical,
       crossAxisAlignment: WrapCrossAlignment.center,
       spacing: 10,
-      children: const [
+      children: [
         CircleImage(image: AssetImage("assets/images/icon_head.webp"),size: 80,),
         Text('Flutter Unit',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
         VersionShower(),
@@ -113,7 +113,7 @@ class VersionInfo extends StatelessWidget {
             onPressed: (){
               _launchURL("https://github.com/toly1994328/FlutterUnit");
             },
-            child:  Text(context.l10n.viewThisProjectGithubRepository,style: TextStyle(fontSize: 12,color: Color(0xff616C84),),)),
+            child:  Text(context.l10n.viewThisProjectGithubRepository,style: const TextStyle(fontSize: 12,color: Color(0xff616C84),),)),
         const Text('Power By 张风捷特烈',style: TextStyle(fontSize: 12,color: Colors.grey),),
         const Text('Copyright © 2018-2024 Toly1994',style: TextStyle(fontSize: 12,color: Colors.grey),),
       ],

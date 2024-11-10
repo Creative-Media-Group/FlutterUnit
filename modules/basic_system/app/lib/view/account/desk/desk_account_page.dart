@@ -59,11 +59,11 @@ class _DeskAccountPageState extends State<DeskAccountPage>
           Expanded(
               child: CustomScrollView(
             slivers: [
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                 child: UserHeader(),
               ),
               SliverPinnedHeader(
-                  color: isDark ? Color(0xff2C3036) : Colors.white,
+                  color: isDark ? const Color(0xff2C3036) : Colors.white,
                   child: TabBar(
                     onTap: (i) {
                       setState(() {

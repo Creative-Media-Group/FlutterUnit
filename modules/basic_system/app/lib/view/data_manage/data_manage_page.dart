@@ -25,7 +25,7 @@ import 'package:widget_module/widget_module.dart';
 ///
 
 class DataManagePage extends StatelessWidget {
-  const DataManagePage({Key? key}) : super(key: key);
+  const DataManagePage({super.key});
 
   @override
   Widget build(BuildContext context) {

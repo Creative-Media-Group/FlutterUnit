@@ -12,8 +12,8 @@ class FlutterUnitText extends StatefulWidget {
     this.text = "Toly",
     this.color = Colors.blue,
     this.fontSize = 32,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State createState() => _FlutterUnitTextState();

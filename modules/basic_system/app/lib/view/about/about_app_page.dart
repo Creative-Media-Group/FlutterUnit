@@ -1,6 +1,7 @@
 /// create by 张风捷特烈 on 2020-04-13
 /// contact me by email 1981462002@qq.com
 /// 说明: ...
+library;
 import 'package:app/app.dart';
 import 'package:components/components.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 
 class AboutAppPage extends StatelessWidget {
-  const AboutAppPage({Key? key}) : super(key: key);
+  const AboutAppPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -119,10 +120,10 @@ class AboutAppPage extends StatelessWidget {
               FeedbackWidget(
                   onPressed: () =>
                       _launchURL("https://github.com/toly1994328/FlutterUnit"),
-                  child: Wrap(
+                  child: const Wrap(
                     direction: Axis.vertical,
                     crossAxisAlignment: WrapCrossAlignment.center,
-                    children: const [
+                    children: [
                       Icon(
                         TolyIcon.icon_github,
                         size: 35,
@@ -133,9 +134,9 @@ class AboutAppPage extends StatelessWidget {
             ],
           ),
         ),
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
               'Flutter Unit',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
@@ -199,7 +200,7 @@ class InfoPanel extends StatelessWidget {
   final String info;
 
 
-  const InfoPanel({Key? key, required this.title,required this.info}) : super(key: key);
+  const InfoPanel({super.key, required this.title,required this.info});
 
   @override
   Widget build(BuildContext context) {

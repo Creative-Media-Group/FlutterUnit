@@ -30,7 +30,7 @@ class FlutterUnitSplash extends StatelessWidget {
 }
 
 class _SplashBody extends StatelessWidget {
-  const _SplashBody({super.key});
+  const _SplashBody();
 
   @override
   Widget build(BuildContext context) {

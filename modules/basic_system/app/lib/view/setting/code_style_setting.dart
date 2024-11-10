@@ -10,7 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CodeStyleSettingPage extends StatelessWidget {
 
-  const CodeStyleSettingPage({Key? key}) : super(key: key);
+  const CodeStyleSettingPage({super.key});
 
   final String code = """
 const String _kCounty = 'China';
@@ -42,7 +42,7 @@ class Hello {
       BuildContext context, List<HighlighterStyle> styles, int index) {
     return ListView.builder(
       itemCount: styles.length,
-      itemBuilder: (_ctx, i) =>  FeedbackWidget(
+      itemBuilder: (ctx, i) =>  FeedbackWidget(
         a: 0.95,
         duration: const Duration(milliseconds: 200),
       onPressed: (){
