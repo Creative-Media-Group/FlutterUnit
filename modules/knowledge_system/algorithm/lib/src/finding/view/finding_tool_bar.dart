@@ -4,7 +4,6 @@ import 'package:algorithm/src/finding/view/finding_button.dart';
 import 'package:app/app.dart';
 import 'package:flutter/material.dart';
 import 'package:toly_ui/toly_ui.dart';
-import 'package:tolyui/basic/basic.dart';
 import 'package:tolyui/tolyui.dart';
 
 import '../data_scope/finding_state.dart';

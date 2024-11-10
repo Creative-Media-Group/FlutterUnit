@@ -1,4 +1,3 @@
-import 'package:app/app.dart';
 import 'package:flutter/material.dart';
 import 'package:toly_ui/toly_ui.dart';
 

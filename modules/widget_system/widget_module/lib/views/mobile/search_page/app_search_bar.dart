@@ -6,7 +6,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:storage/storage.dart';
 import 'package:widget_module/blocs/blocs.dart';
 
-import '../../../data/zone.dart';
 
 class AppSearchBar extends StatefulWidget {
 

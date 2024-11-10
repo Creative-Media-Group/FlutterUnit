@@ -1,13 +1,10 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 
-import 'class_generator.dart';
 import 'desk_widget_top_bar.dart';
 import 'icon_font_gen/icon_font_gen_page.dart';
 import 'model/class.dart';
-import 'model/field.dart';
 import 'popable/class_gen_field.dart';
-import 'popable/toly_select.dart';
 
 class A {}
 

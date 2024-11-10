@@ -91,9 +91,7 @@ class _SliverResizingHeaderNode2State extends State<SliverResizingHeaderNode2> {
 }
 
 class _ItemList extends StatelessWidget {
-  const _ItemList({
-    this.itemCount = 50,
-  });
+  const _ItemList();
 
   final int itemCount;
 

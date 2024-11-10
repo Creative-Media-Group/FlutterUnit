@@ -1,15 +1,12 @@
 import 'dart:math';
 
 import 'package:algorithm/algorithm.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:l10n/l10n.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../bloc/columnize/bloc.dart';
 import '../bloc/exp.dart';
 import '../data/exp.dart';
-import '../data/repository/article_repository.dart';
 import 'article/toly_article_scroll_page.dart';
 
 import 'dart:ui' as ui;

@@ -230,8 +230,7 @@ class DatePickerDialog extends StatefulWidget {
     this.fieldLabelText,
     this.keyboardType,
     this.restorationId,
-  }) : assert(firstDate != null),
-        initialDate = DateUtils.dateOnly(initialDate),
+  }) : initialDate = DateUtils.dateOnly(initialDate),
         firstDate = DateUtils.dateOnly(firstDate),
         lastDate = DateUtils.dateOnly(lastDate),
         currentDate = DateUtils.dateOnly(currentDate ?? DateTime.now()) {
@@ -671,7 +670,7 @@ class _DatePickerHeader extends StatelessWidget {
     required this.orientation,
     this.isShort = false,
     this.entryModeButton,
-  }) : assert(orientation != null);
+  });
 
   static const double _datePickerHeaderLandscapeWidth = 152.0;
   static const double _datePickerHeaderPortraitHeight = 120.0;
@@ -2101,9 +2100,7 @@ class _MonthItem extends StatefulWidget {
     required this.firstDate,
     required this.lastDate,
     required this.displayedMonth,
-    this.dragStartBehavior = DragStartBehavior.start,
-  }) : assert(lastDate != null),
-        assert(!firstDate.isAfter(lastDate)),
+  }) : assert(!firstDate.isAfter(lastDate)),
         assert(selectedDateStart == null || !selectedDateStart.isBefore(firstDate)),
         assert(selectedDateEnd == null || !selectedDateEnd.isBefore(firstDate)),
         assert(selectedDateStart == null || !selectedDateStart.isAfter(lastDate)),

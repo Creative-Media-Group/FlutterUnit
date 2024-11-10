@@ -95,10 +95,6 @@ class Wrapper extends StatelessWidget {
     }
 
     return CustomPaint(
-      child: Padding(
-        padding: padding,
-        child: child,
-      ),
       painter: WrapperPainter(
           spineHeight: spineHeight,
           angle: angle,
@@ -112,6 +108,10 @@ class Wrapper extends StatelessWidget {
           spineType: spineType,
           formBottom: formEnd,
           spinePathBuilder: spinePathBuilder),
+      child: Padding(
+        padding: padding,
+        child: child,
+      ),
     );
   }
 }

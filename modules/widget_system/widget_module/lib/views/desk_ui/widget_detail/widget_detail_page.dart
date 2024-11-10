@@ -7,14 +7,12 @@ import 'package:l10n/l10n.dart';
 import 'package:widget_module/blocs/blocs.dart';
 
 import '../../../../data/zone.dart';
-import 'package:widgets/widgets.dart';
 
 import '../../mobile/widget_detail/category_end_drawer.dart';
 import '../../mobile/widget_detail/node_display/node_display.dart';
 import 'link_widget_buttons.dart';
 import 'widget_detail_bar.dart';
 import 'widget_detail_panel.dart';
-import 'widget_node_panel.dart';
 
 // 用于组件详情不需要在一开始就加载
 // WidgetDetailBloc 可以在稍后提供

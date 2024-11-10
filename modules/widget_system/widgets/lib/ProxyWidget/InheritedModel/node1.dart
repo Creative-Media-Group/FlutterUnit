@@ -181,7 +181,7 @@ class ColorSelector extends StatelessWidget {
       radius: 12,
       backgroundColor: color,
       child: color == activeColor
-          ? Icon(
+          ? const Icon(
               Icons.check,
               color: Colors.white,
               size: 16,
@@ -222,7 +222,7 @@ class _BoxDecorationWrapState extends State<BoxDecorationWrap> {
                 blurRadius: 8,
                 offset: const Offset(0, 0))
           ]),
-      child: CounterText(),
+      child: const CounterText(),
     );
   }
 }

@@ -7,7 +7,7 @@ class RoundRectTabIndicator extends Decoration {
   const RoundRectTabIndicator({
     this.borderSide = const BorderSide(width: 2.0, color: Colors.white),
     this.insets = EdgeInsets.zero,
-  })  : assert(insets != null);
+  });
 
   /// The color and weight of the horizontal line drawn below the selected tab.
   final BorderSide borderSide;

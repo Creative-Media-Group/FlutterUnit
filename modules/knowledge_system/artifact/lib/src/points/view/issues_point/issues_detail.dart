@@ -6,7 +6,6 @@ import 'package:utils/utils.dart';
 
 import '../../bloc/point_system_bloc.dart';
 import '../../data/model/github_model.dart';
-import '../../data/model/issue.dart';
 
 /// create by 张风捷特烈 on 2020/9/3
 /// contact me by email 1981462002@qq.com

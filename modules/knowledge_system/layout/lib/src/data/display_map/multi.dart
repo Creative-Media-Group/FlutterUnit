@@ -1,15 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:layout/src/views/base/positioned/positioned_show.dart';
 import 'package:layout/src/views/playground/view/stack/stack_playground.dart';
 
-import '../../views/base/align/align_show.dart';
-import '../../views/base/align/align_show2.dart';
-import '../../views/base/padding/inner_padding.dart';
-import '../../views/base/padding/outer_padding.dart';
-import '../../views/base/padding/sizedbox_padding.dart';
-import '../../views/base/size/size_loss_by_align.dart';
-import '../../views/base/size/size_tight_constraint.dart';
-import '../../views/base/size/size_unconstraint.dart';
 import '../../views/multi/flex/column_show.dart';
 import '../../views/playground/view/flex/flex_playground.dart';
 import '../../views/multi/flex/row_show.dart';

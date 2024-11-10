@@ -1,5 +1,4 @@
 
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:treasure_tools/src/icon_font_gen/icon_font_class_parser.dart';

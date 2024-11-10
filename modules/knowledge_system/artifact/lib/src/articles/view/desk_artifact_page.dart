@@ -58,11 +58,11 @@ class _DeskKnowledgePageState extends State<DeskKnowledgePage>  with SingleTicke
             ],),
             Expanded(child: TabBarView(
               controller: controller,
-              children: [
+              children: const [
                 LayoutRouterPage(),
-                const AlgoRouterPage(),
-                const TolyArticlesPage(),
-                const DeskPointPage(),
+                AlgoRouterPage(),
+                TolyArticlesPage(),
+                DeskPointPage(),
               ],
             ))
           ],

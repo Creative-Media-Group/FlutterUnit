@@ -1,7 +1,6 @@
 import 'package:app/app.dart';
 import 'package:app_update/views/update_red_point.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:l10n/l10n.dart';
 
 /// create by 张风捷特烈 on 2020-03-26

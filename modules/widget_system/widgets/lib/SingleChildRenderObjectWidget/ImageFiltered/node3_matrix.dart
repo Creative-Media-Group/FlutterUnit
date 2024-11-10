@@ -53,7 +53,7 @@ class _ImageFilteredMatrixState extends State<ImageFilteredMatrix> {
 }
 
 class _TargetContent extends StatelessWidget {
-  const _TargetContent({super.key});
+  const _TargetContent();
 
   @override
   Widget build(BuildContext context) {

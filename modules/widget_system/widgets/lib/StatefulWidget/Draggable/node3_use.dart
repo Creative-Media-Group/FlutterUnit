@@ -65,12 +65,12 @@ class _DeleteDraggableState extends State<DeleteDraggable> {
           width: 30,
               height: 30,
               alignment: Alignment.center,
+              decoration: BoxDecoration(color: e, shape: BoxShape.circle),
               child: Text(
                 colors.indexOf(e).toString(),
                 style: const TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
               ),
-              decoration: BoxDecoration(color: e, shape: BoxShape.circle),
             )),
   )
       .toList();

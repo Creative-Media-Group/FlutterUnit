@@ -220,11 +220,11 @@ class ColumnizeItem extends StatelessWidget {
                     Text(
                       columnize.title,
                       style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                          const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                     Text(
                       '作者: ${columnize.username}',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 12,
                           color: Color(
                             0xff6A6D76,
@@ -232,15 +232,15 @@ class ColumnizeItem extends StatelessWidget {
                     ),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6),
-                      border: Border.all(color: Color(0xff3872E0))),
+                      border: Border.all(color: const Color(0xff3872E0))),
                   child: Text(
                     '${columnize.count} 篇',
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Color(0xff3872E0), fontSize: 12, height: 1.1),
                   ),
                 )
@@ -251,25 +251,25 @@ class ColumnizeItem extends StatelessWidget {
             ),
             Text(
               '专栏简介: ${columnize.subtitle}',
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color(
                     0xffA3A3A3,
                   ),
                   fontSize: 12),
               maxLines: 3,
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               children: [
                 Text(
                   '更新时间: ${formatLong.format(DateTime.fromMillisecondsSinceEpoch(columnize.update, isUtc: true))}',
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Color(
                         0xff6A6D76,
                       ),
                       fontSize: 12),
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
           ],

@@ -51,7 +51,7 @@ class _CustomNavigationRailState extends State<CustomNavigationRail> {
 class _TestContent extends StatelessWidget {
   final String content;
 
-  const _TestContent({super.key, required this.content});
+  const _TestContent({required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ class _TestContent extends StatelessWidget {
 class _NavigationRailDemo extends StatefulWidget {
   final ValueChanged<int>? onDestinationSelected;
 
-  const _NavigationRailDemo({super.key, this.onDestinationSelected});
+  const _NavigationRailDemo({this.onDestinationSelected});
 
   @override
   State<_NavigationRailDemo> createState() => _NavigationRailDemoState();

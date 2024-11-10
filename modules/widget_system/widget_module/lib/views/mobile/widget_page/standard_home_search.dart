@@ -1,6 +1,5 @@
 import 'package:app/app.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:l10n/ext.dart';
 import 'package:toly_ui/toly_ui.dart';
 

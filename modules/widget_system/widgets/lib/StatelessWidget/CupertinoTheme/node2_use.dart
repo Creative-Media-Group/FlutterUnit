@@ -18,7 +18,7 @@ class CustomCupertinoTheme extends StatelessWidget {
 }
 
 class _ChildUseTheme extends StatelessWidget {
-  const _ChildUseTheme({super.key});
+  const _ChildUseTheme();
 
   @override
   Widget build(BuildContext context) {

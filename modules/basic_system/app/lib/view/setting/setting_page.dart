@@ -1,10 +1,8 @@
 import 'package:app/app.dart';
-import 'package:go_router/go_router.dart';
 import 'package:l10n/l10n.dart';
 import 'package:toly_ui/toly_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'language_setting.dart';
 
 class SettingPage extends StatelessWidget {
 

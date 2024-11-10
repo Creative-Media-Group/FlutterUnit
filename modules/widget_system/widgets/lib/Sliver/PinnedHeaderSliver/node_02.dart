@@ -82,9 +82,7 @@ class _PinnedHeaderSliverNode2State extends State<PinnedHeaderSliverNode2> {
 }
 
 class _ItemList extends StatelessWidget {
-  const _ItemList({
-    this.itemCount = 50,
-  });
+  const _ItemList();
 
   final int itemCount;
 

@@ -105,8 +105,8 @@ class _PhoneGalleryUnitState extends State<PhoneGalleryUnit> {
               Expanded(
                   child: Container(
                 margin: const EdgeInsets.only(left: 8, right: 8),
-                child: _buildContent(StrUnit.galleryDesc(context)),
                 decoration: boxDecoration,
+                child: _buildContent(StrUnit.galleryDesc(context)),
               ))
             ],
           ),

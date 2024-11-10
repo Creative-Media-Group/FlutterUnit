@@ -60,8 +60,8 @@ class _WrapOpToolState extends State<WrapOpTool> {
             children: [
               Text('增删操作', style: labelStyle.copyWith(fontWeight: FontWeight.bold)),
               const Spacer(),
-              TolyAction(onTap: _handleAdd, child: Icon(CupertinoIcons.add, size: 18)),
-              TolyAction(onTap: widget.onDelete, child: Icon(CupertinoIcons.delete, size: 16)),
+              TolyAction(onTap: _handleAdd, child: const Icon(CupertinoIcons.add, size: 18)),
+              TolyAction(onTap: widget.onDelete, child: const Icon(CupertinoIcons.delete, size: 16)),
             ],
           ),
         ),

@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:app/app.dart';
 import 'package:flutter/foundation.dart';
@@ -9,10 +8,8 @@ import 'package:l10n/l10n.dart';
 import '../../../data/zone.dart';
 import '../../desk_ui/widget_detail/link_widget_buttons.dart';
 import 'node_display/node_display.dart';
-import 'widget_node_panel.dart';
 import 'package:widget_module/blocs/blocs.dart';
 
-import 'package:widgets/widgets.dart';
 
 import 'category_end_drawer.dart';
 import 'widget_detail_bar.dart';

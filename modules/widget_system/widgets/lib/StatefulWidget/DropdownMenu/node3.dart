@@ -93,7 +93,6 @@ class _UserItem extends StatelessWidget {
   final User user;
 
   const _UserItem({
-    super.key,
     required this.user,
   });
 

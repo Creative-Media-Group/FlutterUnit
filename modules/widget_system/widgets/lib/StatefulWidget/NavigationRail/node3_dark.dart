@@ -62,7 +62,7 @@ class _DarkNavigationRailState extends State<DarkNavigationRail> {
 class _TestContent extends StatelessWidget {
   final String content;
 
-  const _TestContent({super.key, required this.content});
+  const _TestContent({required this.content});
 
   @override
   Widget build(BuildContext context) {

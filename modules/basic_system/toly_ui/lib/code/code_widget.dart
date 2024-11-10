@@ -38,11 +38,11 @@ class CodeWidget extends StatelessWidget {
       }
       body = SingleChildScrollView(
         child: Container(
-          child: codeWidget,
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
               color: style.backgroundColor ?? const Color(0xffF6F8FA),
               borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+          child: codeWidget,
         ),
       );
     return body;

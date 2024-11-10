@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../bloc/point_bloc/point_bloc.dart';
 import '../../bloc/point_system_bloc.dart';
 import '../../data/model/repository.dart';
 import '../issues_point/issues_point_page.dart';

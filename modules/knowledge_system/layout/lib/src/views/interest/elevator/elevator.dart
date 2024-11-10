@@ -50,8 +50,8 @@ class _ElevatorRoomState extends State<ElevatorRoom> {
             ),
             Column(
               children: [
-                TolyAction(onTap:upRoom, child: Icon(Icons.arrow_upward_outlined)),
-                TolyAction(onTap:downRoom, child: Icon(Icons.arrow_downward_outlined)),
+                TolyAction(onTap:upRoom, child: const Icon(Icons.arrow_upward_outlined)),
+                TolyAction(onTap:downRoom, child: const Icon(Icons.arrow_downward_outlined)),
 
               ],
             ),

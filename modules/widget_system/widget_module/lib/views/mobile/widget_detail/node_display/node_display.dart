@@ -78,7 +78,7 @@ class NodeDisplay extends StatelessWidget {
             pressed: Color(0xff096dd9),
           ),
         ).style,
-        child: Wrap(
+        child: const Wrap(
           spacing: 6,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [

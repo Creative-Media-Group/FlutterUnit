@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class SliverPinnedHeader extends StatelessWidget {
   final PreferredSizeWidget child;
