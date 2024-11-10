@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class DirectionPageView extends StatelessWidget {
-  DirectionPageView({Key? key}) : super(key: key);
+  DirectionPageView({super.key});
 
   final List<Color> data = [
     Colors.orange[50]!,

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomHero extends StatelessWidget {
-  const CustomHero({Key? key}) : super(key: key);
+  const CustomHero({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,6 @@ class CustomHero extends StatelessWidget {
 
     Widget container = Container(
       alignment: const Alignment(-0.8, -0.8),
-      child: hero,
       width: 250,
       height: 250 * 0.618,
       decoration: BoxDecoration(
@@ -35,6 +34,7 @@ class CustomHero extends StatelessWidget {
         Colors.green.withAlpha(88),
         Colors.blue.withAlpha(230)
       ])),
+      child: hero,
     );
 
     return GestureDetector(
@@ -49,7 +49,7 @@ class CustomHero extends StatelessWidget {
 }
 
 class TargetPage extends StatelessWidget {
-  const TargetPage({Key? key}) : super(key: key);
+  const TargetPage({super.key});
 
   @override
   Widget build(BuildContext context) {

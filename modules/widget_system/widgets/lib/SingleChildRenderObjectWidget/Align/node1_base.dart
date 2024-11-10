@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomAlign extends StatelessWidget {
-  const CustomAlign({Key? key}) : super(key: key);
+  const CustomAlign({super.key});
 
   final List<Alignment> alignments = const [
     Alignment.topLeft,
@@ -42,12 +42,12 @@ class CustomAlign extends StatelessWidget {
                       height: 60,
                       color: Colors.grey.withAlpha(88),
                       child: Align(
+                          alignment: mode,
                           child: Container(
                             width: 30,
                             height: 30,
                             color: Colors.cyanAccent,
-                          ),
-                          alignment: mode)),
+                          ))),
                   Text(alignmentsInfo[alignments.indexOf(mode)])
                 ]))
             .toList());

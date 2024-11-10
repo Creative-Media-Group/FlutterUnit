@@ -36,7 +36,7 @@ class Class {
   }
 
   Future<void> write2File(Directory directory) {
-    File file = File(path.join(directory.path, "${fileName}.dart"));
+    File file = File(path.join(directory.path, "$fileName.dart"));
     return file.writeAsString(buildClass());
   }
 

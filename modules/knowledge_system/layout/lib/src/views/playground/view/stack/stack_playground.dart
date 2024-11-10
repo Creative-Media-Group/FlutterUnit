@@ -10,7 +10,6 @@ import 'package:flutter/material.dart';
 import 'package:tolyui/tolyui.dart';
 
 import '../../cons.dart';
-import '../../data/flex_attr.dart';
 import '../../data/stack_attr.dart';
 import '../display_item.dart';
 import 'stack_op_panel.dart';

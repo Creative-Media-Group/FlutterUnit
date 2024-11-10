@@ -58,7 +58,7 @@ class WidgetDetailBloc extends Cubit<DetailState> {
         ));
       }
     } catch (e,s) {
-      print("queryDetail=error===${e}=$s==");
+      print("queryDetail=error===$e=$s==");
 
       emit(DetailFailed());
     }

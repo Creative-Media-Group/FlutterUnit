@@ -10,7 +10,7 @@ import 'package:flutter/services.dart';
 /// contact me by email 1981462002@qq.com
 
 class RawImageDemo extends StatefulWidget {
-  const RawImageDemo({Key? key}) : super(key: key);
+  const RawImageDemo({super.key});
 
   @override
   _RawImageDemoState createState() => _RawImageDemoState();

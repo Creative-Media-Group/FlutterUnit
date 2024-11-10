@@ -8,7 +8,7 @@ import '../search_page/standard_search_page.dart';
 
 class StandardHomeSearch extends StatelessWidget
     implements PreferredSizeWidget {
-  const StandardHomeSearch({Key? key}) : super(key: key);
+  const StandardHomeSearch({super.key});
 
   @override
   Size get preferredSize => const Size.fromHeight(35 + 8 * 2);

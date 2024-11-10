@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoPicker extends StatelessWidget {
-  const CustomCupertinoPicker({Key? key}) : super(key: key);
+  const CustomCupertinoPicker({super.key});
 
   final List<String> names = const[
     'Java',

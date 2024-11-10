@@ -26,7 +26,7 @@ class _ElevatorRoomState extends State<ElevatorRoom> {
 
         return Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             Stack(
@@ -50,8 +50,8 @@ class _ElevatorRoomState extends State<ElevatorRoom> {
             ),
             Column(
               children: [
-                TolyAction(child: Icon(Icons.arrow_upward_outlined), onTap:upRoom),
-                TolyAction(child: Icon(Icons.arrow_downward_outlined), onTap:downRoom),
+                TolyAction(onTap:upRoom, child: Icon(Icons.arrow_upward_outlined)),
+                TolyAction(onTap:downRoom, child: Icon(Icons.arrow_downward_outlined)),
 
               ],
             ),

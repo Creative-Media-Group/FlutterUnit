@@ -1,7 +1,6 @@
 import 'package:equatable/equatable.dart';
 
 import '../../data/model/github_model.dart';
-import '../../data/model/issue.dart';
 
 
 /// create by 张风捷特烈 on 2020/9/3

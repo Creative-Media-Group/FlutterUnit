@@ -8,7 +8,7 @@ import 'dart:ui' as ui;
 /// 说明:
 
 class DrawPathFun extends StatelessWidget {
-  const DrawPathFun({Key? key}) : super(key: key);
+  const DrawPathFun({super.key});
 
   @override
   Widget build(BuildContext context) {

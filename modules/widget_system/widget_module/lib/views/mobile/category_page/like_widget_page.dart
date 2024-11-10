@@ -18,7 +18,7 @@ import '../widget_detail/widget_detail_page.dart';
 /// 说明:
 
 class LikeWidgetPage extends StatelessWidget {
-  const LikeWidgetPage({Key? key}) : super(key: key);
+  const LikeWidgetPage({super.key});
 
   final SliverGridDelegate gridDelegate =
       const SliverGridDelegateWithFixedCrossAxisCount(

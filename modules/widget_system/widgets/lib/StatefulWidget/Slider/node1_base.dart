@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomSlider extends StatefulWidget {
-  const CustomSlider({Key? key}) : super(key: key);
+  const CustomSlider({super.key});
 
   @override
   _CustomSliderState createState() => _CustomSliderState();

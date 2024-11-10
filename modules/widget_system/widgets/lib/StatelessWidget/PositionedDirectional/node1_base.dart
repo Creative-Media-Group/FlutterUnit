@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomPositionedDirectional extends StatelessWidget {
-  const CustomPositionedDirectional({Key? key}) : super(key: key);
+  const CustomPositionedDirectional({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +42,9 @@ class CustomPositionedDirectional extends StatelessWidget {
             redBox,
             PositionedDirectional(top: 20, start: 20, child: greenBox),
             PositionedDirectional(
-              child: cyanBox,
               bottom: 10,
               end: 10,
+              child: cyanBox,
             )
           ],
         ));

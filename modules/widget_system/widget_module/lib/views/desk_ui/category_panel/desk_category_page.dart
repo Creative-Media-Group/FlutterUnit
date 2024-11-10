@@ -13,7 +13,7 @@ import '../../mobile/category_page/edit_category_panel.dart';
 import 'desk_top_like_panel.dart';
 
 class DeskCategoryPage extends StatefulWidget {
-  const DeskCategoryPage({Key? key}) : super(key: key);
+  const DeskCategoryPage({super.key});
 
   @override
   State<DeskCategoryPage> createState() => _DeskCategoryPageState();
@@ -30,12 +30,12 @@ class _DeskCategoryPageState extends State<DeskCategoryPage> {
         children: [
           DeskTabTopBar(onTabPressed: (int value) {
             _ctrl.jumpToPage(value);
-          }, tabs: ['组件酒肆','珍藏组件',
+          }, tabs: const ['组件酒肆','珍藏组件',
             // '添加收藏集'
           ],),
               Expanded(child: PageView(
                 controller: _ctrl,
-                children: [
+                children: const [
                   DeskCateGoryPage(),
                   DeskLikePage(),
                 ],
@@ -47,7 +47,7 @@ class _DeskCategoryPageState extends State<DeskCategoryPage> {
 }
 
 class DeskCateGoryPage extends StatelessWidget {
-  const DeskCateGoryPage({Key? key}) : super(key: key);
+  const DeskCateGoryPage({super.key});
 
 
 
@@ -65,7 +65,7 @@ class DeskCateGoryPage extends StatelessWidget {
     if(state is CategoryLoadedState){
       return GridView.builder(
         itemCount: state.categories.length,
-          padding: EdgeInsets.all(12),
+          padding: const EdgeInsets.all(12),
           gridDelegate: deskGridDelegate, itemBuilder:  (_, index) => GestureDetector(
           onTap: () => _toDetailPage(context, state.categories[index]),
           child: CategoryListItem(
@@ -77,7 +77,7 @@ class DeskCateGoryPage extends StatelessWidget {
           )));
     }
 
-    return SizedBox.shrink();
+    return const SizedBox.shrink();
 
   }
 

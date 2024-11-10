@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class ParentDataWidgetDemo extends StatelessWidget {
-  const ParentDataWidgetDemo({Key? key}) : super(key: key);
+  const ParentDataWidgetDemo({super.key});
 
   final String info =
       'ParentDataWidget 是一个抽象类，不能直接使用，它拥有 ParentData 子类型的泛型，该泛型会限定该组件的适应场景。'

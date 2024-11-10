@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ImageFilteredColor extends StatefulWidget {
-  const ImageFilteredColor({Key? key}) : super(key: key);
+  const ImageFilteredColor({super.key});
 
   @override
   State<ImageFilteredColor> createState() => _ImageFilteredColorState();
@@ -109,7 +109,7 @@ class _ImageFilteredColorState extends State<ImageFilteredColor> {
 }
 
 class _TargetContent extends StatelessWidget {
-  const _TargetContent({Key? key}) : super(key: key);
+  const _TargetContent({super.key});
 
   @override
   Widget build(BuildContext context) {

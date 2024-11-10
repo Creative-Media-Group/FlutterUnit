@@ -6,7 +6,7 @@ class SizeUnconstrain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return UnconstrainedBox(
+    return const UnconstrainedBox(
       child: SizeTightConstraint(info: "通过 UnconstrainedBox 解除约束",),
     );
   }

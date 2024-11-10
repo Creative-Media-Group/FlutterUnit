@@ -65,8 +65,7 @@ class DiyFlexibleSpaceBar extends StatefulWidget {
     this.collapseMode = CollapseMode.parallax,
     this.stretchModes = const <StretchMode>[StretchMode.zoomBackground],
     this.expandedTitleScale = 1.5,
-  }) : assert(collapseMode != null),
-        assert(expandedTitleScale >= 1);
+  }) : assert(expandedTitleScale >= 1);
 
   /// The primary contents of the flexible space bar when expanded.
   ///
@@ -126,7 +125,6 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
     if (widget.centerTitle != null) {
       return widget.centerTitle!;
     }
-    assert(theme.platform != null);
     switch (theme.platform) {
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
@@ -144,7 +142,6 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
       return Alignment.bottomCenter;
     }
     final TextDirection textDirection = Directionality.of(context);
-    assert(textDirection != null);
     switch (textDirection) {
       case TextDirection.rtl:
         return Alignment.bottomRight;
@@ -170,10 +167,6 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         final FlexibleSpaceBarSettings settings = context.dependOnInheritedWidgetOfExactType<FlexibleSpaceBarSettings>()!;
-        assert(
-        settings != null,
-        'A FlexibleSpaceBar must be wrapped in the widget returned by FlexibleSpaceBar.createSettings().',
-        );
 
         final List<Widget> children = <Widget>[];
 

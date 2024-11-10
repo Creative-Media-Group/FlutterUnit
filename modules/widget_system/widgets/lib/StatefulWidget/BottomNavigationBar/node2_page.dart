@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class BottomNavigationBarWithPageView extends StatefulWidget {
-  const BottomNavigationBarWithPageView({Key? key}) : super(key: key);
+  const BottomNavigationBarWithPageView({super.key});
 
   @override
   _BottomNavigationBarWithPageViewState createState() =>

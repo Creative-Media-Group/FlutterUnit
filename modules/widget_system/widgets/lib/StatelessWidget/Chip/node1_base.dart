@@ -2,11 +2,12 @@
 
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
+library;
 
 
 import 'package:flutter/material.dart';
 class CustomChip extends StatelessWidget {
-  const CustomChip({Key? key}) : super(key: key);
+  const CustomChip({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoSwitch extends StatefulWidget {
-  const CustomCupertinoSwitch({Key? key}) : super(key: key);
+  const CustomCupertinoSwitch({super.key});
 
   @override
   _CustomCupertinoSwitchState createState() => _CustomCupertinoSwitchState();

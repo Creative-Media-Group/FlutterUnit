@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomExpandIcon extends StatefulWidget {
-  const CustomExpandIcon({Key? key}) : super(key: key);
+  const CustomExpandIcon({super.key});
 
   @override
   _CustomExpandIconState createState() => _CustomExpandIconState();

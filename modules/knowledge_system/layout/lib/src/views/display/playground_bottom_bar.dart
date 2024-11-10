@@ -11,12 +11,12 @@ class PlaygroundBottomBar extends StatelessWidget {
     DisplayFrame frame = DisplayScope.of(context).state.frame;
     return Container(
       width: double.maxFinite,
-      color: Color(0xfff2f2f2),
-      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+      color: const Color(0xfff2f2f2),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       // height: 24,
       child: Text(
         frame.desc,
-        style: TextStyle(fontSize: 12, fontFamily: '宋体'),
+        style: const TextStyle(fontSize: 12, fontFamily: '宋体'),
       ),
       // child: NavigationToolbar(
       //   centerMiddle: true,

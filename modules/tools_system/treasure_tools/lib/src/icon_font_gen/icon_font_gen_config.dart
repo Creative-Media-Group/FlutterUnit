@@ -20,9 +20,9 @@ class IconFontGenConfig {
 
   String get distAssetsDir => path.join(projectPath, assetsDist);
 
-  String get ttfDistPath => path.join(distAssetsDir, path.basenameWithoutExtension(fileDist)+".ttf");
+  String get ttfDistPath => path.join(distAssetsDir, "${path.basenameWithoutExtension(fileDist)}.ttf");
 
-  String get yamlAssetDist => assetsDist.replaceAll('\\', '/')+"/"+path.basename(ttfDistPath);
+  String get yamlAssetDist => "${assetsDist.replaceAll('\\', '/')}/${path.basename(ttfDistPath)}";
 
   String get fontFamily => path
       .basenameWithoutExtension(fileDist)

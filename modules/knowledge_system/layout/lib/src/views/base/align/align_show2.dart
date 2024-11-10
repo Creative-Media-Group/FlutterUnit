@@ -41,10 +41,10 @@ class _AlignShow2State extends State<AlignShow2> {
       height: 120,
       color: Colors.black.withAlpha(10),
       child: Align(
+        alignment: Alignment(_x, f(_x * pi)),
         child: const Ball(
           color: Colors.orangeAccent,
         ),
-        alignment: Alignment(_x, f(_x * pi)),
       ),
     );
 

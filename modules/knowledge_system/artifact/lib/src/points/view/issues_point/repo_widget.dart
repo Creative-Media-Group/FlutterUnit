@@ -13,7 +13,7 @@ import '../../data/model/repository.dart';
 class RepoWidget extends StatelessWidget {
   final Repository repository;
 
-  const RepoWidget({Key? key, required this.repository}) : super(key: key);
+  const RepoWidget({super.key, required this.repository});
 
   @override
   Widget build(BuildContext context) {

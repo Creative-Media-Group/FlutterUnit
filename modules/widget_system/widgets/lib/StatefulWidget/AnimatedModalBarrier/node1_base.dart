@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class AnimatedModalBarrierDemo extends StatefulWidget {
-  const AnimatedModalBarrierDemo({Key? key}) : super(key: key);
+  const AnimatedModalBarrierDemo({super.key});
 
   @override
   _AnimatedModalBarrierDemoState createState() =>

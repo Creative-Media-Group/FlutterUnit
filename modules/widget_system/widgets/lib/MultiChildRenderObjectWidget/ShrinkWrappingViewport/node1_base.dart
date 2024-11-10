@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class ShrinkWrappingViewportDemo extends StatelessWidget {
 
-  const ShrinkWrappingViewportDemo({Key? key}) : super(key: key);
+  const ShrinkWrappingViewportDemo({super.key});
 
   final String info =
       'ShrinkWrappingViewport 在源码中只有一处使用：'

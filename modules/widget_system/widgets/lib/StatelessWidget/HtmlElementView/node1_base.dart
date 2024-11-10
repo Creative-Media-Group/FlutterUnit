@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 ///
 
 class HtmlElementViewDemo extends StatelessWidget {
-  const HtmlElementViewDemo({Key? key}) : super(key: key);
+  const HtmlElementViewDemo({super.key});
 
   final String info =
       '该组件只能用于 Flutter Web 中，嵌入 Html 元素的较为昂贵。'

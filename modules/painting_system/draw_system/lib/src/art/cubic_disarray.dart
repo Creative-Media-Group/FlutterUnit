@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/widgets.dart';
 
 class CubicDisarray extends StatefulWidget {
-  const CubicDisarray({Key? key}) : super(key: key);
+  const CubicDisarray({super.key});
 
   @override
   _CubicDisarrayState createState() => _CubicDisarrayState();

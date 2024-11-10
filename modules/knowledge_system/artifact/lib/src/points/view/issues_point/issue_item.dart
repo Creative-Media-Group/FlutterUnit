@@ -14,7 +14,7 @@ import '../../data/model/issue.dart';
 class IssueItem extends StatelessWidget {
   final Issue issue;
 
-  const IssueItem({Key? key, required this.issue}) : super(key: key);
+  const IssueItem({super.key, required this.issue});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class IssueItem extends StatelessWidget {
               style: TextStyle(fontSize: 15, color: Colors.grey, shadows: [
                 Shadow(
                     color: isDark ? Colors.black : Colors.white,
-                    offset: Offset(1, .5))
+                    offset: const Offset(1, .5))
               ]),
             ),
           ),

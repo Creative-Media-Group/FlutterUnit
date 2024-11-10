@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class MaterialAppDemo extends StatefulWidget {
-  const MaterialAppDemo({Key? key}) : super(key: key);
+  const MaterialAppDemo({super.key});
 
   @override
   _WidgetsAppDemoState createState() => _WidgetsAppDemoState();
@@ -86,7 +86,7 @@ class _WidgetsAppDemoState extends State<MaterialAppDemo> {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();

@@ -5,7 +5,7 @@ import 'package:widgets/utils/color_utils.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomColorFiltered extends StatefulWidget {
-  const CustomColorFiltered({Key? key}) : super(key: key);
+  const CustomColorFiltered({super.key});
 
   @override
   _CustomColorFilteredState createState() => _CustomColorFilteredState();
@@ -32,7 +32,7 @@ class _CustomColorFilteredState extends State<CustomColorFiltered> {
                       )
                     ],
                   ))
-              .toList()
+              
         ]),
       ],
     );
@@ -42,9 +42,9 @@ class _CustomColorFilteredState extends State<CustomColorFiltered> {
         width: 58,
         height: 58,
         child: ColorFiltered(
+            colorFilter: ColorFilter.mode(_color, m),
             child:
-                const Image(image: AssetImage("assets/images/icon_head.webp")),
-            colorFilter: ColorFilter.mode(_color, m)),
+                const Image(image: AssetImage("assets/images/icon_head.webp"))),
       );
 
   Widget _buildRandomColor() => GestureDetector(

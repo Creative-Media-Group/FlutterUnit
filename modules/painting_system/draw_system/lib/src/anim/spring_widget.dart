@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class SpringWidget extends StatefulWidget {
 
-   const SpringWidget({Key? key}) : super(key: key);
+   const SpringWidget({super.key});
 
   @override
   _SpringWidgetState createState() => _SpringWidgetState();

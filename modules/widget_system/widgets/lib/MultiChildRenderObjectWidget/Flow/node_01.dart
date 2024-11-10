@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class FlowNode1 extends StatelessWidget {
-  FlowNode1({Key? key}) : super(key: key);
+  FlowNode1({super.key});
 
   final List<String> data = List.generate(
       16,

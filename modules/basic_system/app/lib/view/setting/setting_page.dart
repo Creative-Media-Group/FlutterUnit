@@ -8,7 +8,7 @@ import 'language_setting.dart';
 
 class SettingPage extends StatelessWidget {
 
-  const SettingPage({Key? key}) : super(key: key);
+  const SettingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class SettingPage extends StatelessWidget {
                 Icons.style,
                 color: Theme.of(context).primaryColor,
               ),
-              title:  Text(context.l10n.darkMode, style:  TextStyle(fontSize: 16)),
+              title:  Text(context.l10n.darkMode, style:  const TextStyle(fontSize: 16)),
               subtitle: BlocBuilder<AppConfigBloc,AppConfig>(
                 builder: (_,state) {
                   String info = switch(state.themeMode){
@@ -47,7 +47,7 @@ class SettingPage extends StatelessWidget {
                 Icons.palette,
                 color: Theme.of(context).primaryColor,
               ),
-              title:  Text(context.l10n.themeColorSetting, style:  TextStyle(fontSize: 16)),
+              title:  Text(context.l10n.themeColorSetting, style:  const TextStyle(fontSize: 16)),
               subtitle: BlocBuilder<AppConfigBloc,AppConfig>(
                 builder: (_,state)=>Text(
                   state.themeColor.label(context),
@@ -64,10 +64,10 @@ class SettingPage extends StatelessWidget {
                 Icons.translate,
                 color: Theme.of(context).primaryColor,
               ),
-              title:  Text(context.l10n.fontSetting, style:  TextStyle(fontSize: 16)),
+              title:  Text(context.l10n.fontSetting, style:  const TextStyle(fontSize: 16)),
               subtitle: BlocBuilder<AppConfigBloc,AppConfig>(
                 builder: (_,state)=>Text(
-                    state.fontFamily,style: TextStyle(fontSize: 12),
+                    state.fontFamily,style: const TextStyle(fontSize: 12),
                 ),
               ),
               trailing: _nextIcon(context),
@@ -81,7 +81,7 @@ class SettingPage extends StatelessWidget {
                 TolyIcon.icon_code,
                 color: Theme.of(context).primaryColor,
               ),
-              title:  Text(context.l10n.codeHighlightStyle, style:  TextStyle(fontSize: 16)),
+              title:  Text(context.l10n.codeHighlightStyle, style:  const TextStyle(fontSize: 16)),
               trailing: _nextIcon(context),
               onTap: () => context.push('/settings/code_style'),
             ),
@@ -99,7 +99,7 @@ class SettingPage extends StatelessWidget {
                 Icons.info,
                 color: Theme.of(context).primaryColor,
               ),
-              title:  Text(context.l10n.versionInformation, style:  TextStyle(fontSize: 16)),
+              title:  Text(context.l10n.versionInformation, style:  const TextStyle(fontSize: 16)),
               trailing: _nextIcon(context),
               onTap: () => context.push('/settings/version'),
             ),
@@ -144,7 +144,7 @@ class SettingPage extends StatelessWidget {
               TolyIcon.icon_background,
               color: Theme.of(context).primaryColor,
             ),
-            title:  Text(context.l10n.displayPerformanceFloatingLayer, style:  TextStyle(fontSize: 16))
+            title:  Text(context.l10n.displayPerformanceFloatingLayer, style:  const TextStyle(fontSize: 16))
             , value: state.showPerformanceOverlay, onChanged: (bool value) {
             BlocProvider.of<AppConfigBloc>(context).switchShowOver(value);
           },

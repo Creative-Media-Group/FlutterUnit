@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 
 class MouseRegionDemo extends StatefulWidget {
-  const MouseRegionDemo({Key? key}) : super(key: key);
+  const MouseRegionDemo({super.key});
 
   @override
   _MouseRegionDemoState createState() => _MouseRegionDemoState();

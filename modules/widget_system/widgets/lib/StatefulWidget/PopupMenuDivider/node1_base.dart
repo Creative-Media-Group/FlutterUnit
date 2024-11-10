@@ -6,7 +6,7 @@ import 'package:widgets/utils/dialog_about.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomPopupMenuDivider extends StatelessWidget {
-  const CustomPopupMenuDivider({Key? key}) : super(key: key);
+  const CustomPopupMenuDivider({super.key});
 
   final Map<String, IconData> map = const {
     "关于": Icons.info_outline,

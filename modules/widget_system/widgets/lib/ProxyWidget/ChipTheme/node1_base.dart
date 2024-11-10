@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ChipThemeDemo extends StatelessWidget {
-  const ChipThemeDemo({Key? key}) : super(key: key);
+  const ChipThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class ChipThemeDemo extends StatelessWidget {
 }
 
 class CustomFilterChip extends StatefulWidget {
-  const CustomFilterChip({Key? key}) : super(key: key);
+  const CustomFilterChip({super.key});
 
   @override
   _CustomFilterChipState createState() => _CustomFilterChipState();

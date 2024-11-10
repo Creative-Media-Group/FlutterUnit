@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class PositionedStack extends StatelessWidget {
-  const PositionedStack({Key? key}) : super(key: key);
+  const PositionedStack({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +38,9 @@ class PositionedStack extends StatelessWidget {
         child: Stack(
           children: <Widget>[yellowBox, redBox, greenBox,
             Positioned(
-              child: cyanBox,
               bottom: 10,
               right: 10,
+              child: cyanBox,
             )
           ],
         ));

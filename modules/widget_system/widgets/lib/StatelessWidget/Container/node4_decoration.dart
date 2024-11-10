@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ContainerDecoration extends StatelessWidget {
-  ContainerDecoration({Key? key}) : super(key: key);
+  ContainerDecoration({super.key});
 
   final List<int> rainbow = [
     0xffff0000,

@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class NavigationToolbarDemo extends StatelessWidget {
-  const NavigationToolbarDemo({Key? key}) : super(key: key);
+  const NavigationToolbarDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return  const Column(
         mainAxisSize: MainAxisSize.min,
-        children: const <Widget>[
+        children: <Widget>[
           SizedBox(
             height: 60,
             child: NavigationToolbar(

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class PaginatedDataTableDemo extends StatefulWidget {
-  const PaginatedDataTableDemo({Key? key}) : super(key: key);
+  const PaginatedDataTableDemo({super.key});
 
   @override
   State<StatefulWidget> createState() => _PaginatedDataTableDemoState();

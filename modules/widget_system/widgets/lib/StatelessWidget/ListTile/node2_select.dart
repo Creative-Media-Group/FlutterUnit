@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SelectListTile extends StatefulWidget {
-  const SelectListTile({Key? key}) : super(key: key);
+  const SelectListTile({super.key});
 
   @override
   _SelectListTileState createState() => _SelectListTileState();

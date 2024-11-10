@@ -8,7 +8,7 @@ Future<void> quickSort(List<int> src, SortCallback callback) async {
 ///快速排序
 Future<void> _quickSort(List<int> src, SortCallback callback,int leftIndex,int rightIndex) async {
   // 定义一个名为 _partition 的异步函数，用于划分数组，并返回划分后的基准元素的索引位置
-  Future<int> _partition(int left, int right) async {
+  Future<int> partition(int left, int right) async {
     // 选择中间位置的元素作为基准元素
     int p = (left + (right - left) / 2).toInt();
 
@@ -45,7 +45,7 @@ Future<void> _quickSort(List<int> src, SortCallback callback,int leftIndex,int r
 
   // 如果左索引小于右索引，则递归地对数组进行快速排序
   if (leftIndex < rightIndex) {
-    int p = await _partition(leftIndex, rightIndex);
+    int p = await partition(leftIndex, rightIndex);
 
     await _quickSort(src,callback,leftIndex, p - 1); // 对基准元素左侧的子数组进行快速排序
 

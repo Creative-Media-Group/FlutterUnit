@@ -12,7 +12,7 @@ import 'world_render.dart';
 /// 说明:
 
 class RandomParticle extends StatefulWidget {
-  const RandomParticle({Key? key}) : super(key: key);
+  const RandomParticle({super.key});
 
   @override
   _RandomParticleState createState() => _RandomParticleState();

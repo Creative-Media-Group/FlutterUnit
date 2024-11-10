@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 
 
 class DunDunPathPage extends StatefulWidget {
-  const DunDunPathPage({Key? key}) : super(key: key);
+  const DunDunPathPage({super.key});
 
   @override
   _DunDunPathPageState createState() => _DunDunPathPageState();

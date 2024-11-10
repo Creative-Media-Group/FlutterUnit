@@ -349,8 +349,8 @@ class TolySwitchListTile extends StatelessWidget {
 
     final ThemeData theme = Theme.of(context);
     final SwitchThemeData switchTheme = SwitchTheme.of(context);
-    final Set<MaterialState> states = <MaterialState>{
-      if (selected) MaterialState.selected,
+    final Set<WidgetState> states = <WidgetState>{
+      if (selected) WidgetState.selected,
     };
     final Color effectiveActiveColor = activeColor
         ?? switchTheme.thumbColor?.resolve(states)

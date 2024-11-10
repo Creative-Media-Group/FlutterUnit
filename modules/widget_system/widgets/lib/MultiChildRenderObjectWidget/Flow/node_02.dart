@@ -15,17 +15,17 @@ class FlowNode02 extends StatefulWidget {
       height: 300,
       alignment: Alignment.center,
       child: FlowNode02(
-          children: data
-              .map((e) => CircleAvatar(backgroundImage: AssetImage(e)))
-              .toList(),
           menu: const CircleAvatar(
             backgroundImage: AssetImage('assets/images/icon_head.webp'),
-          )));
+          ),
+          children: data
+              .map((e) => CircleAvatar(backgroundImage: AssetImage(e)))
+              .toList()));
 
   final List<Widget> children;
   final Widget menu;
 
-  const FlowNode02({Key? key, required this.children, required this.menu}) : super(key: key);
+  const FlowNode02({super.key, required this.children, required this.menu});
 
   @override
   State createState() => _FlowNode02State();

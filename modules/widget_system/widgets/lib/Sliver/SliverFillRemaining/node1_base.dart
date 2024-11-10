@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SliverFillRemainingDemo extends StatefulWidget {
-  const SliverFillRemainingDemo({Key? key}) : super(key: key);
+  const SliverFillRemainingDemo({super.key});
 
   @override
   _SliverFillRemainingDemoState createState() =>

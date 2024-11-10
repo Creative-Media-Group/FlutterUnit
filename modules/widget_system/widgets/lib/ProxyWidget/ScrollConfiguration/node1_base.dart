@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomScrollConfiguration extends StatelessWidget {
-  CustomScrollConfiguration({Key? key}) : super(key: key);
+  CustomScrollConfiguration({super.key});
 
   final List<Color> data = [
     Colors.cyan[50]!,
@@ -56,7 +56,7 @@ class CustomScrollConfiguration extends StatelessWidget {
 
 class NoScrollBehavior extends ScrollBehavior {
   @override
-  Widget buildViewportChrome(
+  Widget buildOverscrollIndicator(
           BuildContext context, Widget child, AxisDirection axisDirection) =>
       child;
 }

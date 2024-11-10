@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomReorderableListView extends StatefulWidget {
-  const CustomReorderableListView({Key? key}) : super(key: key);
+  const CustomReorderableListView({super.key});
 
   @override
   _CustomReorderableListViewState createState() => _CustomReorderableListViewState();

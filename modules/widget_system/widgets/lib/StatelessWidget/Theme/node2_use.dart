@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomTheme extends StatelessWidget {
-  const CustomTheme({Key? key}) : super(key: key);
+  const CustomTheme({super.key});
 
   @override
   Widget build(BuildContext context) {

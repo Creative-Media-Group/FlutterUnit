@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SliverFillViewportDemo extends StatefulWidget {
-  const SliverFillViewportDemo({Key? key}) : super(key: key);
+  const SliverFillViewportDemo({super.key});
 
   @override
   _SliverFillViewportDemoState createState() => _SliverFillViewportDemoState();

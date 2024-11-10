@@ -8,7 +8,7 @@ class AppInfoApi {
     String errorMsg = "";
     var result = await HttpUtil.instance
         .client
-        .get(PathUnit.appInfo+"/$appName")
+        .get("${PathUnit.appInfo}/$appName")
         .catchError((err) {
       errorMsg = err.toString();
     });

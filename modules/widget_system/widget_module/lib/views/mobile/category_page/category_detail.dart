@@ -18,7 +18,7 @@ import '../../../data/zone.dart';
 class CategoryShow extends StatelessWidget {
   final CategoryModel model;
 
-  const CategoryShow({Key? key, required this.model}) : super(key: key);
+  const CategoryShow({super.key, required this.model});
 
   @override
   Widget build(BuildContext context) {
@@ -77,13 +77,13 @@ class CategoryShow extends StatelessWidget {
 class SimpleWidgetItem extends StatelessWidget {
   final WidgetModel data;
 
-  const SimpleWidgetItem({Key? key, required this.data}) : super(key: key);
+  const SimpleWidgetItem({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
     bool isDark = Theme.of(context).brightness == Brightness.dark;
 Color shadowColor = isDark?Colors.black:Colors.white;
-    return Container(
+    return SizedBox(
       height: 64,
       child: Row(
         children: <Widget>[
@@ -114,7 +114,7 @@ Color shadowColor = isDark?Colors.black:Colors.white;
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                   shadows: [
-                    Shadow(color: shadowColor, offset: Offset(.3, .3))
+                    Shadow(color: shadowColor, offset: const Offset(.3, .3))
                   ])),
         ),
         const SizedBox(width: 15),
@@ -150,9 +150,9 @@ Color shadowColor = isDark?Colors.black:Colors.white;
       maxLines: 2,
       overflow: TextOverflow.ellipsis,
       style:  TextStyle(
-          color: Color(0xFF757575),
+          color: const Color(0xFF757575),
           fontSize: 12,
-          shadows: [Shadow(color: shadowColor, offset: Offset(.5, .5))]),
+          shadows: [Shadow(color: shadowColor, offset: const Offset(.5, .5))]),
     );
   }
 }

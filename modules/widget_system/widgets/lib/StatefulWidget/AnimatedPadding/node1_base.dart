@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomAnimatedPadding extends StatefulWidget {
-  const CustomAnimatedPadding({Key? key}) : super(key: key);
+  const CustomAnimatedPadding({super.key});
 
   @override
   _CustomAnimatedPaddingState createState() => _CustomAnimatedPaddingState();

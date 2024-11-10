@@ -22,13 +22,13 @@ class DeskWidgetNodePanel extends StatefulWidget {
   final bool death;
 
   const DeskWidgetNodePanel(
-      {Key? key, this.text='',
+      {super.key, this.text='',
       this.subText='',
       this.code='',
       this.death=false,
       this.show,
      required this.codeStyle,
-      this.codeFamily}) : super(key: key);
+      this.codeFamily});
 
   @override
   _DeskWidgetNodePanelState createState() => _DeskWidgetNodePanelState();
@@ -101,7 +101,7 @@ class _DeskWidgetNodePanelState extends State<DeskWidgetNodePanel> {
   Widget _buildNodeInfo() => SizedBox(
         width: double.infinity,
         child: Panel(
-          color: Color(0x33E5EAE1),
+          color: const Color(0x33E5EAE1),
             child: Text(
           widget.subText,
           style: const TextStyle(fontSize: 12),
@@ -112,11 +112,11 @@ class _DeskWidgetNodePanelState extends State<DeskWidgetNodePanel> {
         padding: const EdgeInsets.only(right: 10.0),
         child: ToggleRotate(
           durationMs: 300,
+          onTap: _toggleCodePanel,
           child: Icon(
             TolyIcon.icon_code,
             color: themeColor,
           ),
-          onTap: _toggleCodePanel,
         ),
       );
 

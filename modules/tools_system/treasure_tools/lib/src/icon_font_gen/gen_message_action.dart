@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class GenMessageAction extends StatelessWidget {
   final VoidCallback onGen;
-  const GenMessageAction({Key? key, required this.onGen}) : super(key: key);
+  const GenMessageAction({super.key, required this.onGen});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class GenMessageAction extends StatelessWidget {
             style: ElevatedButton.styleFrom(
                 elevation: 0, shape: const StadiumBorder()),
             onPressed: onGen,
-            child: Wrap(
+            child: const Wrap(
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 4,
               children: [
@@ -29,7 +29,7 @@ class GenMessageAction extends StatelessWidget {
                   TolyIcon.icon_fast,
                   size: 16,
                 ),
-                const Text(
+                Text(
                   '生成代码',
                   style: TextStyle(height: 1.1, fontSize: 12),
                 ),

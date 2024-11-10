@@ -8,7 +8,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 /// 说明:
 
 class FontSettingPage extends StatelessWidget {
-  const FontSettingPage({Key? key}) : super(key: key);
+  const FontSettingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,11 +47,10 @@ class FontCell extends StatelessWidget {
   final String fontFamily;
 
   const FontCell(
-      {Key? key,
+      {super.key,
       required this.active,
       required this.onSelect,
-      required this.fontFamily})
-      : super(key: key);
+      required this.fontFamily});
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +80,7 @@ class FontCell extends StatelessWidget {
           ),
           child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(8),
                   bottomRight: Radius.circular(8),
                 ),

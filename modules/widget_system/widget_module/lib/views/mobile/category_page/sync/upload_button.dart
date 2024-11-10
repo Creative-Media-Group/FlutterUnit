@@ -19,7 +19,7 @@ import '../../../../data/zone.dart';
 /// 说明:
 
 class UploadCategoryButton extends StatefulWidget {
-  const UploadCategoryButton({Key? key}) : super(key: key);
+  const UploadCategoryButton({super.key});
 
   @override
   _UploadCategoryButtonState createState() => _UploadCategoryButtonState();
@@ -64,11 +64,11 @@ class _UploadCategoryButtonState extends State<UploadCategoryButton> {
 
   Widget _buildDefault() {
     return FeedbackWidget(
+        onPressed: _doUploadCategoryData,
         child: const Icon(
           TolyIcon.upload,
           size: 24,
-        ),
-        onPressed: _doUploadCategoryData);
+        ));
   }
 
   void _doUploadCategoryData() async{
@@ -76,7 +76,7 @@ class _UploadCategoryButtonState extends State<UploadCategoryButton> {
 
     CategoryRepository rep = BlocProvider.of<CategoryBloc>(context).repository;
     List<CategoryTo> loadCategories = await rep.loadCategoryData();
-    List<int> likeData = await  AppStorage().flutter<LikeDao>()!.likeWidgetIds();
+    List<int> likeData = await  AppStorage().flutter<LikeDao>().likeWidgetIds();
 
 
     String json = jsonEncode(loadCategories);

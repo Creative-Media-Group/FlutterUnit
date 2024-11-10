@@ -7,7 +7,7 @@ import '../../../data/zone.dart';
 class WidgetDetailPanel extends StatelessWidget {
   final WidgetModel model;
 
-  const WidgetDetailPanel({Key? key, required this.model}) : super(key: key);
+  const WidgetDetailPanel({super.key, required this.model});
 
   @override
   Widget build(BuildContext context) {

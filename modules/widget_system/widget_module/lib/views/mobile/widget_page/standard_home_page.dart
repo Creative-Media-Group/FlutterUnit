@@ -12,7 +12,7 @@ import 'standard_home_search.dart';
 import 'widget_page.dart';
 
 class StandardHomePage extends StatefulWidget {
-  const StandardHomePage({Key? key}) : super(key: key);
+  const StandardHomePage({super.key});
 
   @override
   State<StandardHomePage> createState() => _StandardHomePageState();
@@ -80,7 +80,7 @@ class _StandardHomePageState extends State<StandardHomePage>
             child: NestedScrollView(
                 floatHeaderSlivers: true,
                 headerSliverBuilder: _buildHeader,
-                body: WidgetPage()),
+                body: const WidgetPage()),
           ),
           SizedBox(
             height: bottom,

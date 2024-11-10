@@ -11,10 +11,10 @@ class SortSettings extends StatefulWidget {
 }
 
 class _SortSettingsState extends State<SortSettings> {
-  late TextEditingController _count =
+  late final TextEditingController _count =
       TextEditingController();
-  late TextEditingController _duration = TextEditingController();
-  late TextEditingController _seed =
+  late final TextEditingController _duration = TextEditingController();
+  late final TextEditingController _seed =
       TextEditingController();
 
   @override
@@ -37,7 +37,7 @@ class _SortSettingsState extends State<SortSettings> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: BackButton(),
+        leading: const BackButton(),
         actions: [
           IconButton(onPressed: (){
             SortState state = SortStateScope.of(context);
@@ -49,15 +49,15 @@ class _SortSettingsState extends State<SortSettings> {
                 seed: int.parse(_seed.text)
             );
             Navigator.of(context).pop();
-          }, icon: Icon(Icons.check))],
-        iconTheme: IconThemeData(color: Colors.black),
-        titleTextStyle: TextStyle(
+          }, icon: const Icon(Icons.check))],
+        iconTheme: const IconThemeData(color: Colors.black),
+        titleTextStyle: const TextStyle(
           color: Colors.black,
           fontSize: 16,
           fontWeight: FontWeight.bold,
         ),
         centerTitle: true,
-        title: Text('排序算法配置'),
+        title: const Text('排序算法配置'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -65,7 +65,7 @@ class _SortSettingsState extends State<SortSettings> {
           children: [
             Row(
               children: [
-                Text('数据数量(个数):'),
+                const Text('数据数量(个数):'),
                 const SizedBox(
                   width: 20,
                 ),
@@ -77,7 +77,7 @@ class _SortSettingsState extends State<SortSettings> {
             ),
             Row(
               children: [
-                Text('时间间隔(微秒):'),
+                const Text('时间间隔(微秒):'),
                 const SizedBox(
                   width: 20,
                 ),
@@ -89,7 +89,7 @@ class _SortSettingsState extends State<SortSettings> {
             ),
             Row(
               children: [
-                Text('随机种子:'),
+                const Text('随机种子:'),
                 const SizedBox(
                   width: 20,
                 ),
@@ -99,7 +99,7 @@ class _SortSettingsState extends State<SortSettings> {
                 )),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             // ElevatedButton(
             //     onPressed: () {
             //       SortState state = SortStateScope.of(context);

@@ -8,7 +8,7 @@ import 'matrix4_shower.dart';
 /// contact me by email 1981462002@qq.com
 
 class RotateTransform extends StatefulWidget {
-  const RotateTransform({Key? key}) : super(key: key);
+  const RotateTransform({super.key});
 
   @override
   _RotateTransformState createState() => _RotateTransformState();

@@ -11,7 +11,7 @@ class AppDeskNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color backgroundColor = context.isDark ? Color(0xff001529) : Colors.white;
+    Color backgroundColor = context.isDark ? const Color(0xff001529) : Colors.white;
 
     return Scaffold(
       backgroundColor: backgroundColor,

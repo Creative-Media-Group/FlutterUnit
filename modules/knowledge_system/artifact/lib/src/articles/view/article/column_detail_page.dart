@@ -7,7 +7,7 @@ import 'sliver_article.dart';
 class ColumnDetailPage extends StatelessWidget {
   final Columnize columnize;
 
-  const ColumnDetailPage({Key? key, required this.columnize}) : super(key: key);
+  const ColumnDetailPage({super.key, required this.columnize});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class ColumnDetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(columnize.title),
       ),
-      body: CustomScrollView(
+      body: const CustomScrollView(
         slivers: [
           SliverPadding(
               padding: EdgeInsets.only(top: 8),

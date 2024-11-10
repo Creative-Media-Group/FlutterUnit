@@ -9,7 +9,7 @@ import '../bloc/display_state.dart';
 import '../data/display_map/display_map.dart';
 
 class LayoutRouterPage extends StatefulWidget {
-  LayoutRouterPage({super.key});
+  const LayoutRouterPage({super.key});
 
   @override
   State<LayoutRouterPage> createState() => _LayoutRouterPageState();
@@ -57,6 +57,6 @@ class LayoutPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(color: Colors.white, child: const Center(child: Text("TODO")));
+    return const Material(color: Colors.white, child: Center(child: Text("TODO")));
   }
 }

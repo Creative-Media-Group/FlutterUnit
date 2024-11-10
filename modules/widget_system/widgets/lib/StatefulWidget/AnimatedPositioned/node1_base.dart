@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomAnimatedPositioned extends StatefulWidget {
-  const CustomAnimatedPositioned({Key? key}) : super(key: key);
+  const CustomAnimatedPositioned({super.key});
 
   @override
   _CustomAnimatedPositionedState createState() =>

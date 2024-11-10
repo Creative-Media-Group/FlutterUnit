@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CupertinoDialogActionDemo extends StatelessWidget {
-  const CupertinoDialogActionDemo({Key? key}) : super(key: key);
+  const CupertinoDialogActionDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

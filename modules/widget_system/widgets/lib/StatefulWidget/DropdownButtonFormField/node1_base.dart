@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class DropdownButtonFormFieldDemo extends StatefulWidget {
-  const DropdownButtonFormFieldDemo({Key? key}) : super(key: key);
+  const DropdownButtonFormFieldDemo({super.key});
 
   @override
   _DropdownButtonFormFieldDemoState createState() =>

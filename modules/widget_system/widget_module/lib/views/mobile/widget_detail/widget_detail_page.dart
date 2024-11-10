@@ -45,7 +45,7 @@ class WidgetDetailPageScope extends StatelessWidget {
 class WidgetDetailPage extends StatelessWidget {
   final WidgetModel model;
 
-  const WidgetDetailPage({Key? key, required this.model}) : super(key: key);
+  const WidgetDetailPage({super.key, required this.model});
 
   @override
   Widget build(BuildContext context) {

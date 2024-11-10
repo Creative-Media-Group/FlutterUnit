@@ -52,10 +52,11 @@ class _DeskWidgetDetailPageScopeState extends State<DeskWidgetDetailPageScope> {
 
   @override
   Widget build(BuildContext context) {
-    if (_model == null)
-      return Center(
+    if (_model == null) {
+      return const Center(
         child: CupertinoActivityIndicator(),
       );
+    }
 
     return BlocProvider<WidgetDetailBloc>(
       create: (_) => WidgetDetailBloc(
@@ -72,7 +73,7 @@ class _DeskWidgetDetailPageScopeState extends State<DeskWidgetDetailPageScope> {
 class DeskWidgetDetailPage extends StatelessWidget {
   final WidgetModel? model;
 
-  const DeskWidgetDetailPage({Key? key, required this.model}) : super(key: key);
+  const DeskWidgetDetailPage({super.key, required this.model});
 
   @override
   Widget build(BuildContext context) {

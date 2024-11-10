@@ -1,6 +1,5 @@
 
 import 'package:fx_dao/fx_dao.dart';
-import 'package:sqflite/sqlite_api.dart';
 
 import '../model/cache_po.dart';
 

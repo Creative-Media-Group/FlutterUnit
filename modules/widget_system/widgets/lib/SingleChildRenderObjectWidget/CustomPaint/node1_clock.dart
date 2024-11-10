@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ClockPage extends StatelessWidget {
-  const ClockPage({Key? key}) : super(key: key);
+  const ClockPage({super.key});
 
   @override
   Widget build(BuildContext context) {

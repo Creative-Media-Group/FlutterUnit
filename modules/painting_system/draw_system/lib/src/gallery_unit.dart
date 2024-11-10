@@ -17,7 +17,7 @@ import 'gallery_factory.dart';
 /// 说明:
 
 class GalleryUnit extends StatelessWidget {
-  const GalleryUnit({Key? key}) : super(key: key);
+  const GalleryUnit({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class GalleryUnit extends StatelessWidget {
 }
 
 class PhoneGalleryUnit extends StatefulWidget {
-  const PhoneGalleryUnit({Key? key}) : super(key: key);
+  const PhoneGalleryUnit({super.key});
 
   @override
   _PhoneGalleryUnitState createState() => _PhoneGalleryUnitState();
@@ -90,6 +90,15 @@ class _PhoneGalleryUnitState extends State<PhoneGalleryUnit> {
             statusBarIconBrightness: Brightness.light
         ),
         child:ValueListenableBuilder(
+          valueListenable: factor,
+          builder: (_,double value, child) => Container(
+            color: isDark?null:Color.lerp(
+              color,
+              nextColor,
+              value,
+            ),
+            child: child,
+          ),
           child: Column(
             children: [
               _buildTitle(context),
@@ -100,15 +109,6 @@ class _PhoneGalleryUnitState extends State<PhoneGalleryUnit> {
                 decoration: boxDecoration,
               ))
             ],
-          ),
-          valueListenable: factor,
-          builder: (_,double value, child) => Container(
-            color: isDark?null:Color.lerp(
-              color,
-              nextColor,
-              value,
-            ),
-            child: child,
           ),
         ),
       ),
@@ -122,15 +122,15 @@ class _PhoneGalleryUnitState extends State<PhoneGalleryUnit> {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children:  [
-           FlutterLogo(
+           const FlutterLogo(
             size: 40,
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Text(
             context.l10n.paintCollection,
-            style: TextStyle(fontSize: 26, color: Colors.white),
+            style: const TextStyle(fontSize: 26, color: Colors.white),
           ),
         ],
       ),
@@ -175,14 +175,14 @@ class _PhoneGalleryUnitState extends State<PhoneGalleryUnit> {
                 controller: _ctrl,
                 itemBuilder: (_, index) {
                   return AnimatedBuilder(
+                    animation: _ctrl,
+                    builder: (context, child) =>
+                        _buildAnimItemByIndex(context, child, index),
                     child: Padding(
                       padding: const EdgeInsets.all(6.0),
                       child: widgets[
                           _fixPosition(index, _firstOffset, widgets.length)],
                     ),
-                    animation: _ctrl,
-                    builder: (context, child) =>
-                        _buildAnimItemByIndex(context, child, index),
                   );
                 },
                 onPageChanged: (index) {

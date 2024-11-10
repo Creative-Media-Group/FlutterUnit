@@ -6,7 +6,7 @@ import 'package:widgets/utils/dialog_about.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomPopupMenuButton extends StatefulWidget {
-  const CustomPopupMenuButton({Key? key}) : super(key: key);
+  const CustomPopupMenuButton({super.key});
 
   @override
   _CustomPopupMenuButtonState createState() => _CustomPopupMenuButtonState();

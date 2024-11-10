@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class DenseSwitchListTile extends StatefulWidget {
-  const DenseSwitchListTile({Key? key}) : super(key: key);
+  const DenseSwitchListTile({super.key});
 
   @override
   _DenseSwitchListTileState createState() => _DenseSwitchListTileState();

@@ -22,8 +22,7 @@ class AlertConformDialog extends StatelessWidget {
       this.titleDivider = false,
       this.onCancel,
       this.conformTextColor,
-      Key? key})
-      : super(key: key);
+      super.key});
 
   final TextStyle noticeStyle =
       const TextStyle(color: Colors.grey, fontSize: 16);

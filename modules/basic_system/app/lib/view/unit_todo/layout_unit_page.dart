@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class LayoutUnitPage extends StatelessWidget {
 
-  const LayoutUnitPage({Key? key}) : super(key: key);
+  const LayoutUnitPage({super.key});
 
 
   final String info = '【Flutter布局集录】是Unit项目计划的第二阶段的功能之一。'
@@ -23,10 +23,10 @@ class LayoutUnitPage extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          Positioned(
+          const Positioned(
             top: 50,
             child: Column(
-              children: const [
+              children: [
                 CircleImage(
                   image: AssetImage('assets/images/icon_head.webp'),
                   size: 80,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ImageSwitch extends StatefulWidget {
-  const ImageSwitch({Key? key}) : super(key: key);
+  const ImageSwitch({super.key});
 
   @override
   _ImageSwitchState createState() => _ImageSwitchState();

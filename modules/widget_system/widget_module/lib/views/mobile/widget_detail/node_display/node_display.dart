@@ -69,15 +69,8 @@ class NodeDisplay extends StatelessWidget {
         onPressed: () {
           Navigator.of(ctx).push(MaterialPageRoute(builder: (_)=>page));
         },
-        child: Wrap(
-          spacing: 6,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            Icon(Icons.open_in_new,size: 16,),
-            Text('新界面打开'),
-          ],),
         style: FillButtonPalette(
-          foregroundPalette: Palette.all(Colors.white),
+          foregroundPalette: const Palette.all(Colors.white),
           borderRadius: BorderRadius.circular(6),
           backgroundPalette: const Palette(
             normal: Color(0xff1890ff),
@@ -85,6 +78,13 @@ class NodeDisplay extends StatelessWidget {
             pressed: Color(0xff096dd9),
           ),
         ).style,
+        child: Wrap(
+          spacing: 6,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            Icon(Icons.open_in_new,size: 16,),
+            Text('新界面打开'),
+          ],),
       ),
    );
   }

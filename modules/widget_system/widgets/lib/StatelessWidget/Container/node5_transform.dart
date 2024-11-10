@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ContainerTransform extends StatelessWidget {
-  const ContainerTransform({Key? key}) : super(key: key);
+  const ContainerTransform({super.key});
 
   @override
   Widget build(BuildContext context) {

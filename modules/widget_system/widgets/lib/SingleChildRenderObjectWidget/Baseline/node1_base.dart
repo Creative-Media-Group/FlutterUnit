@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomBaseline extends StatefulWidget {
-  const CustomBaseline({Key? key}) : super(key: key);
+  const CustomBaseline({super.key});
 
   @override
   _CustomBaselineState createState() => _CustomBaselineState();
@@ -21,9 +21,9 @@ class _CustomBaselineState extends State<CustomBaseline> {
 
 
     Widget baseline = Baseline(
-        child: childBox,
         baseline: _baseline,
-        baselineType: TextBaseline.alphabetic);
+        baselineType: TextBaseline.alphabetic,
+        child: childBox);
 
     return Column(
       children: <Widget>[

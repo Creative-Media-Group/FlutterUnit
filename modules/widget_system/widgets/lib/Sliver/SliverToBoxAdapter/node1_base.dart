@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SliverToBoxAdapterDemo extends StatelessWidget {
-  SliverToBoxAdapterDemo({Key? key}) : super(key: key);
+  SliverToBoxAdapterDemo({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

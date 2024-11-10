@@ -11,7 +11,7 @@ import 'package:flutter/services.dart';
 /// 说明:
 
 class DrawPicture extends StatefulWidget {
-  const DrawPicture({Key? key}) : super(key: key);
+  const DrawPicture({super.key});
 
   @override
   _DrawPictureState createState() => _DrawPictureState();

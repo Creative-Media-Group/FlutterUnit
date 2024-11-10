@@ -4,7 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 class CircleHalo extends StatefulWidget {
-  const CircleHalo({Key? key}) : super(key: key);
+  const CircleHalo({super.key});
 
   @override
   _CircleHaloState createState() => _CircleHaloState();

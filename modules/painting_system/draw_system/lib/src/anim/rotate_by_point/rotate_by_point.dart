@@ -6,7 +6,7 @@ import 'angle_panter.dart';
 import 'line.dart';
 
 class RotateByPointWidget extends StatefulWidget {
-  const RotateByPointWidget({Key? key}) : super(key: key);
+  const RotateByPointWidget({super.key});
 
   @override
   State<RotateByPointWidget> createState() => _RotateByPointWidgetState();

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomRotatedBox extends StatefulWidget {
-  const CustomRotatedBox({Key? key}) : super(key: key);
+  const CustomRotatedBox({super.key});
 
   @override
   _CustomRotatedBoxState createState() => _CustomRotatedBoxState();

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
 class HypnoticSquares extends StatefulWidget {
-  const HypnoticSquares({Key? key}) : super(key: key);
+  const HypnoticSquares({super.key});
 
   @override
   _HypnoticSquaresState createState() => _HypnoticSquaresState();

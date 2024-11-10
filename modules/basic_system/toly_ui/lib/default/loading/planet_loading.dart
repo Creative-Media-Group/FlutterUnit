@@ -11,7 +11,7 @@ import '../../ti/math_runner.dart';
 /// 说明:
 
 class PlateLoading extends StatelessWidget {
-  const PlateLoading({Key? key}) : super(key: key);
+  const PlateLoading({super.key});
 
   @override
   Widget build(BuildContext context) {

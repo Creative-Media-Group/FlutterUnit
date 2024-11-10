@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'stamp_data.dart';
 
 class StampPaper extends StatefulWidget {
-  const StampPaper({Key? key}) : super(key: key);
+  const StampPaper({super.key});
 
   @override
   _StampPaperState createState() => _StampPaperState();

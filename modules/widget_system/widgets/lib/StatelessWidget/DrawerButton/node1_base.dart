@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class DrawerButtonDemo extends StatelessWidget {
-  const DrawerButtonDemo({Key? key}) : super(key: key);
+  const DrawerButtonDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

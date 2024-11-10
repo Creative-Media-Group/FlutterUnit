@@ -15,10 +15,10 @@ class GalleryCardItem extends StatelessWidget {
   final int count;
 
   const GalleryCardItem({
-    Key? key,
+    super.key,
     required this.galleryInfo,
     this.count = 0,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +31,11 @@ class GalleryCardItem extends StatelessWidget {
       child: Container(
           height: double.maxFinite,
           alignment: Alignment.topCenter,
+          decoration:  BoxDecoration(
+              color: isDark?Colors.black87:Colors.white,
+              borderRadius: const BorderRadius.all(
+                Radius.circular(20),
+              )),
           child: Column(
             children: [
               Hero(
@@ -99,12 +104,7 @@ class GalleryCardItem extends StatelessWidget {
                 ),
               )
             ],
-          ),
-          decoration:  BoxDecoration(
-              color: isDark?Colors.black87:Colors.white,
-              borderRadius: BorderRadius.all(
-                Radius.circular(20),
-              ))),
+          )),
     );
   }
 }

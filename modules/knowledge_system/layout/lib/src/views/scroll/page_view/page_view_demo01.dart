@@ -21,7 +21,7 @@ class PageViewDemo01 extends StatelessWidget {
               child: Text(
                 'Page ${index + 1}\n${colorString(color)}',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18, color: Colors.white),
+                style: const TextStyle(fontSize: 18, color: Colors.white),
               ),
             );
           }),

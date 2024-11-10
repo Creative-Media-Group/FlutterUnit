@@ -15,13 +15,12 @@ class DeskFrameShower extends StatelessWidget {
   final Widget content;
 
   const DeskFrameShower(
-      {Key? key,
+      {super.key,
         this.title = "",
         this.author = "",
         this.srcUrl = "",
         this.info = "",
-        required this.content})
-      : super(key: key);
+        required this.content});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 /// contact me by email 1981462002@qq.com
 
 class CupertinoSegmentedControlDemo extends StatefulWidget {
-  const CupertinoSegmentedControlDemo({Key? key}) : super(key: key);
+  const CupertinoSegmentedControlDemo({super.key});
 
   @override
   _CupertinoSegmentedControlDemoState createState() =>

@@ -7,12 +7,12 @@ class OuterPadding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         InnerPadding(),
         Padding(
-          padding: const EdgeInsets.only(left: 24.0),
+          padding: EdgeInsets.only(left: 24.0),
           child: InnerPadding(),
         ),
       ],

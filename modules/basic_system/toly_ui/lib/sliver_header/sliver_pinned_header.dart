@@ -5,7 +5,7 @@ class SliverPinnedHeader extends StatelessWidget {
   final PreferredSizeWidget child;
   final Color color;
 
-  SliverPinnedHeader({required this.child, this.color = Colors.white});
+  const SliverPinnedHeader({super.key, required this.child, this.color = Colors.white});
 
   @override
   Widget build(BuildContext context) {

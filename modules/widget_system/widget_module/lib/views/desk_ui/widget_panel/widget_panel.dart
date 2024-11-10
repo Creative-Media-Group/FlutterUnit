@@ -11,7 +11,7 @@ import 'desk_widget_model_item.dart';
 import 'desk_widget_top_bar.dart';
 
 class DeskWidgetPanel extends StatefulWidget {
-  const DeskWidgetPanel({Key? key}) : super(key: key);
+  const DeskWidgetPanel({super.key});
 
   @override
   State<DeskWidgetPanel> createState() => _DeskWidgetPanelState();
@@ -63,7 +63,7 @@ class _DeskWidgetPanelState extends State<DeskWidgetPanel>{
 class WidgetList extends StatelessWidget {
   final WidgetsLoaded state;
 
-  const WidgetList({Key? key, required this.state}) : super(key: key);
+  const WidgetList({super.key, required this.state});
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +76,7 @@ class WidgetList extends StatelessWidget {
     );
 
     return GridView.builder(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       gridDelegate: gridDelegate,
       itemBuilder: _buildItem,
       itemCount: state.widgets.length,

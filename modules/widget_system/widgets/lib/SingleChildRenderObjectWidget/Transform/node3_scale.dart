@@ -5,7 +5,7 @@ import 'matrix4_shower.dart';
 /// contact me by email 1981462002@qq.com
 
 class ScaleTransform extends StatefulWidget {
-  const ScaleTransform({Key? key}) : super(key: key);
+  const ScaleTransform({super.key});
 
   @override
   _ScaleTransformState createState() => _ScaleTransformState();

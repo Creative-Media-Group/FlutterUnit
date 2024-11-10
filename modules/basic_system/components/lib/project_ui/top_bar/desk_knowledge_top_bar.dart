@@ -7,8 +7,7 @@ class DeskKnowledgeTabTopBar extends StatefulWidget {
   final ValueChanged<int> onTabPressed;
 
   const DeskKnowledgeTabTopBar(
-      {Key? key, required this.onTabPressed, required this.tabs})
-      : super(key: key);
+      {super.key, required this.onTabPressed, required this.tabs});
 
   @override
   State<DeskKnowledgeTabTopBar> createState() => _DeskKnowledgeTabTopBarState();

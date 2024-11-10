@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomSwitch extends StatefulWidget {
-  const CustomSwitch({Key? key}) : super(key: key);
+  const CustomSwitch({super.key});
 
   @override
   _CustomSwitchState createState() => _CustomSwitchState();

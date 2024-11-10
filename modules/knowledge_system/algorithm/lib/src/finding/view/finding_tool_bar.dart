@@ -22,7 +22,7 @@ class FindingToolBar extends StatelessWidget implements PreferredSizeWidget{
 
     return DragToMoveWrapper(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 42,
         color: isDark ? const Color(0xff2C3036) : Colors.white,
         child: Row(
@@ -65,13 +65,13 @@ class FindingToolBar extends StatelessWidget implements PreferredSizeWidget{
                   color: Colors.blue,
                   size: 20,
                 )),
-            Spacer(),
+            const Spacer(),
             TolyLink(
                 href:
-                    'https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/finding/functions/${name}.dart',
+                    'https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/finding/functions/$name.dart',
                 text: '查看[$name 寻路]源码',
                 hoverColor: Colors.blue,
-                style: TextStyle(fontSize: 12,fontFamily: '宋体'),
+                style: const TextStyle(fontSize: 12,fontFamily: '宋体'),
                 onTap: jumpURL),
             const SizedBox(width: 10),
             // TolyAction(
@@ -91,7 +91,7 @@ class FindingToolBar extends StatelessWidget implements PreferredSizeWidget{
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(42);
+  Size get preferredSize => const Size.fromHeight(42);
 }
 
 class SortBar extends StatelessWidget {

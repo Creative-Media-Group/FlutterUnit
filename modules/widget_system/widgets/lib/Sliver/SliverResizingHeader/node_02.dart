@@ -72,9 +72,8 @@ class _SliverResizingHeaderNode2State extends State<SliverResizingHeaderNode2> {
         title: Opacity(opacity: factor, child: text),
       );
 
-      return SliverResizingHeader(child: header,
-      minExtentPrototype: AppBar(),
-        maxExtentPrototype: header,
+      return SliverResizingHeader(minExtentPrototype: AppBar(),
+        maxExtentPrototype: header,child: header,
       );
     });
   }
@@ -93,7 +92,6 @@ class _SliverResizingHeaderNode2State extends State<SliverResizingHeaderNode2> {
 
 class _ItemList extends StatelessWidget {
   const _ItemList({
-    super.key,
     this.itemCount = 50,
   });
 

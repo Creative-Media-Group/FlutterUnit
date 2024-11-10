@@ -41,7 +41,7 @@ class _InheritedModelDemoState extends State<InheritedModelDemo> {
             CounterModel(
               color: _color,
               counter: _counter,
-              child: BoxDecorationWrap(),
+              child: const BoxDecorationWrap(),
             ),
             CircleIconButton(
               color: Colors.blue,
@@ -124,8 +124,8 @@ class CircleIconButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20),
-        decoration: BoxDecoration(
+        margin: const EdgeInsets.symmetric(horizontal: 20),
+        decoration: const BoxDecoration(
           color: Color(0xFFDFDFDF),
           shape: BoxShape.circle,
           // border: Border.all(width: 14.0, color: Color(0xFFDFDFDF))
@@ -133,7 +133,7 @@ class CircleIconButton extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(2.0),
           child: Container(
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: color,
               shape: BoxShape.circle,
@@ -179,6 +179,7 @@ class ColorSelector extends StatelessWidget {
   Widget _buildCircle(Color color) {
     return CircleAvatar(
       radius: 12,
+      backgroundColor: color,
       child: color == activeColor
           ? Icon(
               Icons.check,
@@ -186,7 +187,6 @@ class ColorSelector extends StatelessWidget {
               size: 16,
             )
           : null,
-      backgroundColor: color,
     );
   }
 }
@@ -210,8 +210,7 @@ class _BoxDecorationWrapState extends State<BoxDecorationWrap> {
   Widget build(BuildContext context) {
     final Color color = CounterModel.of(context,CounterAspect.color)?.color ?? Colors.black;
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      child: CounterText(),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: color),
@@ -221,8 +220,9 @@ class _BoxDecorationWrapState extends State<BoxDecorationWrap> {
                 color: color,
                 spreadRadius: 2,
                 blurRadius: 8,
-                offset: Offset(0, 0))
+                offset: const Offset(0, 0))
           ]),
+      child: CounterText(),
     );
   }
 }

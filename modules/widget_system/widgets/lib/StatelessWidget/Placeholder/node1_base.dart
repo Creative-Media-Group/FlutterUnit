@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomPlaceholder extends StatelessWidget {
-  const CustomPlaceholder({Key? key}) : super(key: key);
+  const CustomPlaceholder({super.key});
 
   @override
   Widget build(BuildContext context) {

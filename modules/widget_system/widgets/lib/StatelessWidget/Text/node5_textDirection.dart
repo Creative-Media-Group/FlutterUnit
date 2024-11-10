@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class TextDirectionText extends StatelessWidget {
-  const TextDirectionText({Key? key}) : super(key: key);
+  const TextDirectionText({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SliverFixedExtentListDemo extends StatefulWidget {
-  const SliverFixedExtentListDemo({Key? key}) : super(key: key);
+  const SliverFixedExtentListDemo({super.key});
 
   @override
   _SliverFixedExtentListDemoState createState() => _SliverFixedExtentListDemoState();

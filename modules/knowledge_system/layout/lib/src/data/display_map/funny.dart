@@ -16,6 +16,6 @@ List<DisplayFrame> get funnyElevator => [
     title: '电梯布局',
     desc: "模拟完成电梯的运行。",
     src: '',
-    display: (BuildContext context) => ElevatorRoom(),
+    display: (BuildContext context) => const ElevatorRoom(),
   ),
 ];

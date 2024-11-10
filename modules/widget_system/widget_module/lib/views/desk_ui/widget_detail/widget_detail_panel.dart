@@ -7,7 +7,7 @@ import '../../../../data/zone.dart';
 class DeskWidgetDetailPanel extends StatelessWidget {
   final WidgetModel model;
 
-  const DeskWidgetDetailPanel({Key? key, required this.model}) : super(key: key);
+  const DeskWidgetDetailPanel({super.key, required this.model});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class DeskWidgetDetailPanel extends StatelessWidget {
     child: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Panel(
-          color: Color(0x33E5EAE1),
+          color: const Color(0x33E5EAE1),
           child: Text(model.info)),
     ),
   );

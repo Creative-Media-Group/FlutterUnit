@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class DirectionWrap extends StatelessWidget {
-  DirectionWrap({Key? key}) : super(key: key);
+  DirectionWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

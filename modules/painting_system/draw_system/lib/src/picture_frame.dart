@@ -15,12 +15,12 @@ class PictureFrame extends StatelessWidget {
   final Alignment? alignment;
   final EdgeInsetsGeometry? marge;
 
-  const PictureFrame({Key? key, this.child,
+  const PictureFrame({super.key, this.child,
     this.width,
     this.height,
     this.alignment,
     this.color = Colors.transparent,
-    this.marge}) : super(key: key);
+    this.marge});
 
   @override
   Widget build(BuildContext context) {
@@ -115,13 +115,12 @@ class FrameShower extends StatelessWidget {
   final String info;
   final Widget content;
 
-  const FrameShower({Key? key,
+  const FrameShower({super.key,
     this.title = "",
     this.author = "",
     this.srcUrl = "",
     this.info = "",
-    required this.content})
-      : super(key: key);
+    required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -144,7 +143,7 @@ class FrameShower extends StatelessWidget {
             title,
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          PictureFrame(child: content,color: Colors.white,),
+          PictureFrame(color: Colors.white,child: content,),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(
@@ -158,7 +157,7 @@ class FrameShower extends StatelessWidget {
                   onTap: _launch,
                   child:  Text(
                     "${context.l10n.srcPath}    ",
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                         color: Colors.blueAccent),

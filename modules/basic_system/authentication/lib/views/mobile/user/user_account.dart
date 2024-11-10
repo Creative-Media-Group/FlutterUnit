@@ -12,7 +12,7 @@ import '../../../blocs/authentic/event.dart';
 import '../../../blocs/user/state.dart';
 
 class UserAccountPage extends StatelessWidget {
-  const UserAccountPage({Key? key}) : super(key: key);
+  const UserAccountPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -382,8 +382,7 @@ class UserItemPanel extends StatelessWidget {
   final String value;
   final Color? color;
   const UserItemPanel(
-      {Key? key, required this.label, required this.value, required this.color})
-      : super(key: key);
+      {super.key, required this.label, required this.value, required this.color});
 
   @override
   Widget build(BuildContext context) {

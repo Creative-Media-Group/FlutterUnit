@@ -5,18 +5,18 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class DefaultTextStyleDemo extends StatelessWidget {
-  const DefaultTextStyleDemo({Key? key}) : super(key: key);
+  const DefaultTextStyleDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTextStyle(
-      style: const TextStyle(
+    return const DefaultTextStyle(
+      style: TextStyle(
           fontSize: 18,
           color: Colors.blue,
           decoration: TextDecoration.underline),
       child: Wrap(
         spacing: 5,
-        children: const[
+        children: [
           Text("Hello,",),
           FlutterLogo(),
           Text("Flutter",style: TextStyle(color: Colors.red),),

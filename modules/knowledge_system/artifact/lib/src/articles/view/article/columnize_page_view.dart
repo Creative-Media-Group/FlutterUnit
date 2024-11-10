@@ -29,7 +29,7 @@ const colors = [
 ];
 
 class ColumnizePageView extends StatefulWidget {
-  const ColumnizePageView({Key? key}) : super(key: key);
+  const ColumnizePageView({super.key});
 
   @override
   _ColumnizePageViewState createState() => _ColumnizePageViewState();
@@ -86,13 +86,13 @@ class _ColumnizePageViewState extends State<ColumnizePageView> {
         controller: _ctrl, // itemCount: 7,
         itemBuilder: (_, index) {
           return AnimatedBuilder(
-            child: _buildByIndex(context, index, data),
             animation: _ctrl,
             builder: (context, child) => _buildAnimItemByIndex(
               context,
               child,
               index,
             ),
+            child: _buildByIndex(context, index, data),
           );
         },
         onPageChanged: (index) {
@@ -116,14 +116,14 @@ class _ColumnizePageViewState extends State<ColumnizePageView> {
               right: 0,
               child: IconButton(onPressed: (){
                 _position+=1;
-                _ctrl.animateToPage(_position, duration: Duration(milliseconds: 500),curve: Curves.easeIn);
-              }, icon: Icon(Icons.navigate_next_outlined))),
+                _ctrl.animateToPage(_position, duration: const Duration(milliseconds: 500),curve: Curves.easeIn);
+              }, icon: const Icon(Icons.navigate_next_outlined))),
           Positioned(
               left: 0,
               child: IconButton(onPressed: (){
                 _position-=1;
-                _ctrl.animateToPage(_position, duration: Duration(milliseconds: 500),curve: Curves.easeIn);
-              }, icon: Icon(Icons.navigate_before))),
+                _ctrl.animateToPage(_position, duration: const Duration(milliseconds: 500),curve: Curves.easeIn);
+              }, icon: const Icon(Icons.navigate_before))),
         ],
       ),
     );
@@ -180,8 +180,7 @@ class _ColumnizePageViewState extends State<ColumnizePageView> {
 class ColumnizeItem extends StatelessWidget {
   final Columnize columnize;
   final Color color;
-  const ColumnizeItem({Key? key, required this.columnize, required this.color})
-      : super(key: key);
+  const ColumnizeItem({super.key, required this.columnize, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -198,7 +197,17 @@ class ColumnizeItem extends StatelessWidget {
       },
       child: Container(
         alignment: Alignment.topLeft,
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        decoration: BoxDecoration(
+          gradient:
+              LinearGradient(transform: const GradientRotation(3 * pi / 4), colors: [
+            color.withOpacity(0.1),
+            color.withOpacity(0.08),
+            color.withOpacity(0),
+            // Theme.of(context).primaryColor.withAlpha(88)
+          ]), // color: color.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(8),
+        ),
         // margin: EdgeInsets.only(left: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -264,16 +273,6 @@ class ColumnizeItem extends StatelessWidget {
               ],
             ),
           ],
-        ),
-        decoration: BoxDecoration(
-          gradient:
-              LinearGradient(transform: GradientRotation(3 * pi / 4), colors: [
-            color.withOpacity(0.1),
-            color.withOpacity(0.08),
-            color.withOpacity(0),
-            // Theme.of(context).primaryColor.withAlpha(88)
-          ]), // color: color.withOpacity(0.1),
-          borderRadius: BorderRadius.circular(8),
         ),
       ),
     );

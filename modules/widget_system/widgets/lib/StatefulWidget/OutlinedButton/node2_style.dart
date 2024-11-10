@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class OutlinedButtonStyleDemo extends StatelessWidget {
-  const OutlinedButtonStyleDemo({Key? key}) : super(key: key);
+  const OutlinedButtonStyleDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +20,9 @@ class OutlinedButtonStyleDemo extends StatelessWidget {
                 foregroundColor: Colors.white,
                 elevation: 2,
                 shadowColor: Colors.orangeAccent),
-            child: const Text('ElevatedButton样式'),
             onPressed: _onPressed,
             onLongPress: _onLongPress,
+            child: const Text('ElevatedButton样式'),
           ),
           OutlinedButton(
             style: TextButton.styleFrom(
@@ -34,10 +34,10 @@ class OutlinedButtonStyleDemo extends StatelessWidget {
                 ),
                 // elevation: 2,
                 shadowColor: Colors.orangeAccent),
-            child: const Text('ElevatedButton边线'),
             autofocus: false,
             onPressed: _onPressed,
             onLongPress: _onLongPress,
+            child: const Text('ElevatedButton边线'),
           ),
         ],
       ),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomAnimatedPositionedDirectional extends StatefulWidget {
-  const CustomAnimatedPositionedDirectional({Key? key}) : super(key: key);
+  const CustomAnimatedPositionedDirectional({super.key});
 
   @override
   _CustomAnimatedPositionedDirectionalState createState() =>

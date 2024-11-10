@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class AutocompleteType extends StatefulWidget {
-  const AutocompleteType({Key? key}) : super(key: key);
+  const AutocompleteType({super.key});
 
   @override
   State<AutocompleteType> createState() => _AutocompleteTypeState();
@@ -119,7 +119,7 @@ class _AutocompleteTypeState extends State<AutocompleteType> {
         padding: const EdgeInsets.only(top: 20),
         child: Material(
           child: ConstrainedBox(
-            constraints: BoxConstraints(maxHeight: 150),
+            constraints: const BoxConstraints(maxHeight: 150),
             child: ListView.builder(
               padding: EdgeInsets.zero,
               itemBuilder: (_, index) {
@@ -145,11 +145,11 @@ class _UserItem extends StatelessWidget {
   final User user;
 
   const _UserItem({
-    Key? key,
+    super.key,
     this.onSelected,
     required this.user,
     required this.args,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

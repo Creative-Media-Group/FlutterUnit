@@ -16,7 +16,7 @@ import '../gallery_factory.dart';
 /// 说明:
 
 class DeskGalleryUnit extends StatefulWidget {
-  const DeskGalleryUnit({Key? key}) : super(key: key);
+  const DeskGalleryUnit({super.key});
 
   @override
   _DeskGalleryUnitState createState() => _DeskGalleryUnitState();

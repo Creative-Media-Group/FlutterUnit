@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class DivisionsGridPaper extends StatelessWidget {
-  const DivisionsGridPaper({Key? key}) : super(key: key);
+  const DivisionsGridPaper({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,11 +1,9 @@
 import 'dart:math';
 
 import 'package:app/app.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:toly_ui/code/code.dart';
 import 'package:toly_ui/toly_ui.dart';
 import 'package:tolyui/tolyui.dart';
 

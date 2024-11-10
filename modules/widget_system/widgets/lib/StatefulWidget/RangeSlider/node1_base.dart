@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomRangeSlider extends StatefulWidget {
-  const CustomRangeSlider({Key? key}) : super(key: key);
+  const CustomRangeSlider({super.key});
 
   @override
   _CustomRangeSliderState createState() => _CustomRangeSliderState();

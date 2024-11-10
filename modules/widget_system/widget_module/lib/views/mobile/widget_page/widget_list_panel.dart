@@ -6,7 +6,7 @@ import 'package:widget_module/blocs/blocs.dart';
 import 'phone_widget_content.dart';
 
 class WidgetListPanel extends StatelessWidget {
-  const WidgetListPanel({Key? key}) : super(key: key);
+  const WidgetListPanel({super.key});
 
   @override
   Widget build(BuildContext context) {

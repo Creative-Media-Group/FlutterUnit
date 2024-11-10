@@ -13,7 +13,7 @@ import 'sliver_article.dart';
 import 'sliver_columnize.dart';
 
 class TolyArticleScrollPage extends StatefulWidget {
-  const TolyArticleScrollPage({Key? key}) : super(key: key);
+  const TolyArticleScrollPage({super.key});
 
   @override
   State<TolyArticleScrollPage> createState() => _TolyArticleScrollPageState();
@@ -40,14 +40,14 @@ class _TolyArticleScrollPageState extends State<TolyArticleScrollPage> {
           onRefresh: _onRefresh,
           onLoading: _loadMore,
           controller: _refreshController,
-          child: CustomScrollView(
+          child: const CustomScrollView(
             slivers: [
               // SliverOverlapInjector(
               //   handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
               // ),
               SliverPadding(
                 padding: EdgeInsets.only(top: 10,bottom: 10),
-                sliver: const SliverToBoxAdapter(
+                sliver: SliverToBoxAdapter(
                   child: ColumnizeViewPage(),
                 ),
               ),
@@ -66,7 +66,7 @@ class _TolyArticleScrollPageState extends State<TolyArticleScrollPage> {
 
   void _onRefresh() async {
     // monitor network fetch
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(const Duration(milliseconds: 500));
 
     _refreshController.refreshCompleted();
   }
@@ -79,7 +79,7 @@ class _TolyArticleScrollPageState extends State<TolyArticleScrollPage> {
     if(state is ArticleWithData){
       if (state.data.length >= state.total) {
         _refreshController.loadNoData();
-        await Future.delayed(Duration(milliseconds: 2000));
+        await Future.delayed(const Duration(milliseconds: 2000));
         _refreshController.resetNoData();
         return;
       }

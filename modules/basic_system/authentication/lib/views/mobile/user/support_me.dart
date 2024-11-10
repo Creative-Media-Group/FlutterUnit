@@ -13,10 +13,10 @@ class SupportMe extends StatelessWidget {
           title: Column(
             children: [
               Text(context.l10n.homeAccountSupport),
-              Text('开源不易, 请我喝咖啡~',style: TextStyle(fontSize: 12,fontWeight: FontWeight.normal),),
+              const Text('开源不易, 请我喝咖啡~',style: TextStyle(fontSize: 12,fontWeight: FontWeight.normal),),
             ],
           ),
-          bottom: TabBar(
+          bottom: const TabBar(
             tabs: [
               Tab(
                 text: '支付宝',

@@ -7,7 +7,7 @@ import 'package:wrapper/wrapper.dart';
 import 'model/time_node.dart';
 
 class FlutterUnitTimeLine extends StatelessWidget {
-  const FlutterUnitTimeLine({Key? key}) : super(key: key);
+  const FlutterUnitTimeLine({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +164,7 @@ class FlutterUnitTimeLine extends StatelessWidget {
 class TimeLineNode extends StatelessWidget {
   final TimeNode timeNode;
 
-  const TimeLineNode({Key? key, required this.timeNode}) : super(key: key);
+  const TimeLineNode({super.key, required this.timeNode});
 
   final double dashLineWith = 20;
   final double marginTop = 10;

@@ -10,7 +10,7 @@ import '../../../data/zone.dart';
 
 class AppSearchBar extends StatefulWidget {
 
-  const AppSearchBar({Key? key}):super(key: key);
+  const AppSearchBar({super.key});
 
   @override
   _AppSearchBarState createState() => _AppSearchBarState();
@@ -35,13 +35,13 @@ class _AppSearchBarState extends State<AppSearchBar> {
                   filled: true,
                   fillColor: Colors.white,
                   contentPadding: EdgeInsets.only(top: isDesk?6:1),//调整文字边距
-                  prefixIcon: Icon(Icons.search),
-                  border: UnderlineInputBorder(
+                  prefixIcon: const Icon(Icons.search),
+                  border: const UnderlineInputBorder(
                     borderSide: BorderSide.none,
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
                   hintText: "搜点啥...",
-                  hintStyle: TextStyle(fontSize: 14)),
+                  hintStyle: const TextStyle(fontSize: 14)),
               onChanged: _doSearch,
               onSubmitted: (str) {
                 //提交后,收起键盘

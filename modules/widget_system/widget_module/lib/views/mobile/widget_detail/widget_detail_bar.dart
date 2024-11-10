@@ -13,8 +13,7 @@ import '../../../data/zone.dart';
 class SliverWidgetDetailBar extends StatelessWidget {
   final WidgetModel model;
 
-  const SliverWidgetDetailBar({Key? key, required this.model})
-      : super(key: key);
+  const SliverWidgetDetailBar({super.key, required this.model});
 
   final Color backgroundColor = const Color(0xffFAFAFA);
   static const Color textColor = Color(0xff262626);
@@ -43,7 +42,7 @@ class SliverWidgetDetailBar extends StatelessWidget {
         ),
         fixedSubtitle: Text(
           model.name,
-          style:  TextStyle(color: isDark?appBarTextColor:Color(0xff696969), fontSize: 12),
+          style:  TextStyle(color: isDark?appBarTextColor:const Color(0xff696969), fontSize: 12),
         ),
         title: Padding(
           padding: const EdgeInsets.only(bottom: 3),

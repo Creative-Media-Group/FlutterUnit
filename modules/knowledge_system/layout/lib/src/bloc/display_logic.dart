@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../data/display_map/display_map.dart';
-import '../data/model/display_frame.dart';
 import 'display_state.dart';
 
 class DisplayLogic with ChangeNotifier {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class LinearShaderMask extends StatelessWidget {
-  const LinearShaderMask({Key? key}) : super(key: key);
+  const LinearShaderMask({super.key});
 
   final List<Color> colors = const [Colors.red, Colors.yellow, Colors.blue];
 

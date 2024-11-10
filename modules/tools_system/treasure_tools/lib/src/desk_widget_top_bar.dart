@@ -8,7 +8,7 @@ class DeskCodeGenTopBar extends StatefulWidget {
   final ValueChanged<int> onTabPressed;
   final VoidCallback onTapGen;
 
-  const DeskCodeGenTopBar({Key? key,required this.onTabPressed, required this.onTapGen}) : super(key: key);
+  const DeskCodeGenTopBar({super.key,required this.onTabPressed, required this.onTapGen});
 
   @override
   State<DeskCodeGenTopBar> createState() => _DeskCodeGenTopBarState();
@@ -33,7 +33,7 @@ class _DeskCodeGenTopBarState extends State<DeskCodeGenTopBar>  with SingleTicke
     return DragToMoveWrapper(
       child: Container(
         height: 64,
-      color: isDark?Color(0xff2C3036):Colors.white,
+      color: isDark?const Color(0xff2C3036):Colors.white,
         child: Row(
           children: [
             const SizedBox(width: 12,),
@@ -60,10 +60,10 @@ class _DeskCodeGenTopBarState extends State<DeskCodeGenTopBar>  with SingleTicke
                 _tabs.map((String name) => Tab(text: name)).toList(),
               ),
             ),
-            Spacer(),
+            const Spacer(),
 
             const SizedBox(width: 20,),
-            WindowButtons(),
+            const WindowButtons(),
           ],
         ),
       ),

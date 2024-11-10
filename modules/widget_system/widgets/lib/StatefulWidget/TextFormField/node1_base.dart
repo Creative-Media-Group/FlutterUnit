@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomTextFormField extends StatefulWidget {
-  const CustomTextFormField({Key? key}) : super(key: key);
+  const CustomTextFormField({super.key});
 
   @override
   _CustomTextFormFieldState createState() => _CustomTextFormFieldState();

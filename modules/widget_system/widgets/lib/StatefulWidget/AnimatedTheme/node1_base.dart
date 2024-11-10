@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class AnimatedThemeDemo extends StatefulWidget {
-  const AnimatedThemeDemo({Key? key}) : super(key: key);
+  const AnimatedThemeDemo({super.key});
 
   @override
   _AnimatedThemeDemoState createState() => _AnimatedThemeDemoState();
@@ -69,7 +69,7 @@ class _AnimatedThemeDemoState extends State<AnimatedThemeDemo> {
 }
 
 class ChildContent extends StatelessWidget {
-  const ChildContent({Key? key}) : super(key: key);
+  const ChildContent({super.key});
 
   @override
   Widget build(BuildContext context) {

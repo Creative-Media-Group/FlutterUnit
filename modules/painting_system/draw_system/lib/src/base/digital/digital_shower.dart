@@ -4,7 +4,7 @@ import 'digital_path.dart';
 import 'digital_widget.dart';
 
 class DigitalShower extends StatefulWidget {
-  const DigitalShower({Key? key}) : super(key: key);
+  const DigitalShower({super.key});
 
   @override
   State<DigitalShower> createState() => _DigitalShowerState();
@@ -27,7 +27,7 @@ class _DigitalShowerState extends State<DigitalShower> {
       ),
       body: Center(
           child: MultiDigitalWidget(
-            colors: [Colors.indigo,],
+            colors: const [Colors.indigo,],
         width: 50,
         spacing: 16,
         count: 4,

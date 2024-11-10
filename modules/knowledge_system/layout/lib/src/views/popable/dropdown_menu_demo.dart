@@ -26,7 +26,7 @@ class DropdownMenuNode1 extends StatefulWidget {
 
 class _DropdownMenuNode1State extends State<DropdownMenuNode1> {
   final List<String> data = ['语文', '数学', '英语', '物理', '化学', '生物', '地理'];
-  late String _dropdownValue = data.first;
+  late final String _dropdownValue = data.first;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _DropdownMenuNode1State extends State<DropdownMenuNode1> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          TextField(),
+          const TextField(),
           // DropdownMenu<String>(
           //   requestFocusOnTap: false,
           //   menuHeight: 200,

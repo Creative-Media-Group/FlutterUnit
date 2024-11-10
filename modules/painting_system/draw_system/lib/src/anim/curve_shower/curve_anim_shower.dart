@@ -5,7 +5,7 @@ import 'anim_painter.dart';
 import 'point_data.dart';
 
 class CurveAnimShower extends StatefulWidget {
-  const CurveAnimShower({Key? key}) : super(key: key);
+  const CurveAnimShower({super.key});
 
   @override
   _CurveAnimShowerState createState() => _CurveAnimShowerState();

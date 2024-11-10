@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class R3C2 extends StatefulWidget {
-  const R3C2({Key? key}) : super(key: key);
+  const R3C2({super.key});
 
   @override
   _R3C2State createState() => _R3C2State();

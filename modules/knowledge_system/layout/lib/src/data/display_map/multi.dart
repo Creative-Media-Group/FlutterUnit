@@ -45,7 +45,7 @@ List<DisplayFrame> get multiWrap => [
         title: 'Wrap PlayGround',
         desc: "在 Wrap PlayGround 中，你可以通过交互来直观体验 Wrap 布局特性。",
         src: '',
-        display: (BuildContext context) => WrapPlayground(),
+        display: (BuildContext context) => const WrapPlayground(),
       ),
     ];
 
@@ -54,7 +54,7 @@ List<DisplayFrame> get multiStack => [
     title: 'Stack PlayGround',
     desc: "在 Stack PlayGround 中，你可以通过交互来直观体验 Stack 布局特性。",
     src: '',
-    display: (BuildContext context) => StackPlayground(),
+    display: (BuildContext context) => const StackPlayground(),
   ),
 ];
 
@@ -63,7 +63,7 @@ List<DisplayFrame> get listView => [
     title: 'ListView 滑动列表',
     desc: "通过 ListView.builder 构造，可以实现按需加载的滑动视图。",
     src: '',
-    display: (BuildContext context) => ListViewDemo01(),
+    display: (BuildContext context) => const ListViewDemo01(),
   ),
 ];
 

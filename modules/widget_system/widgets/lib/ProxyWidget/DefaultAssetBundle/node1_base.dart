@@ -5,7 +5,7 @@ import 'dart:ui' as ui;
 /// contact me by email 1981462002@qq.com
 
 class DefaultAssetBundleDemo extends StatefulWidget {
-  const DefaultAssetBundleDemo({Key? key}) : super(key: key);
+  const DefaultAssetBundleDemo({super.key});
 
   @override
   _DefaultAssetBundleDemoState createState() => _DefaultAssetBundleDemoState();

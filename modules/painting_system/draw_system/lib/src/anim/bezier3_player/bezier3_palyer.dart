@@ -9,7 +9,7 @@ import 'touch_info.dart';
 /// 说明:
 
 class Bezier3Player extends StatefulWidget {
-  const Bezier3Player({Key? key}) : super(key: key);
+  const Bezier3Player({super.key});
 
   @override
   _Bezier3PlayerState createState() => _Bezier3PlayerState();

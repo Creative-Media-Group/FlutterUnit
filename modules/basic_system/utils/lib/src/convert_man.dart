@@ -1,6 +1,7 @@
 /// create by 张风捷特烈 on 2020/6/17
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 
 const double _kMillisLimit = 1000.0;
 
@@ -24,13 +25,13 @@ class ConvertMan {
     if (subTimes < _kMillisLimit) {
       return "刚刚";
     } else if (subTimes < _kSecondsLimit) {
-      return (subTimes / _kMillisLimit).round().toString() + " 秒前";
+      return "${(subTimes / _kMillisLimit).round()} 秒前";
     } else if (subTimes < _kMinutesLimit) {
-      return (subTimes / _kSecondsLimit).round().toString() + "分钟前";
+      return "${(subTimes / _kSecondsLimit).round()}分钟前";
     } else if (subTimes < _kHourLimit) {
-      return (subTimes / _kMinutesLimit).round().toString() + "小时前";
+      return "${(subTimes / _kMinutesLimit).round()}小时前";
     } else if (subTimes < _kDaysLimit) {
-      return (subTimes / _kHourLimit).round().toString() + "天前";
+      return "${(subTimes / _kHourLimit).round()}天前";
     } else {
       return _getDateStr(date);
     }

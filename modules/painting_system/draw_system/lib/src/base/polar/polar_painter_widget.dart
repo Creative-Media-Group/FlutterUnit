@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'angle_painter.dart';
 
 class PolarPainterWidget extends StatelessWidget {
-  const PolarPainterWidget({Key? key}) : super(key: key);
+  const PolarPainterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -6,7 +6,7 @@ import 'package:flutter/rendering.dart';
 /// contact me by email 1981462002@qq.com
 
 class SliverLayoutBuilderDemo extends StatefulWidget {
-  const SliverLayoutBuilderDemo({Key? key}) : super(key: key);
+  const SliverLayoutBuilderDemo({super.key});
 
   @override
   _SliverLayoutBuilderDemoState createState() =>

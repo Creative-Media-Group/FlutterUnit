@@ -11,7 +11,7 @@ import 'clock_fx.dart';
 class ClockWidget extends StatefulWidget {
   final double radius;
 
-  const ClockWidget({Key? key, this.radius = 100}) : super(key: key);
+  const ClockWidget({super.key, this.radius = 100});
 
   @override
   _ClockWidgetState createState() => _ClockWidgetState();

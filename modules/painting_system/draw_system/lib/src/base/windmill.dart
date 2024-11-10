@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class WindmillWidget extends StatefulWidget {
-  const WindmillWidget({Key? key}) : super(key: key);
+  const WindmillWidget({super.key});
 
   @override
   State<WindmillWidget> createState() => _WindmillWidgetState();

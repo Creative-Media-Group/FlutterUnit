@@ -136,10 +136,6 @@ Future<DateTime?> showDatePicker({
   TextInputType? keyboardType,
   Offset? anchorPoint,
 }) async {
-  assert(context != null);
-  assert(initialDate != null);
-  assert(firstDate != null);
-  assert(lastDate != null);
   initialDate = DateUtils.dateOnly(initialDate);
   firstDate = DateUtils.dateOnly(firstDate);
   lastDate = DateUtils.dateOnly(lastDate);
@@ -159,9 +155,6 @@ Future<DateTime?> showDatePicker({
   selectableDayPredicate == null || selectableDayPredicate(initialDate),
   'Provided initialDate $initialDate must satisfy provided selectableDayPredicate.',
   );
-  assert(initialEntryMode != null);
-  assert(useRootNavigator != null);
-  assert(initialDatePickerMode != null);
   assert(debugCheckHasMaterialLocalizations(context));
 
   Widget dialog = DatePickerDialog(
@@ -237,15 +230,11 @@ class DatePickerDialog extends StatefulWidget {
     this.fieldLabelText,
     this.keyboardType,
     this.restorationId,
-  }) : assert(initialDate != null),
-        assert(firstDate != null),
-        assert(lastDate != null),
+  }) : assert(firstDate != null),
         initialDate = DateUtils.dateOnly(initialDate),
         firstDate = DateUtils.dateOnly(firstDate),
         lastDate = DateUtils.dateOnly(lastDate),
-        currentDate = DateUtils.dateOnly(currentDate ?? DateTime.now()),
-        assert(initialEntryMode != null),
-        assert(initialCalendarMode != null) {
+        currentDate = DateUtils.dateOnly(currentDate ?? DateTime.now()) {
     assert(
     !this.lastDate.isBefore(this.firstDate),
     'lastDate ${this.lastDate} must be on or after firstDate ${this.firstDate}.',
@@ -568,7 +557,7 @@ class _DatePickerDialogState extends State<DatePickerDialog> with RestorationMix
         curve: Curves.easeIn,
         child: MediaQuery(
           data: MediaQuery.of(context).copyWith(
-            textScaleFactor: textScaleFactor,
+            textScaler: TextScaler.linear(textScaleFactor),
           ),
           child: Builder(builder: (BuildContext context) {
             switch (orientation) {
@@ -682,9 +671,7 @@ class _DatePickerHeader extends StatelessWidget {
     required this.orientation,
     this.isShort = false,
     this.entryModeButton,
-  }) : assert(helpText != null),
-        assert(orientation != null),
-        assert(isShort != null);
+  }) : assert(orientation != null);
 
   static const double _datePickerHeaderLandscapeWidth = 152.0;
   static const double _datePickerHeaderPortraitHeight = 120.0;
@@ -933,9 +920,8 @@ Future<DateTimeRange?> showDateRangePicker({
   TransitionBuilder? builder,
   Offset? anchorPoint,
 }) async {
-  assert(context != null);
   assert(
-  initialDateRange == null || (initialDateRange.start != null && initialDateRange.end != null),
+  initialDateRange == null || (initialDateRange.end != null),
   'initialDateRange must be null or have non-null start and end dates.',
   );
   assert(
@@ -943,9 +929,7 @@ Future<DateTimeRange?> showDateRangePicker({
   "initialDateRange's start date must not be after it's end date.",
   );
   initialDateRange = initialDateRange == null ? null : DateUtils.datesOnly(initialDateRange);
-  assert(firstDate != null);
   firstDate = DateUtils.dateOnly(firstDate);
-  assert(lastDate != null);
   lastDate = DateUtils.dateOnly(lastDate);
   assert(
   !lastDate.isBefore(firstDate),
@@ -968,8 +952,6 @@ Future<DateTimeRange?> showDateRangePicker({
   "initialDateRange's end date must be on or before lastDate $lastDate.",
   );
   currentDate = DateUtils.dateOnly(currentDate ?? DateTime.now());
-  assert(initialEntryMode != null);
-  assert(useRootNavigator != null);
   assert(debugCheckHasMaterialLocalizations(context));
 
   Widget dialog = DateRangePickerDialog(
@@ -1407,7 +1389,7 @@ class _DateRangePickerDialogState extends State<DateRangePickerDialog> with Rest
         curve: Curves.easeIn,
         child: MediaQuery(
           data: MediaQuery.of(context).copyWith(
-            textScaleFactor: textScaleFactor,
+            textScaler: TextScaler.linear(textScaleFactor),
           ),
           child: Builder(builder: (BuildContext context) {
             return contents;
@@ -1579,8 +1561,6 @@ class _CalendarDateRangePicker extends StatefulWidget {
     required this.onEndDateChanged,
   }) : initialStartDate = initialStartDate != null ? DateUtils.dateOnly(initialStartDate) : null,
         initialEndDate = initialEndDate != null ? DateUtils.dateOnly(initialEndDate) : null,
-        assert(firstDate != null),
-        assert(lastDate != null),
         firstDate = DateUtils.dateOnly(firstDate),
         lastDate = DateUtils.dateOnly(lastDate),
         currentDate = DateUtils.dateOnly(currentDate ?? DateTime.now()) {
@@ -2028,10 +2008,9 @@ class _MonthSliverGridLayout extends SliverGridLayout {
     required this.dayChildWidth,
     required this.edgeChildWidth,
     required this.reverseCrossAxis,
-  }) : assert(crossAxisCount != null && crossAxisCount > 0),
-        assert(dayChildWidth != null && dayChildWidth >= 0),
-        assert(edgeChildWidth != null && edgeChildWidth >= 0),
-        assert(reverseCrossAxis != null);
+  }) : assert(crossAxisCount > 0),
+        assert(dayChildWidth >= 0),
+        assert(edgeChildWidth >= 0);
 
   /// The number of children in the cross axis.
   final int crossAxisCount;
@@ -2123,18 +2102,13 @@ class _MonthItem extends StatefulWidget {
     required this.lastDate,
     required this.displayedMonth,
     this.dragStartBehavior = DragStartBehavior.start,
-  }) : assert(firstDate != null),
-        assert(lastDate != null),
+  }) : assert(lastDate != null),
         assert(!firstDate.isAfter(lastDate)),
         assert(selectedDateStart == null || !selectedDateStart.isBefore(firstDate)),
         assert(selectedDateEnd == null || !selectedDateEnd.isBefore(firstDate)),
         assert(selectedDateStart == null || !selectedDateStart.isAfter(lastDate)),
         assert(selectedDateEnd == null || !selectedDateEnd.isAfter(lastDate)),
-        assert(selectedDateStart == null || selectedDateEnd == null || !selectedDateStart.isAfter(selectedDateEnd)),
-        assert(currentDate != null),
-        assert(onChanged != null),
-        assert(displayedMonth != null),
-        assert(dragStartBehavior != null);
+        assert(selectedDateStart == null || selectedDateEnd == null || !selectedDateStart.isAfter(selectedDateEnd));
 
   /// The currently selected start date.
   ///
@@ -2686,14 +2660,8 @@ class _InputDateRangePicker extends StatefulWidget {
     this.autovalidate = false,
   }) : initialStartDate = initialStartDate == null ? null : DateUtils.dateOnly(initialStartDate),
         initialEndDate = initialEndDate == null ? null : DateUtils.dateOnly(initialEndDate),
-        assert(firstDate != null),
         firstDate = DateUtils.dateOnly(firstDate),
-        assert(lastDate != null),
-        lastDate = DateUtils.dateOnly(lastDate),
-        assert(firstDate != null),
-        assert(lastDate != null),
-        assert(autofocus != null),
-        assert(autovalidate != null);
+        lastDate = DateUtils.dateOnly(lastDate);
 
   /// The [DateTime] that represents the start of the initial date range selection.
   final DateTime? initialStartDate;

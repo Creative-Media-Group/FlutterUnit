@@ -1,6 +1,7 @@
 
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
+library;
 
 ///
 
@@ -10,7 +11,7 @@ import 'package:widgets/utils/dialog_about.dart';
 
 
 class CustomActionChip extends StatelessWidget {
-  const CustomActionChip({Key? key}) : super(key: key);
+  const CustomActionChip({super.key});
 
   @override
   Widget build(BuildContext context) {

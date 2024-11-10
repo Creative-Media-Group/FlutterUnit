@@ -12,7 +12,7 @@ import '../bloc/event.dart';
 import '../bloc/state.dart';
 
 class AppUpdatePanel extends StatelessWidget {
-  const AppUpdatePanel({Key? key}) : super(key: key);
+  const AppUpdatePanel({super.key});
 
   @override
   Widget build(BuildContext context) {

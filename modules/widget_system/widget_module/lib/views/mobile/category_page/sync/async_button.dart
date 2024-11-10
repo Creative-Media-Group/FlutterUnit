@@ -21,7 +21,7 @@ import 'package:toly_ui/toly_ui.dart';
 /// 说明: 同步数据按钮，点击时请求服务器，获取备份数据。
 
 class SyncCategoryButton extends StatefulWidget {
-  const SyncCategoryButton({Key? key}) : super(key: key);
+  const SyncCategoryButton({super.key});
 
   @override
   _SyncCategoryButtonState createState() => _SyncCategoryButtonState();
@@ -66,11 +66,11 @@ class _SyncCategoryButtonState extends State<SyncCategoryButton> {
 
   Widget _buildDefault() {
     return FeedbackWidget(
+        onPressed: _doSync,
         child: const Icon(
           TolyIcon.download,
           size: 24,
-        ),
-        onPressed: _doSync);
+        ));
   }
 
   void _doSync() async {

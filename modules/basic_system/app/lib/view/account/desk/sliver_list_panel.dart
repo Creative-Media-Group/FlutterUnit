@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:toly_ui/toly_ui.dart';
 
 import '../../about/about_app_page.dart';

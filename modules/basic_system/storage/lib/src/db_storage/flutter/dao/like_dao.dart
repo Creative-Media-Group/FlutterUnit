@@ -1,5 +1,4 @@
 import 'package:fx_dao/fx_dao.dart';
-import 'package:sqflite/sqflite.dart';
 
 class LikeDao with HasDatabase, DbTable{
   @override

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class TextButtonStyleDemo extends StatelessWidget {
-  const TextButtonStyleDemo({Key? key}) : super(key: key);
+  const TextButtonStyleDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,9 @@ class TextButtonStyleDemo extends StatelessWidget {
                 foregroundColor: Colors.white,
                 elevation: 2,
                 shadowColor: Colors.orangeAccent),
-            child: const Text('TextButton 样式'),
             onPressed: _onPressed,
             onLongPress: _onLongPress,
+            child: const Text('TextButton 样式'),
           ),
           TextButton(
             style: TextButton.styleFrom(
@@ -34,10 +34,10 @@ class TextButtonStyleDemo extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 // elevation: 2,
                 shadowColor: Colors.orangeAccent),
-            child: const Text('TextButton 边线'),
             autofocus: false,
             onPressed: _onPressed,
             onLongPress: _onLongPress,
+            child: const Text('TextButton 边线'),
           ),
         ],
       ),

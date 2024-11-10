@@ -35,7 +35,7 @@ class CategoryPage extends StatelessWidget {
     childAspectRatio: 0.9,
   );
   
-  const CategoryPage({Key? key}) : super(key: key);
+  const CategoryPage({super.key});
 
   @override
   Widget build(BuildContext context) {

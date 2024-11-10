@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class UniqueWidgetDemo extends StatelessWidget {
-  const UniqueWidgetDemo({Key? key}) : super(key: key);
+  const UniqueWidgetDemo({super.key});
 
   final String info =
       '该类是抽象类，在 Flutter 框架层没有实现类，也没有其他源码使用到它，说明它基本上没啥用。'

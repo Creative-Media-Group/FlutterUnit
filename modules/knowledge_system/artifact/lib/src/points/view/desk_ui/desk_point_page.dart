@@ -11,7 +11,7 @@ import '../issues_point/issues_point_page.dart';
 import 'github_repo_panel.dart';
 
 class DeskPointPage extends StatefulWidget {
-  const DeskPointPage({Key? key}) : super(key: key);
+  const DeskPointPage({super.key});
 
   @override
   State<DeskPointPage> createState() => _DeskPointPageState();
@@ -45,15 +45,15 @@ class _DeskPointPageState extends State<DeskPointPage> {
                     GithubRepoPanel(
                       repository: _repository,
                     ),
-                    Expanded(
+                    const Expanded(
                         child: SizedBox(
                             width: 250,
                             child: IssuesTip())
                         )
                   ],
                 ),
-                VerticalDivider(width: 1,),
-                Expanded(flex: 2, child: IssuesPointContent()),
+                const VerticalDivider(width: 1,),
+                const Expanded(flex: 2, child: IssuesPointContent()),
               ],
             ))
           ],
@@ -64,7 +64,7 @@ class _DeskPointPageState extends State<DeskPointPage> {
 }
 
 class IssuesTip extends StatelessWidget {
-  const IssuesTip({Key? key}) : super(key: key);
+  const IssuesTip({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -72,12 +72,12 @@ class IssuesTip extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Text.rich(
         TextSpan(children: [
-          TextSpan(
+          const TextSpan(
               text: '* 注： ',
               style: TextStyle(
                   color: Colors.red,
                   fontWeight: FontWeight.bold)),
-          TextSpan(
+          const TextSpan(
               text:
               '要点集录中的 QA 数据收录在 FlutterUnit 以 point 为标签的 issues 中。如果需要提供数据，在 issues 中问答即可。'),
           TextSpan(
@@ -85,12 +85,12 @@ class IssuesTip extends StatelessWidget {
               mouseCursor: SystemMouseCursors.click,
               recognizer: TapGestureRecognizer()
                 ..onTap = _toUrl,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.blue,
                   decoration: TextDecoration.underline,
                   fontWeight: FontWeight.bold)),
         ]),
-        style: TextStyle(fontSize: 14),
+        style: const TextStyle(fontSize: 14),
       ),
     );
   }
@@ -119,7 +119,7 @@ class SimpleDeskTopBar extends StatelessWidget {
     return DragToMoveWrapper(
       child: Container(
         height: height,
-        color: isDark? Color(0xff2C3036):Colors.white,
+        color: isDark? const Color(0xff2C3036):Colors.white,
         child: Row(
           children: [
             if (leading != null) Padding(

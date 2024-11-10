@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomDismissible extends StatefulWidget {
-  const CustomDismissible({Key? key}) : super(key: key);
+  const CustomDismissible({super.key});
 
   @override
   _CustomDismissibleState createState() => _CustomDismissibleState();
@@ -47,11 +47,11 @@ class _CustomDismissibleState extends State<CustomDismissible> {
       ),
       secondaryBackground: Container(
         alignment: const Alignment(0.9, 0),
+        color: Colors.red,
         child: const Icon(
           Icons.close,
           color: Colors.white,
         ),
-        color: Colors.red,
       ),
       key: ValueKey(color),
       onDismissed: (d) {

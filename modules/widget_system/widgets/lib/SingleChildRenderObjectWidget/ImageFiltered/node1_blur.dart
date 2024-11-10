@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ImageFilteredBlur extends StatefulWidget {
-  const ImageFilteredBlur({Key? key}) : super(key: key);
+  const ImageFilteredBlur({super.key});
 
   @override
   State<ImageFilteredBlur> createState() => _ImageFilteredBlurState();
@@ -44,7 +44,7 @@ class _ImageFilteredBlurState extends State<ImageFilteredBlur> {
                     max: 4,
                     value: _sigmaX,
                     divisions: 360,
-                    label: 'x:' + _sigmaX.toStringAsFixed(1),
+                    label: 'x:${_sigmaX.toStringAsFixed(1)}',
                     onChanged: (v) => setState(() => _sigmaX = v)),
               ),
               Expanded(
@@ -53,7 +53,7 @@ class _ImageFilteredBlurState extends State<ImageFilteredBlur> {
                     max: 4,
                     value: _sigmaY,
                     divisions: 360,
-                    label: 'y:' + _sigmaY.toStringAsFixed(1),
+                    label: 'y:${_sigmaY.toStringAsFixed(1)}',
                     onChanged: (v) => setState(() => _sigmaY = v)),
               ),
             ],
@@ -88,7 +88,7 @@ class _ImageFilteredBlurState extends State<ImageFilteredBlur> {
 }
 
 class _TargetContent extends StatelessWidget {
-  const _TargetContent({Key? key}) : super(key: key);
+  const _TargetContent({super.key});
 
   @override
   Widget build(BuildContext context) {

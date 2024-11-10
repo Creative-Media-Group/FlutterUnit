@@ -11,7 +11,7 @@ import 'package:l10n/l10n.dart';
 class MePageItem extends StatelessWidget {
   final Color color;
 
-  const MePageItem({Key? key, this.color = Colors.white}) : super(key: key);
+  const MePageItem({super.key, this.color = Colors.white});
 
   @override
   Widget build(BuildContext context) {

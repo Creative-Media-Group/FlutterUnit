@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ShapeMaterial extends StatelessWidget {
-  const ShapeMaterial({Key? key}) : super(key: key);
+  const ShapeMaterial({super.key});
 
   final Map<String, ShapeBorder> shapeMap = const {
     'BorderDirectional': BorderDirectional(

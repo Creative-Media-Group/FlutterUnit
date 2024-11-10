@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../layout.dart';
-import '../../views/base/size/size_tight_constraint.dart';
 import '../../views/base/size/size_display.dart';
-import '../../views/test_show.dart';
-import '../menu/menu_repository_impl.dart';
 import '../view/app_desk_navigation.dart';
 
 RouteBase get deskNavRoute => ShellRoute(

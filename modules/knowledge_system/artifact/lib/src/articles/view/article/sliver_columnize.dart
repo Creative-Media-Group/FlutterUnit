@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'columnize_page_view.dart';
 import 'package:l10n/l10n.dart';
 class ColumnizeViewPage extends StatefulWidget {
-  const ColumnizeViewPage({Key? key}) : super(key: key);
+  const ColumnizeViewPage({super.key});
 
   @override
   State<ColumnizeViewPage> createState() => _ColumnizeViewPageState();
@@ -31,17 +31,17 @@ class _ColumnizeViewPageState extends State<ColumnizeViewPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 16.0,right: 16,top: 12,bottom: 4),
+            padding: const EdgeInsets.only(left: 16.0,right: 16,top: 12,bottom: 4),
             child: Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundImage: AssetImage('assets/images/icon_head.webp',),
                   backgroundColor: Colors.transparent,
                   radius: 10,
                 ),
-                SizedBox(width: 6,),
-                Text("捷特文章专栏",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-                Spacer(),
+                const SizedBox(width: 6,),
+                const Text("捷特文章专栏",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                const Spacer(),
                 GestureDetector(
                   onTap: () async{
                     Uri uri = Uri.parse('https://juejin.im/user/5b42c0656fb9a04fe727eb37');
@@ -57,8 +57,8 @@ class _ColumnizeViewPageState extends State<ColumnizeViewPage> {
                       Text(
                         context.l10n.knowledgeToJuejin
 
-    ,style: TextStyle(fontSize: 12,color: Colors.blue),),
-                      Icon(Icons.navigate_next,size: 12,color: Colors.blue,)
+    ,style: const TextStyle(fontSize: 12,color: Colors.blue),),
+                      const Icon(Icons.navigate_next,size: 12,color: Colors.blue,)
                     ],
                   ),
                 ),
@@ -66,10 +66,10 @@ class _ColumnizeViewPageState extends State<ColumnizeViewPage> {
               ],
             ),
           ),
-          Expanded(
+          const Expanded(
             child: ColumnizePageView(),
           ),
-          SizedBox(height: 10,)
+          const SizedBox(height: 10,)
         ],
       ),
     );

@@ -17,19 +17,19 @@ class DeskSortBar extends StatelessWidget {
 
     return DragToMoveWrapper(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 42,
         color: isDark ? const Color(0xff2C3036) : Colors.white,
         child: Row(
           children: [
             const SortButton(),
-            Spacer(),
+            const Spacer(),
             TolyLink(
                 href:
-                    'https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/sort/functions/${name}.dart',
+                    'https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/sort/functions/$name.dart',
                 text: '查看排序源码',
                 hoverColor: Colors.blue,
-                style: TextStyle(fontSize: 12, fontFamily: '宋体'),
+                style: const TextStyle(fontSize: 12, fontFamily: '宋体'),
                 onTap: jumpURL),
             const SizedBox(width: 10),
             TolyAction(

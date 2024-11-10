@@ -13,13 +13,13 @@ import '../../data/model/issue.dart';
 /// 说明:
 
 class IssuesDetailPage extends StatelessWidget {
-  const IssuesDetailPage({Key? key}) : super(key: key);
+  const IssuesDetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size(0,kToolbarHeight),
+        preferredSize: const Size(0,kToolbarHeight),
         child: DragToMoveWrapper(
           child: AppBar(
             centerTitle: false,
@@ -59,7 +59,7 @@ class IssuesDetailPage extends StatelessWidget {
 class IssueTitle extends StatelessWidget {
   final Issue issue;
 
-  const IssueTitle({Key? key, required this.issue}) : super(key: key);
+  const IssueTitle({super.key, required this.issue});
 
   String get issueDesHtml => issue.bodyHtml != null
       ? issue.bodyHtml!
@@ -145,7 +145,7 @@ class IssueTitle extends StatelessWidget {
 class IssueCommentWidget extends StatelessWidget {
   final IssueComment comment;
 
-  const IssueCommentWidget({Key? key, required this.comment}) : super(key: key);
+  const IssueCommentWidget({super.key, required this.comment});
 
   String get issueDesHtml => comment.bodyHtml != null
       ? comment.bodyHtml!

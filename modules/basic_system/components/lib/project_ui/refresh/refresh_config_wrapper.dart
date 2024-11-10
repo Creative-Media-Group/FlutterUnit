@@ -6,7 +6,7 @@ import 'toly_refresh_indicator.dart';
 
 class RefreshConfigWrapper extends StatelessWidget {
   final Widget child;
-  const RefreshConfigWrapper({Key? key, required this.child}) : super(key: key);
+  const RefreshConfigWrapper({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -30,19 +30,19 @@ class RefreshConfigWrapper extends StatelessWidget {
               ],
             );
           } else if (mode == LoadStatus.loading) {
-            body = CupertinoActivityIndicator();
+            body = const CupertinoActivityIndicator();
           } else if (mode == LoadStatus.failed) {
-            body = Text("加载失败！点击重试！");
+            body = const Text("加载失败！点击重试！");
           } else if (mode == LoadStatus.canLoading) {
             body = Text("松手,加载更多!",
                 style: TextStyle(color: themeColor, height: 1));
           } else {
-            body = Text("没有更多数据了!",
+            body = const Text("没有更多数据了!",
                 style: TextStyle(
                   color: Colors.grey,
                 ));
           }
-          return Container(
+          return SizedBox(
             height: 55.0,
             child: Center(child: body),
           );

@@ -16,7 +16,7 @@ import 'page_item.dart';
 /// 说明:
 
 class UserPage extends StatelessWidget {
-  const UserPage({Key? key}) : super(key: key);
+  const UserPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +97,7 @@ class UserPage extends StatelessWidget {
     if (state is AuthSuccess) {
       return FeedbackWidget(
         onEnd: () {
-          Navigator.of(context).push(SlidePageRoute(child: UserAccountPage()));
+          Navigator.of(context).push(SlidePageRoute(child: const UserAccountPage()));
         },
         child: CircleImage(
           size: 80,

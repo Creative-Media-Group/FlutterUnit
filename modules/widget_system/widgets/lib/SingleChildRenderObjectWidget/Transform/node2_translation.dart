@@ -6,7 +6,7 @@ import 'matrix4_shower.dart';
 /// contact me by email 1981462002@qq.com
 
 class TranslationTransform extends StatefulWidget {
-  const TranslationTransform({Key? key}) : super(key: key);
+  const TranslationTransform({super.key});
 
   @override
   _TranslationTransformState createState() => _TranslationTransformState();

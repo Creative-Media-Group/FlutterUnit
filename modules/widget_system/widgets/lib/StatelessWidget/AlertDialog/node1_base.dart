@@ -2,12 +2,13 @@
 
 /// create by 张风捷特烈 on 2020-03-24
 /// contact me by email 1981462002@qq.com
+library;
 
 
 import 'package:flutter/material.dart';
 
 class CustomAlertDialog extends StatelessWidget {
-  const CustomAlertDialog({Key? key}) : super(key: key);
+  const CustomAlertDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -79,9 +80,9 @@ class CustomAlertDialog extends StatelessWidget {
   }
 
   Widget _buildContent() {
-    return  Column(
+    return  const Column(
       mainAxisSize: MainAxisSize.min,
-      children: const [
+      children: [
          Padding(
           padding: EdgeInsets.all(10.0),
           child: Text(

@@ -7,7 +7,7 @@ import 'package:widget_module/blocs/blocs.dart';
 import 'widget_list_panel.dart';
 
 class WidgetPage extends StatefulWidget {
-  const WidgetPage({Key? key}) : super(key: key);
+  const WidgetPage({super.key});
 
   @override
   State<WidgetPage> createState() => _WidgetPageState();
@@ -37,12 +37,12 @@ class _WidgetPageState extends State<WidgetPage> {
           onRefresh: _onRefresh,
           enablePullUp: true,
           onLoading: _onLoadMore,
-          child: CustomScrollView(
+          child: const CustomScrollView(
 
             // key: PageStorageKey<String>(name),
             slivers: <Widget>[
 
-              const WidgetListPanel(),
+              WidgetListPanel(),
 
             ],
           ),

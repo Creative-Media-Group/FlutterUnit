@@ -18,7 +18,7 @@ class EditCategoryPanel extends StatefulWidget {
   final CategoryModel? model;
   final EditType type;
 
-  const EditCategoryPanel({Key? key, this.model, this.type = EditType.add}) : super(key: key);
+  const EditCategoryPanel({super.key, this.model, this.type = EditType.add});
 
   @override
   _EditCategoryPanelState createState() => _EditCategoryPanelState();
@@ -51,7 +51,7 @@ class _EditCategoryPanelState extends State<EditCategoryPanel> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
           child: InputButton(
-            defaultText: '${widget.model?.name??''}',
+            defaultText: widget.model?.name??'',
             config: const InputButtonConfig(hint: '收藏集名称', iconData: Icons.check),
             onSubmit: _doEdit,
           ),
@@ -59,7 +59,7 @@ class _EditCategoryPanelState extends State<EditCategoryPanel> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
           child: EditPanel(
-            defaultText: '${widget.model?.info??''}',
+            defaultText: widget.model?.info??'',
             submitClear: false,
             hint: '收藏集简介...',
             onChange: (v) => info = v,

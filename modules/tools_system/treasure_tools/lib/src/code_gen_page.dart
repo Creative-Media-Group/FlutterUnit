@@ -12,7 +12,7 @@ import 'popable/toly_select.dart';
 class A {}
 
 class CodeGenPage extends StatefulWidget {
-  const CodeGenPage({Key? key}) : super(key: key);
+  const CodeGenPage({super.key});
 
   @override
   State<CodeGenPage> createState() => _CodeGenPageState();
@@ -20,7 +20,7 @@ class CodeGenPage extends StatefulWidget {
 
 class _CodeGenPageState extends State<CodeGenPage> {
 
-  TextEditingController _dirPath = TextEditingController();
+  final TextEditingController _dirPath = TextEditingController();
   final PageController _ctrl = PageController();
   int selectIndex = 0;
 
@@ -56,7 +56,7 @@ class _CodeGenPageState extends State<CodeGenPage> {
           ),
           Expanded(child: PageView(
             controller:_ctrl,
-            children: [
+            children: const [
               IconFontGenPage(),
               Center(
                 child: Text(
@@ -88,12 +88,12 @@ class _CodeGenPageState extends State<CodeGenPage> {
                       //   _dirPath.text = directoryPath;
                       // }
                     },
-                    child: Icon(Icons.file_copy_outlined)),
-                SizedBox(width: 20,),
+                    child: const Icon(Icons.file_copy_outlined)),
+                const SizedBox(width: 20,),
                 Expanded(child: TextField(
                   controller: _dirPath,
                 )),
-                SizedBox(width: 20,),
+                const SizedBox(width: 20,),
               ],
             ),
           ),
@@ -152,8 +152,7 @@ class GenInput extends StatelessWidget {
   final TextEditingController? controller;
 
   const GenInput(
-      {Key? key, required this.hintText, this.controller, required this.label})
-      : super(key: key);
+      {super.key, required this.hintText, this.controller, required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +163,7 @@ class GenInput extends StatelessWidget {
           padding: const EdgeInsets.all(6.0),
           child: Text(
             label,
-            style: TextStyle(fontSize: 12),
+            style: const TextStyle(fontSize: 12),
           ),
         ),
         SizedBox(
@@ -172,22 +171,22 @@ class GenInput extends StatelessWidget {
           height: 30,
           child: TextField(
             controller: controller,
-            style: TextStyle(fontSize: 14),
+            style: const TextStyle(fontSize: 14),
             decoration: InputDecoration(
                 filled: true,
                 hoverColor: Colors.transparent,
-                contentPadding: EdgeInsets.only(top: 0, left: 15),
-                fillColor: Color(0xffF1F2F3),
+                contentPadding: const EdgeInsets.only(top: 0, left: 15),
+                fillColor: const Color(0xffF1F2F3),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).primaryColor),
-                  borderRadius: BorderRadius.all(Radius.circular(6)),
+                  borderRadius: const BorderRadius.all(Radius.circular(6)),
                 ),
-                enabledBorder: OutlineInputBorder(
+                enabledBorder: const OutlineInputBorder(
                   borderSide: BorderSide.none,
                   borderRadius: BorderRadius.all(Radius.circular(6)),
                 ),
                 hintText: hintText,
-                hintStyle: TextStyle(fontSize: 12, color: Colors.grey)),
+                hintStyle: const TextStyle(fontSize: 12, color: Colors.grey)),
           ),
         ),
       ],
@@ -201,11 +200,11 @@ class GenCheckBox extends StatelessWidget {
   final ValueChanged<bool?>? onChanged;
 
   const GenCheckBox({
-    Key? key,
+    super.key,
     required this.label,
     required this.checked,
     this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -216,7 +215,7 @@ class GenCheckBox extends StatelessWidget {
         Checkbox(value: checked, onChanged: onChanged),
         Text(
           label,
-          style: TextStyle(fontSize: 12),
+          style: const TextStyle(fontSize: 12),
         ),
       ],
     );

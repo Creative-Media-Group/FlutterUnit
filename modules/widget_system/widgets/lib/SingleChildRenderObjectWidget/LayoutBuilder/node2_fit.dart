@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class FitByLayoutBuilder extends StatefulWidget {
-  const FitByLayoutBuilder({Key? key}) : super(key: key);
+  const FitByLayoutBuilder({super.key});
 
   @override
   _FitByLayoutBuilderState createState() => _FitByLayoutBuilderState();

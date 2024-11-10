@@ -3,15 +3,15 @@ import 'package:flutter/cupertino.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoActivityIndicator extends StatelessWidget {
-  const CustomCupertinoActivityIndicator({Key? key}) : super(key: key);
+  const CustomCupertinoActivityIndicator({super.key});
 
 
   @override
   Widget build(BuildContext context) {
 
-    return Wrap(
+    return const Wrap(
       spacing: 20,
-      children: const [
+      children: [
         CupertinoActivityIndicator(
           animating: true,
           radius: 25,

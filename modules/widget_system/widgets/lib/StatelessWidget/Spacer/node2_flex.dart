@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ManySpacer extends StatefulWidget {
-  const ManySpacer({Key? key}) : super(key: key);
+  const ManySpacer({super.key});
 
   @override
   _ManySpacerState createState() => _ManySpacerState();

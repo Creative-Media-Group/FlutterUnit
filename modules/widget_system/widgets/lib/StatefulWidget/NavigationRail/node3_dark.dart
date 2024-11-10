@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 
 
 class DarkNavigationRail extends StatefulWidget {
-  const DarkNavigationRail({Key? key}) : super(key: key);
+  const DarkNavigationRail({super.key});
 
   @override
   State<DarkNavigationRail> createState() => _DarkNavigationRailState();
@@ -62,7 +62,7 @@ class _DarkNavigationRailState extends State<DarkNavigationRail> {
 class _TestContent extends StatelessWidget {
   final String content;
 
-  const _TestContent({Key? key, required this.content}) : super(key: key);
+  const _TestContent({super.key, required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -77,8 +77,7 @@ class _TestContent extends StatelessWidget {
 class DarkExtendableNavigation extends StatefulWidget {
   final ValueChanged<int>? onDestinationSelected;
 
-  const DarkExtendableNavigation({Key? key, this.onDestinationSelected})
-      : super(key: key);
+  const DarkExtendableNavigation({super.key, this.onDestinationSelected});
 
   @override
   State<DarkExtendableNavigation> createState() => _DarkExtendableNavigationState();

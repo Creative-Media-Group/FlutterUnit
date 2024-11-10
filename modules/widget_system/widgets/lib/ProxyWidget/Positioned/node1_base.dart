@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomPositioned extends StatelessWidget {
-  const CustomPositioned({Key? key}) : super(key: key);
+  const CustomPositioned({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +42,9 @@ class CustomPositioned extends StatelessWidget {
             redBox,
             Positioned(top: 20, left: 20, child: greenBox),
             Positioned(
-              child: cyanBox,
               bottom: 10,
               right: 10,
+              child: cyanBox,
             )
           ],
         ));

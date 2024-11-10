@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 
 class CupertinoTabViewDemo extends StatelessWidget {
-  const CupertinoTabViewDemo({Key? key}) : super(key: key);
+  const CupertinoTabViewDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class CupertinoTabViewDemo extends StatelessWidget {
 
 
 class CupertinoTabViewPage extends StatelessWidget {
-  const CupertinoTabViewPage({Key? key}) : super(key: key);
+  const CupertinoTabViewPage({super.key});
 
 
   @override
@@ -46,7 +46,7 @@ class CupertinoTabViewPage extends StatelessWidget {
 }
 
 class DetailPage extends StatelessWidget {
-  const DetailPage({Key? key}) : super(key: key);
+  const DetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {

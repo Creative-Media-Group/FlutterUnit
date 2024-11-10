@@ -33,7 +33,7 @@ class TolySelect extends StatefulWidget {
   final double fontSize;
 
   const TolySelect(
-      {Key? key,
+      {super.key,
         this.data = const [],
         required this.activeIndex,
         required this.change,
@@ -42,8 +42,7 @@ class TolySelect extends StatefulWidget {
         this.height = 40,
         this.width = 240,
         this.fontSize = 14,
-      })
-      : super(key: key);
+      });
 
   @override
   _TolySelectState createState() => _TolySelectState();
@@ -124,7 +123,7 @@ class _TolySelectState extends State<TolySelect>
 
   void _showOverlay() {
     _overlayEntry = _createOverlayEntry();
-    Overlay.of(context)?.insert(_overlayEntry!);
+    Overlay.of(context).insert(_overlayEntry!);
   }
 
   void _hideOverlay() {
@@ -139,7 +138,7 @@ class _TolySelectState extends State<TolySelect>
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
-            color: _focused ? Color(0xff409eff) : widget.disableColor,
+            color: _focused ? const Color(0xff409eff) : widget.disableColor,
           )),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -148,7 +147,7 @@ class _TolySelectState extends State<TolySelect>
             widget.data.isNotEmpty ? widget.data[widget.activeIndex] : "暂无数据",style: TextStyle(
               height: 1,
               fontSize: widget.fontSize,
-            color: Color(0xff606266)
+            color: const Color(0xff606266)
           ),),
           AnimatedBuilder(
             animation: animation,
@@ -158,7 +157,7 @@ class _TolySelectState extends State<TolySelect>
             ),
             child: Icon(
               Icons.keyboard_arrow_down,
-              color: Color(0xffc0c4cc),
+              color: const Color(0xffc0c4cc),
               size: widget.iconSize,
             ),
           ),
@@ -189,7 +188,7 @@ class _TolySelectState extends State<TolySelect>
               radius: 4,
               shadows: [
                 BoxShadow(
-                  offset: Offset(0,2),
+                  offset: const Offset(0,2),
                   blurRadius: 8,
 
                   color: Colors.black.withOpacity(0.1)
@@ -197,7 +196,7 @@ class _TolySelectState extends State<TolySelect>
               ],
               // elevation: 3,
               // shadowColor: Colors.black.withOpacity(0.1),
-              child: Container(
+              child: SizedBox(
                 height: min(34.0*widget.data.length+10,150),
                 // alignment: Alignment.center,
                 // decoration: const BoxDecoration(
@@ -206,7 +205,7 @@ class _TolySelectState extends State<TolySelect>
                 width: widget.width,
                 child: ListView.builder(
                   itemExtent: 34,
-                    padding: EdgeInsets.symmetric(vertical: 5),
+                    padding: const EdgeInsets.symmetric(vertical: 5),
                     // shrinkWrap: true,
                     itemCount: widget.data.length,
                     itemBuilder: _buildItem),
@@ -229,7 +228,7 @@ class _TolySelectState extends State<TolySelect>
             _overlayEntry?.markNeedsBuild();
             _node.unfocus();
           },
-          hoverColor: Color(0xffF5F7FA),
+          hoverColor: const Color(0xffF5F7FA),
           child: Container(
               padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 15),
               color: Colors.transparent,

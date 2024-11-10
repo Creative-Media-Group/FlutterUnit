@@ -8,7 +8,7 @@ import 'widget_model_item.dart';
 class PhoneWidgetContent extends StatelessWidget {
   final List<WidgetModel> items;
 
-  const PhoneWidgetContent({Key? key,required this.items}) : super(key: key);
+  const PhoneWidgetContent({super.key,required this.items});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class IndexedStackNode01 extends StatefulWidget {
-  const IndexedStackNode01({Key? key}) : super(key: key);
+  const IndexedStackNode01({super.key});
 
   @override
   State createState() => _IndexedStackNode01State();

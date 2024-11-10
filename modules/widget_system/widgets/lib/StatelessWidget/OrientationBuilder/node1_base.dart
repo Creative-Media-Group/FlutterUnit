@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class OrientationBuilderDemo extends StatefulWidget {
-  const OrientationBuilderDemo({Key? key}) : super(key: key);
+  const OrientationBuilderDemo({super.key});
 
   @override
   _OrientationBuilderDemoState createState() => _OrientationBuilderDemoState();
@@ -20,8 +20,8 @@ class _OrientationBuilderDemoState extends State<OrientationBuilderDemo> {
         Container(
           width: _width,
           height: 200,
-          child: OrientationBuilder(builder: _builder),
           color: Colors.orange,
+          child: OrientationBuilder(builder: _builder),
         ),
         _buildSlider()
       ],

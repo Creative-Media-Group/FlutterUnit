@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class StepperDemo extends StatefulWidget {
-  const StepperDemo({Key? key}) : super(key: key);
+  const StepperDemo({super.key});
 
   @override
   _StepperDemoState createState() => _StepperDemoState();

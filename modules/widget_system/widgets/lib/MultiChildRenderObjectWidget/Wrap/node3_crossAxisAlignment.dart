@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CrossAxisAlignmentWrap extends StatelessWidget {
-  CrossAxisAlignmentWrap({Key? key}) : super(key: key);
+  CrossAxisAlignmentWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

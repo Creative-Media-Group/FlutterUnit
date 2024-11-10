@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomFutureBuilder extends StatefulWidget {
-  const CustomFutureBuilder({Key? key}) : super(key: key);
+  const CustomFutureBuilder({super.key});
 
   @override
   _CustomFutureBuilderState createState() => _CustomFutureBuilderState();

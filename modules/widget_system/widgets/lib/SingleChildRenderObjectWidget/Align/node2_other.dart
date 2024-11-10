@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 
 class Ball extends StatelessWidget {
   const Ball({
-    Key? key,
+    super.key,
     this.radius = 15,
     this.color = Colors.blue,
-  }) : super(key: key);
+  });
   final double radius; //半径
   final Color color; //颜色
 
@@ -28,8 +28,8 @@ class Ball extends StatelessWidget {
 
 class SinLayout extends StatefulWidget {
   const SinLayout({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _SinLayoutState createState() => _SinLayoutState();
@@ -45,10 +45,10 @@ class _SinLayoutState extends State<SinLayout> {
       height: 120,
       color: Colors.black.withAlpha(10),
       child: Align(
+        alignment: Alignment(_x, f(_x * pi)),
         child: const Ball(
           color: Colors.orangeAccent,
         ),
-        alignment: Alignment(_x, f(_x * pi)),
       ),
     );
 

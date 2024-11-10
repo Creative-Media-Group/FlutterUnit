@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class BadgeDemo extends StatelessWidget {
-  const BadgeDemo({Key? key}) : super(key: key);
+  const BadgeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

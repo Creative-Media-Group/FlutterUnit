@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SliverAnimatedListDemo extends StatefulWidget {
-  const SliverAnimatedListDemo({Key? key}) : super(key: key);
+  const SliverAnimatedListDemo({super.key});
 
   @override
   _SliverAnimatedListDemoState createState() =>
@@ -146,12 +146,12 @@ class ListModel<E> {
 
 class CardItem extends StatelessWidget {
   const CardItem({
-    Key? key,
+    super.key,
     required this.animation,
     required this.item,
     this.onTap,
     this.selected = false,
-  }) :super(key: key);
+  });
   final Animation<double> animation;
   final VoidCallback? onTap;
   final int item;

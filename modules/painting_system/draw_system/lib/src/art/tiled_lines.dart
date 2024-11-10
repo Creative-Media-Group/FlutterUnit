@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class TiledLines extends StatefulWidget {
-  const TiledLines({Key? key}) : super(key: key);
+  const TiledLines({super.key});
 
   @override
   _TiledLinesState createState() => _TiledLinesState();

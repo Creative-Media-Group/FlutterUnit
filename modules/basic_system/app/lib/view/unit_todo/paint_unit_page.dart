@@ -7,7 +7,7 @@ class PaintUnitPage extends StatelessWidget {
       '将收录大量绘制作品，展现Flutter强大的绘制表现力,'
       '以供学习绘制技能。本集录将支持绘制征集，愿开发者共同集录。';
 
-  const PaintUnitPage({Key? key}) : super(key: key);
+  const PaintUnitPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +18,10 @@ class PaintUnitPage extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: <Widget>[
-          Positioned(
+          const Positioned(
             top: 50,
             child: Column(
-              children: const [
+              children: [
                 CircleImage(
                   image: AssetImage('assets/images/icon_head.webp'),
                   size: 80,

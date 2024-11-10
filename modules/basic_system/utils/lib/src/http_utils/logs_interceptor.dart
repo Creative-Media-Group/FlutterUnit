@@ -14,7 +14,7 @@ class LogsInterceptors extends InterceptorsWrapper {
   }
 
   @override
-  void onError(DioError err, ErrorInterceptorHandler handler) {
+  void onError(DioException err, ErrorInterceptorHandler handler) {
     print('==========请求异常: ' + err.toString()+"==========");
     if(err.response!=null){
       print('==========请求异常信息: ' + err.response.toString()+"==========");

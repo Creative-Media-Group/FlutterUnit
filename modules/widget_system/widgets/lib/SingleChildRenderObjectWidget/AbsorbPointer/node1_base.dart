@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class CustomAbsorbPointer extends StatefulWidget {
-  const CustomAbsorbPointer({Key? key}) : super(key: key);
+  const CustomAbsorbPointer({super.key});
 
   @override
   _CustomAbsorbPointerState createState() => _CustomAbsorbPointerState();

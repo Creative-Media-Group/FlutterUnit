@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class BoxDecorationDemo extends StatelessWidget {
-  const BoxDecorationDemo({Key? key}) : super(key: key);
+  const BoxDecorationDemo({super.key});
 
   final List<int> rainbow = const [
     0xffff0000,

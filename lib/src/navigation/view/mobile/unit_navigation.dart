@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:algorithm/algorithm.dart';
-import 'package:app/app.dart';
 import 'package:app_update/app_update.dart';
 import 'package:artifact/artifact.dart';
 import 'package:authentication/authentication.dart';
@@ -9,7 +8,6 @@ import 'package:draw_system/draw_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_unit/src/navigation/model/app_tab.dart';
-import 'package:l10n/l10n.dart';
 
 import 'package:widget_module/blocs/blocs.dart';
 import 'package:widget_module/widget_module.dart';

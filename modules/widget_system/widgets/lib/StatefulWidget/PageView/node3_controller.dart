@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CtrlPageView extends StatefulWidget {
-  const CtrlPageView({Key? key}) : super(key: key);
+  const CtrlPageView({super.key});
 
   @override
   _CtrlPageViewState createState() => _CtrlPageViewState();

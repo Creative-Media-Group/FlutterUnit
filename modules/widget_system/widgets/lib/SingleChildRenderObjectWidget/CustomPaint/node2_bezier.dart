@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class PlayBezier3Page extends StatefulWidget {
-  const PlayBezier3Page({Key? key}) : super(key: key);
+  const PlayBezier3Page({super.key});
 
   @override
   _PlayBezier3PageState createState() => _PlayBezier3PageState();

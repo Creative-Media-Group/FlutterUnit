@@ -13,7 +13,7 @@ class DeskAccountTopBar extends StatelessWidget {
     return DragToMoveWrapper(
       child: Container(
         height: 64,
-        color: isDark ? Color(0xff2C3036) : Colors.white,
+        color: isDark ? const Color(0xff2C3036) : Colors.white,
         child: Row(
           children: [
             if (leading != null) Padding(

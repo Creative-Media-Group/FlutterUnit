@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 /// 说明:
 
 class DrawPath extends StatefulWidget {
-  const DrawPath({Key? key}) : super(key: key);
+  const DrawPath({super.key});
 
   @override
   _DrawPathState createState() => _DrawPathState();

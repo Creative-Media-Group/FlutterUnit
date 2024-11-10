@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class TapGestureDetector extends StatefulWidget {
-  const TapGestureDetector({Key? key}) : super(key: key);
+  const TapGestureDetector({super.key});
 
   @override
   _TapGestureDetectorState createState() => _TapGestureDetectorState();

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomForm extends StatefulWidget {
-  const CustomForm({Key? key}) : super(key: key);
+  const CustomForm({super.key});
 
   @override
   _CustomFormState createState() => _CustomFormState();

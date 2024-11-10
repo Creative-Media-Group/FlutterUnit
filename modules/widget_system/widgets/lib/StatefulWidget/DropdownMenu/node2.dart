@@ -73,9 +73,9 @@ class _DropdownMenuNode2State extends State<DropdownMenuNode2> {
       width: 160,
       menuHeight: 150,
       menuStyle: const MenuStyle(
-        backgroundColor: MaterialStatePropertyAll<Color>(Colors.white),
-        surfaceTintColor: MaterialStatePropertyAll<Color>(Colors.white),
-        padding: MaterialStatePropertyAll<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 20,horizontal: 8)),
+        backgroundColor: WidgetStatePropertyAll<Color>(Colors.white),
+        surfaceTintColor: WidgetStatePropertyAll<Color>(Colors.white),
+        padding: WidgetStatePropertyAll<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 20,horizontal: 8)),
       ),
       onSelected: (ColorLabel? color) {
         setState(() {

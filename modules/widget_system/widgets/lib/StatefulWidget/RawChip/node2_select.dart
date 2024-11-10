@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class SelectRawChip extends StatefulWidget {
-  const SelectRawChip({Key? key}) : super(key: key);
+  const SelectRawChip({super.key});
 
   @override
   _SelectRawChipState createState() => _SelectRawChipState();

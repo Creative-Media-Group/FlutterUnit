@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ProToggleButtons extends StatefulWidget {
-  const ProToggleButtons({Key? key}) : super(key: key);
+  const ProToggleButtons({super.key});
 
   @override
   _ProToggleButtonsState createState() => _ProToggleButtonsState();
@@ -17,11 +17,6 @@ class _ProToggleButtonsState extends State<ProToggleButtons> {
   @override
   Widget build(BuildContext context) {
     return ToggleButtons(
-      children: const <Widget>[
-        Icon(Icons.skip_previous),
-        Icon(Icons.pause),
-        Icon(Icons.skip_next),
-      ],
       borderWidth: 1,
       borderColor: Colors.blue,
       selectedBorderColor: Colors.orangeAccent,
@@ -33,6 +28,11 @@ class _ProToggleButtonsState extends State<ProToggleButtons> {
       onPressed: (value) => setState(() {
         _isSelected[value] = !_isSelected[value];
       }),
+      children: const <Widget>[
+        Icon(Icons.skip_previous),
+        Icon(Icons.pause),
+        Icon(Icons.skip_next),
+      ],
     );
   }
 }

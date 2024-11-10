@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomScaleTransition extends StatefulWidget {
-  const CustomScaleTransition({Key? key}) : super(key: key);
+  const CustomScaleTransition({super.key});
 
   @override
   _CustomScaleTransitionState createState() => _CustomScaleTransitionState();

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class TextCupertinoTheme extends StatelessWidget {
-  const TextCupertinoTheme({Key? key}) : super(key: key);
+  const TextCupertinoTheme({super.key});
 
   @override
   Widget build(BuildContext context) {

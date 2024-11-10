@@ -17,7 +17,7 @@ import 'repo_widget.dart';
 /// 说明:
 
 class IssuesPointScope extends StatelessWidget {
-  const IssuesPointScope({Key? key}) : super(key: key);
+  const IssuesPointScope({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class IssuesPointScope extends StatelessWidget {
 }
 
 class IssuesPointPage extends StatelessWidget {
-  const IssuesPointPage({Key? key}) : super(key: key);
+  const IssuesPointPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class IssuesPointPage extends StatelessWidget {
 }
 
 class IssuesPointContent extends StatefulWidget {
-  const IssuesPointContent({Key? key}) : super(key: key);
+  const IssuesPointContent({super.key});
 
   @override
   _IssuesPointContentState createState() => _IssuesPointContentState();

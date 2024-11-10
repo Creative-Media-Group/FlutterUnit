@@ -7,7 +7,7 @@ import '../widget_page/unit_drawer_header.dart';
 import 'edit_category_panel.dart';
 
 class HomeRightDrawer extends StatefulWidget {
-  const HomeRightDrawer({Key? key}) : super(key: key);
+  const HomeRightDrawer({super.key});
 
   @override
   _HomeRightDrawerState createState() => _HomeRightDrawerState();

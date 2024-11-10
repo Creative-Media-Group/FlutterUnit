@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class PanGestureDetector extends StatefulWidget {
-  const PanGestureDetector({Key? key}) : super(key: key);
+  const PanGestureDetector({super.key});
 
   @override
   _PanGestureDetectorState createState() => _PanGestureDetectorState();

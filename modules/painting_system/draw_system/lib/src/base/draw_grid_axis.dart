@@ -7,7 +7,7 @@ import '../utils/coordinate.dart';
 /// 说明:
 
 class DrawGridAxis extends StatelessWidget {
-  const DrawGridAxis({Key? key}) : super(key: key);
+  const DrawGridAxis({super.key});
 
   @override
   Widget build(BuildContext context) {

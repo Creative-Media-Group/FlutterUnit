@@ -13,7 +13,7 @@ class CategoryListItem extends StatelessWidget {
   final Function(CategoryModel)? onDeleteItemClick;
   final Function(CategoryModel)? onEditItemClick;
 
-  const CategoryListItem({Key? key, required this.data, this.onDeleteItemClick,this.onEditItemClick}) : super(key: key);
+  const CategoryListItem({super.key, required this.data, this.onDeleteItemClick,this.onEditItemClick});
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +24,9 @@ class CategoryListItem extends StatelessWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).listTileTheme.tileColor,
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.01),blurRadius: 6,offset: Offset(0,2))
+          BoxShadow(color: Colors.black.withOpacity(0.01),blurRadius: 6,offset: const Offset(0,2))
         ],
-        borderRadius: BorderRadius.all(Radius.circular(8)),
+        borderRadius: const BorderRadius.all(Radius.circular(8)),
       ),
     );
 

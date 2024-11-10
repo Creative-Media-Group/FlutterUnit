@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomFractionallySizedBox extends StatefulWidget {
-  const CustomFractionallySizedBox({Key? key}) : super(key: key);
+  const CustomFractionallySizedBox({super.key});
 
   @override
   _CustomFractionallySizedBoxState createState() =>
@@ -41,14 +41,14 @@ class _CustomFractionallySizedBoxState
           divisions: 20,
           min: 0.0,
           max: 2,
-          label: '宽分率:' + _wf.toStringAsFixed(1),
+          label: '宽分率:${_wf.toStringAsFixed(1)}',
           value: _wf,
           onChanged: (v) => setState(() => _wf = v)),
       Slider(
           divisions: 20,
           min: 0.0,
           max: 2,
-          label: '高分率:' + _hf.toStringAsFixed(1),
+          label: '高分率:${_hf.toStringAsFixed(1)}',
           value: _hf,
           onChanged: (v) => setState(() => _hf = v)),
     ],

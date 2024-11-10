@@ -58,8 +58,8 @@ class _StackOpToolState extends State<StackOpTool> {
             children: [
               Text('增删操作', style: labelStyle.copyWith(fontWeight: FontWeight.bold)),
               const Spacer(),
-              TolyAction(child: const Icon(CupertinoIcons.add, size: 18), onTap: _handleAdd),
-              TolyAction(child: const Icon(CupertinoIcons.delete, size: 16), onTap: widget.onDelete),
+              TolyAction(onTap: _handleAdd, child: const Icon(CupertinoIcons.add, size: 18)),
+              TolyAction(onTap: widget.onDelete, child: const Icon(CupertinoIcons.delete, size: 16)),
             ],
           ),
         ),
@@ -71,8 +71,8 @@ class _StackOpToolState extends State<StackOpTool> {
           child: Row(
             children: [
               Text('属性操作', style: labelStyle.copyWith(fontWeight: FontWeight.bold)),
-              Spacer(),
-              TolyAction(child: const Icon(CupertinoIcons.refresh, size: 16), onTap: widget.onReset),
+              const Spacer(),
+              TolyAction(onTap: widget.onReset, child: const Icon(CupertinoIcons.refresh, size: 16)),
 
             ],
           ),

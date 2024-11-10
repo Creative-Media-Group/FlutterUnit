@@ -12,7 +12,7 @@ import 'article_detail_page.dart';
 import 'columnize_page_view.dart';
 
 class SliverArticlePanel extends StatelessWidget {
-  const SliverArticlePanel({Key? key}) : super(key: key);
+  const SliverArticlePanel({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class SliverArticlePanel extends StatelessWidget {
 
 class SliverArticle extends StatelessWidget {
   final List<Article> data;
-  const SliverArticle({Key? key, required this.data}) : super(key: key);
+  const SliverArticle({super.key, required this.data});
 
 
 
@@ -71,7 +71,7 @@ class SliverArticle extends StatelessWidget {
 class ArticlePanel extends StatelessWidget {
   final Article article;
 
-  const ArticlePanel({Key? key, required this.article}) : super(key: key);
+  const ArticlePanel({super.key, required this.article});
 
   void toArticleDetail(BuildContext context){
     if(Platform.isAndroid||Platform.isIOS){

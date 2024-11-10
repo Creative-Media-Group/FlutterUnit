@@ -61,15 +61,15 @@ class LanguageSwitchTile extends StatelessWidget {
         color: color,
       ),
       title: Text(context.l10n.settingLanguageText,
-          style: TextStyle(fontSize: 16)),
+          style: const TextStyle(fontSize: 16)),
       subtitle: Text(
         '${activeLanguage.label}: ${activeLanguage.locale}',
-        style: TextStyle(fontSize: 12),
+        style: const TextStyle(fontSize: 12),
       ),
       trailing: Icon(Icons.chevron_right, color: color),
       onTap: () {
         showModalBottomSheet(
-            context: context, builder: (_) => LanguageSettingPage());
+            context: context, builder: (_) => const LanguageSettingPage());
       },
     );
   }

@@ -45,7 +45,7 @@ class _DeskKnowledgePageState extends State<DeskKnowledgePage>  with SingleTicke
         BlocProvider<ArticleBloc>(create: (_) => ArticleBloc(aRepository,pageSize: 1000)..init()),
       ],
       child: Scaffold(
-        endDrawer: SortSettings(),
+        endDrawer: const SortSettings(),
         body: Column(
           children: [
             DeskKnowledgeTabTopBar(onTabPressed: (int value) {
@@ -60,9 +60,9 @@ class _DeskKnowledgePageState extends State<DeskKnowledgePage>  with SingleTicke
               controller: controller,
               children: [
                 LayoutRouterPage(),
-                AlgoRouterPage(),
-                TolyArticlesPage(),
-                DeskPointPage(),
+                const AlgoRouterPage(),
+                const TolyArticlesPage(),
+                const DeskPointPage(),
               ],
             ))
           ],
@@ -90,12 +90,12 @@ class TolyArticlesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
+    return const CustomScrollView(
 
       slivers: [
         SliverPadding(
           padding: EdgeInsets.only(top: 10,bottom: 10,right: 36,left: 36),
-          sliver: const SliverToBoxAdapter(
+          sliver: SliverToBoxAdapter(
             child: ColumnizeViewPage(),
           ),
         ),
@@ -124,7 +124,7 @@ class SoreAlgoPage extends StatelessWidget {
 
               GestureDetector(
                   onTap: () {
-                    _launchURL('https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/sort/functions/${name}.dart');
+                    _launchURL('https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/sort/functions/$name.dart');
                   },
                   child: Text(
                     '查看排序源码',
@@ -133,20 +133,20 @@ class SoreAlgoPage extends StatelessWidget {
                       color: Theme.of(context).primaryColor,
                     ),
                   )),
-              Spacer(),
-              SortButton(),
+              const Spacer(),
+              const SortButton(),
               const SizedBox(width: 12,),
-              SortSelector(),
+              const SortSelector(),
               const SizedBox(width: 12,),
               GestureDetector(
                   onTap: () {
                     Scaffold.of(context).openEndDrawer();
                   },
-                  child: Icon(Icons.settings))
+                  child: const Icon(Icons.settings))
             ],
           ),
         ),
-        Expanded(child: SortPaper()),
+        const Expanded(child: SortPaper()),
       ],
     );
   }

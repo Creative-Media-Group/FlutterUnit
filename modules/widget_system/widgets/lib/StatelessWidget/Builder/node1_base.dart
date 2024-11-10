@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class BuilderDemo extends StatelessWidget {
-  const BuilderDemo({Key? key}) : super(key: key);
+  const BuilderDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

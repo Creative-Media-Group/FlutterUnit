@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoDatePicker extends StatefulWidget {
-  const CustomCupertinoDatePicker({Key? key}) : super(key: key);
+  const CustomCupertinoDatePicker({super.key});
 
   @override
   _CustomCupertinoDatePickerState createState() =>

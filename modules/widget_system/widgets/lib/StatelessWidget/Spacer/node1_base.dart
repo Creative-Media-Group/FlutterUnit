@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class OneSpacer extends StatelessWidget {
-  const OneSpacer({Key? key}) : super(key: key);
+  const OneSpacer({super.key});
 
   @override
   Widget build(BuildContext context) {

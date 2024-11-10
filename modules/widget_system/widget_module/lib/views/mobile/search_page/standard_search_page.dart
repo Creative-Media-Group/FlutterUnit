@@ -13,7 +13,7 @@ import 'standard_search_bar.dart';
 // SearchPage 可以复用 WidgetsBloc，进行局部的 Bloc
 // 不必单独提供 SearchBloc 增加复杂性
 class StandardSearchPageProvider extends StatelessWidget {
-  const StandardSearchPageProvider({Key? key}) : super(key: key);
+  const StandardSearchPageProvider({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class StandardSearchPageProvider extends StatelessWidget {
 }
 
 class StandardSearchPage extends StatelessWidget {
-  const StandardSearchPage({Key? key}) : super(key: key);
+  const StandardSearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {

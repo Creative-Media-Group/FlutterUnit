@@ -1,11 +1,12 @@
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
+library;
 
 
 import 'package:flutter/material.dart';
 
 class DenseCheckBoxListTile extends StatefulWidget {
-  const DenseCheckBoxListTile({Key? key}) : super(key: key);
+  const DenseCheckBoxListTile({super.key});
 
   @override
   _DenseCheckBoxListTileState createState() => _DenseCheckBoxListTileState();

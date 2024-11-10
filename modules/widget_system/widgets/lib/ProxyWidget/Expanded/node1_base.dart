@@ -5,7 +5,7 @@ import 'package:widgets/utils/color_utils.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomExpended extends StatefulWidget {
-  const CustomExpended({Key? key}) : super(key: key);
+  const CustomExpended({super.key});
 
   @override
   _CustomExpendedState createState() => _CustomExpendedState();

@@ -17,8 +17,7 @@ class GalleryDetailPage extends StatefulWidget {
   final GalleryInfo galleryInfo;
   final List<Widget> children;
 
-  const GalleryDetailPage({Key? key,required this.galleryInfo, this.children = const []})
-      : super(key: key);
+  const GalleryDetailPage({super.key,required this.galleryInfo, this.children = const []});
 
   @override
   _GalleryDetailPageState createState() => _GalleryDetailPageState();
@@ -90,8 +89,8 @@ class _GalleryDetailPageState extends State<GalleryDetailPage> {
                 flex: 80,
                 child: PageView(
                   controller: _ctrl,
-                  children: widget.children,
                   onPageChanged: _onPageChanged,
+                  children: widget.children,
                 ))
           ],
         ),

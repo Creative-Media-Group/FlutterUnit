@@ -4,7 +4,7 @@ import 'config.dart';
 
 
 class BufengPanel extends StatefulWidget {
-  const BufengPanel({Key? key}) : super(key: key);
+  const BufengPanel({super.key});
 
   @override
   State<BufengPanel> createState() => _BufengPanelState();

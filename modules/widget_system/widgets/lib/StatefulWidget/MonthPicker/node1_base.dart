@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomMonthPicker extends StatelessWidget{
-  const CustomMonthPicker({Key? key}) : super(key: key);
+  const CustomMonthPicker({super.key});
 
   final String info =
       'MonthPicker 月份期选择器于 Flutter3.0 退出历史舞台。取代者为 CalendarDatePicker 日历选择器。';

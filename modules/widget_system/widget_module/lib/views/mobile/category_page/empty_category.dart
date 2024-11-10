@@ -18,7 +18,7 @@ import 'package:sqflite/sqflite.dart';
 
 class EmptyCategory extends StatelessWidget {
 
-  const EmptyCategory({Key? key}) : super(key: key);
+  const EmptyCategory({super.key});
 
   @override
   Widget build(BuildContext context) {

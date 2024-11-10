@@ -19,13 +19,13 @@ class WidgetNodePanel extends StatefulWidget {
   final bool death;
 
   const WidgetNodePanel(
-      {Key? key, this.text='',
+      {super.key, this.text='',
       this.subText='',
       this.code='',
       this.death=false,
       this.show,
      required this.codeStyle,
-      this.codeFamily}) : super(key: key);
+      this.codeFamily});
 
   @override
   _WidgetNodePanelState createState() => _WidgetNodePanelState();
@@ -96,11 +96,11 @@ class _WidgetNodePanelState extends State<WidgetNodePanel> {
         padding: const EdgeInsets.only(right: 10.0),
         child: ToggleRotate(
           durationMs: 300,
+          onTap: _toggleCodePanel,
           child: Icon(
             TolyIcon.icon_code,
             color: themeColor,
           ),
-          onTap: _toggleCodePanel,
         ),
       );
 

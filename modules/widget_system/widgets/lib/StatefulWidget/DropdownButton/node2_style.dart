@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class StyleDropDownButton extends StatefulWidget {
-  const StyleDropDownButton({Key? key}) : super(key: key);
+  const StyleDropDownButton({super.key});
 
   @override
   _StyleDropDownButtonState createState() => _StyleDropDownButtonState();

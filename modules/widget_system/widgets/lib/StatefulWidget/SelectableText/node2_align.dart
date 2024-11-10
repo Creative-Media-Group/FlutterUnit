@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class AlignSelectableText extends StatefulWidget {
-  const AlignSelectableText({Key? key}) : super(key: key);
+  const AlignSelectableText({super.key});
 
   @override
   _AlignSelectableTextState createState() => _AlignSelectableTextState();

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ContainerConstraints extends StatelessWidget {
-  const ContainerConstraints({Key? key}) : super(key: key);
+  const ContainerConstraints({super.key});
 
   @override
   Widget build(BuildContext context) {

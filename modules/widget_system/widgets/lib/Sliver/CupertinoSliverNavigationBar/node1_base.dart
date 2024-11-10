@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CupertinoSliverNavigationBarDemo extends StatelessWidget {
-  CupertinoSliverNavigationBarDemo({Key? key}) : super(key: key);
+  CupertinoSliverNavigationBarDemo({super.key});
 
   final List<Color> data = [
     Colors.orange[50]!,
@@ -34,9 +34,9 @@ class CupertinoSliverNavigationBarDemo extends StatelessWidget {
             leading: _buildLeading(),
             backgroundColor: Colors.white,
             // middle: Text('张风捷特烈'),
-            largeTitle: Row(
+            largeTitle: const Row(
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 Icon(
                   Icons.ac_unit,
                   size: 20,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class TristateCheckBok extends StatefulWidget {
-  const TristateCheckBok({Key? key}) : super(key: key);
+  const TristateCheckBok({super.key});
 
   @override
   _TristateCheckBokState createState() => _TristateCheckBokState();

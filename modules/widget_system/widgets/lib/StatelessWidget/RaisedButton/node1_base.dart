@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomRaisedButton extends StatelessWidget {
-  const CustomRaisedButton({Key? key}) : super(key: key);
+  const CustomRaisedButton({super.key});
 
   final String info =
       'RaisedButton 按钮于 Flutter3.3 退出历史舞台。取代者为 ElevatedButton 按钮。';

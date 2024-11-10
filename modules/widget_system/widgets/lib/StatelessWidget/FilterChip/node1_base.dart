@@ -1,10 +1,11 @@
 /// create by 张风捷特烈 on 2020-03-26
 /// contact me by email 1981462002@qq.com
+library;
 
 import 'package:flutter/material.dart';
 
 class CustomFilterChip extends StatefulWidget {
-  const CustomFilterChip({Key? key}) : super(key: key);
+  const CustomFilterChip({super.key});
 
   @override
   _CustomFilterChipState createState() => _CustomFilterChipState();

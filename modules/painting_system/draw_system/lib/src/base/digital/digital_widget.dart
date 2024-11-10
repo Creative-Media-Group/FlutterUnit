@@ -11,13 +11,12 @@ class SingleDigitalWidget extends StatelessWidget {
   final DigitalPath digitalPath;
 
   SingleDigitalWidget(
-      {Key? key,
+      {super.key,
       required this.width,
       required this.value,
       DigitalPath? digitalPath,
       this.color = Colors.black})
-      : digitalPath = digitalPath ?? DigitalPath(),
-        super(key: key);
+      : digitalPath = digitalPath ?? DigitalPath();
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +42,7 @@ class MultiDigitalWidget extends StatelessWidget {
   final List<Color> colors;
 
   MultiDigitalWidget({
-    Key? key,
+    super.key,
     required this.count,
     required this.value,
     this.spacing = 26,
@@ -51,8 +50,7 @@ class MultiDigitalWidget extends StatelessWidget {
     required this.width,
     this.colors = const [],
     DigitalPath? digitalPath,
-  })  : digitalPath = digitalPath ?? DigitalPath(),
-        super(key: key);
+  })  : digitalPath = digitalPath ?? DigitalPath();
 
   @override
   Widget build(BuildContext context) {

@@ -7,8 +7,7 @@ class LinkWidgetButtons extends StatelessWidget {
   final ValueChanged<WidgetModel> onSelect;
 
   const LinkWidgetButtons(
-      {Key? key, required this.links, required this.onSelect})
-      : super(key: key);
+      {super.key, required this.links, required this.onSelect});
 
   @override
   Widget build(BuildContext context) {

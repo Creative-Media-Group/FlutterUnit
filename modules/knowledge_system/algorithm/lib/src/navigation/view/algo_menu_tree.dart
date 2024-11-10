@@ -39,7 +39,7 @@ class _AppMenuTreeState extends State<AppMenuTree> with RouterChangeListenerMixi
   @override
   Widget build(BuildContext context) {
     Color expandBackgroundColor = context.isDark ? Colors.black : Colors.transparent;
-    Color backgroundColor = context.isDark ? Color(0xff001529) : Colors.white;
+    Color backgroundColor = context.isDark ? const Color(0xff001529) : Colors.white;
 
     return TolyRailMenuTree(
       enableWidthChange: true,

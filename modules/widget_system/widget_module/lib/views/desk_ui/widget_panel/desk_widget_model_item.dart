@@ -16,8 +16,7 @@ class DeskWidgetItem extends StatelessWidget {
   final String? searchArg;
 
   const DeskWidgetItem(
-      {Key? key, required this.model, required this.onTap, this.searchArg})
-      : super(key: key);
+      {super.key, required this.model, required this.onTap, this.searchArg});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +24,7 @@ class DeskWidgetItem extends StatelessWidget {
     Color? tileColor = Theme.of(context).listTileTheme.tileColor;
     Color? textColor = Theme.of(context).listTileTheme.textColor;
     bool isDark = Theme.of(context).brightness == Brightness.dark;
-    textColor = isDark?textColor: Color(0xff2F3032);
+    textColor = isDark?textColor: const Color(0xff2F3032);
 
     return InkWell(
       borderRadius: BorderRadius.circular(6),
@@ -122,17 +121,17 @@ class DeskWidgetItem extends StatelessWidget {
         const Spacer(),
         Wrapper.just(
           radius: 2,
-          color:  isDark? Color(0xff292A2D):const Color(0xffF3F3F5),
+          color:  isDark? const Color(0xff292A2D):const Color(0xffF3F3F5),
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           child: Text(
             Cons.kWidgetFamilyLabelMap[model.family]!,
             style:  TextStyle(
-                color:  isDark?Color(0xffCCCCCC):Color(0xff878D96),
+                color:  isDark?const Color(0xffCCCCCC):const Color(0xff878D96),
                 height: 1,
                 fontSize: 12,
                 shadows: [
                   Shadow(
-                      color: isDark? Colors.black:Colors.white, blurRadius: 2, offset: Offset(1, 1))
+                      color: isDark? Colors.black:Colors.white, blurRadius: 2, offset: const Offset(1, 1))
                 ]),
           ),
         ),

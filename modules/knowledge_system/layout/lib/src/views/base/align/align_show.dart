@@ -29,7 +29,7 @@ class AlignShow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle style = TextStyle(
+    TextStyle style = const TextStyle(
       fontWeight: FontWeight.bold,
       color: Colors.grey,
       fontSize: 12
@@ -45,12 +45,12 @@ class AlignShow extends StatelessWidget {
                         height: 100,
                         color: Colors.grey.withAlpha(88),
                         child: Align(
+                            alignment: mode,
                             child: Container(
                               width: 30,
                               height: 30,
                               color: Colors.cyanAccent,
-                            ),
-                            alignment: mode)),
+                            ))),
                     Text(
                       alignmentsInfo[alignments.indexOf(mode)],
                       style: style,

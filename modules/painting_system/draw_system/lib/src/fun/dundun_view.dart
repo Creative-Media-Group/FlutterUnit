@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class DunDunView extends StatefulWidget {
-  const DunDunView({Key? key}) : super(key: key);
+  const DunDunView({super.key});
 
   @override
   _DunDunViewState createState() => _DunDunViewState();

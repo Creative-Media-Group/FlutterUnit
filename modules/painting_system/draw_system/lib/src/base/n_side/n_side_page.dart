@@ -5,7 +5,7 @@ import 'shape_painter.dart';
 class NSidePage extends StatefulWidget {
   final int count;
 
-  const NSidePage({Key? key, this.count = 9}) : super(key: key);
+  const NSidePage({super.key, this.count = 9});
 
   @override
   State<NSidePage> createState() => _NSidePageState();

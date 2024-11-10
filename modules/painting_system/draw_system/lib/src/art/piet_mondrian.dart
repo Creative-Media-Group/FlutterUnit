@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
 class PietMondrian extends StatefulWidget {
-  const PietMondrian({Key? key}) : super(key: key);
+  const PietMondrian({super.key});
 
   @override
   _PietMondrianState createState() => _PietMondrianState();

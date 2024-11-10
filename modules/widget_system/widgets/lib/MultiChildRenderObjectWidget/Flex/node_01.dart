@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class FlexNode1 extends StatelessWidget {
-  FlexNode1({Key? key}) : super(key: key);
+  FlexNode1({super.key});
 
   static TextStyle textStyle =
       const TextStyle(color: Colors.white, fontWeight: FontWeight.bold);

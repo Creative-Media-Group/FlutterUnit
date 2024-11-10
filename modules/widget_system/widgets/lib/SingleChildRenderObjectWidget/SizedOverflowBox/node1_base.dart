@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomSizedOverflowBox extends StatefulWidget {
-  const CustomSizedOverflowBox({Key? key}) : super(key: key);
+  const CustomSizedOverflowBox({super.key});
 
   @override
   _CustomSizedOverflowBoxState createState() => _CustomSizedOverflowBoxState();
@@ -40,14 +40,14 @@ class _CustomSizedOverflowBoxState extends State<CustomSizedOverflowBox> {
               divisions: 100,
               min: 0,
               max: 250,
-              label: 'x:' + _x.toStringAsFixed(1),
+              label: 'x:${_x.toStringAsFixed(1)}',
               value: _x,
               onChanged: (v) => setState(() => _x = v)),
           Slider(
               divisions: 100,
               min: 0,
               max: 100,
-              label: 'y:' + _y.toStringAsFixed(1),
+              label: 'y:${_y.toStringAsFixed(1)}',
               value: _y,
               onChanged: (v) => setState(() => _y = v)),
 

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomSingleChildScrollView extends StatelessWidget {
-  CustomSingleChildScrollView({Key? key}) : super(key: key);
+  CustomSingleChildScrollView({super.key});
 
   final List<Color> data = [
     Colors.blue[50]!,

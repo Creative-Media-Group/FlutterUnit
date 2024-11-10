@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class BuilderListView extends StatelessWidget {
-  BuilderListView({Key? key}) : super(key: key);
+  BuilderListView({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

@@ -10,7 +10,7 @@ class Circle {
 }
 
 class CirclePacking extends StatefulWidget {
-  const CirclePacking({Key? key}) : super(key: key);
+  const CirclePacking({super.key});
 
   @override
   _CirclePackingState createState() => _CirclePackingState();

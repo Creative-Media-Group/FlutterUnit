@@ -18,7 +18,7 @@ import '../widget_page/unit_drawer_header.dart';
 class CategoryEndDrawer extends StatelessWidget {
   final WidgetModel widget;
 
-  const CategoryEndDrawer({Key? key, required this.widget}) : super(key: key);
+  const CategoryEndDrawer({super.key, required this.widget});
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +87,7 @@ class CategoryEndDrawer extends StatelessWidget {
 class CategoryInfo extends StatefulWidget {
   final int id;
 
-  const CategoryInfo(this.id, {Key? key}) : super(key: key);
+  const CategoryInfo(this.id, {super.key});
 
   @override
   _CategoryInfoState createState() => _CategoryInfoState();

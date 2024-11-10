@@ -7,7 +7,7 @@ import 'matrix4_shower.dart';
 /// contact me by email 1981462002@qq.com
 
 class SkewTransform extends StatefulWidget {
-  const SkewTransform({Key? key}) : super(key: key);
+  const SkewTransform({super.key});
 
   @override
   _SkewTransformState createState() => _SkewTransformState();

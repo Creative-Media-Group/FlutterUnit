@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class CupertinoFullscreenDialogTransitionDemo extends StatelessWidget {
-  const CupertinoFullscreenDialogTransitionDemo({Key? key}) : super(key: key);
+  const CupertinoFullscreenDialogTransitionDemo({super.key});
 
   final String info =
       '和 CupertinoPageTransition 一样，该组件底层基于 SlideTransition 组件实现，'

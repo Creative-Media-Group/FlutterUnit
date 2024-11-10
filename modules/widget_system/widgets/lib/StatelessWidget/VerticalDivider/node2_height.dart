@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class WidthVerticalDivider extends StatelessWidget {
-  const WidthVerticalDivider({Key? key}) : super(key: key);
+  const WidthVerticalDivider({super.key});
 
   @override
   Widget build(BuildContext context) {

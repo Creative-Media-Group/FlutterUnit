@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomDropDownButtonHideUnderline extends StatefulWidget {
-  const CustomDropDownButtonHideUnderline({Key? key}) : super(key: key);
+  const CustomDropDownButtonHideUnderline({super.key});
 
   @override
   _CustomDropDownButtonHideUnderlineState createState() =>

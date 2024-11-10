@@ -17,12 +17,12 @@ class _CarouselNode2State extends State<CarouselNode2> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(title: Text('Carousel'),),
+      appBar: AppBar(title: const Text('Carousel'),),
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxHeight: 64),
           child: CarouselView(
-            backgroundColor:  Color(0xfff7f8fa),
+            backgroundColor:  const Color(0xfff7f8fa),
             itemExtent: 240,
             // shrinkExtent: 200,
             itemSnapping: true,
@@ -41,7 +41,6 @@ class _CarouselNode2State extends State<CarouselNode2> {
 
 class _UncontainedLayoutCard extends StatelessWidget {
   const _UncontainedLayoutCard({
-    super.key,
     required this.index,
     required this.label,
   });
@@ -62,25 +61,25 @@ class _UncontainedLayoutCard extends StatelessWidget {
               Container(
                 width: 18,
                 height: 18,
-                margin: EdgeInsets.only(right: 6),
+                margin: const EdgeInsets.only(right: 6),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                  color: Colors.red,
                  borderRadius: BorderRadius.circular(4)
                 ),
-                child: Text('热',style: TextStyle(fontSize: 10,color: Colors.white,),),
+                child: const Text('热',style: TextStyle(fontSize: 10,color: Colors.white,),),
               ),
-              Text(
+              const Text(
                 'Container 容器组件',
-                style: const TextStyle(color: Colors.black, fontSize: 14,fontWeight: FontWeight.bold),
+                style: TextStyle(color: Colors.black, fontSize: 14,fontWeight: FontWeight.bold),
                 overflow: TextOverflow.clip,
                 softWrap: false,
               ),
             ],
           ),
-          Text(
+          const Text(
             '用于容纳单个子组件的容器组件。集成了若干个单子组件的功能，如内外边距、形变、装饰、约束等...',
-            style: const TextStyle(color: Colors.grey, fontSize: 12),
+            style: TextStyle(color: Colors.grey, fontSize: 12),
             overflow: TextOverflow.clip,
             softWrap: false,
           ),

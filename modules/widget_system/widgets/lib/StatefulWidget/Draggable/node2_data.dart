@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class DraggablePage extends StatefulWidget {
-  const DraggablePage({Key? key}) : super(key: key);
+  const DraggablePage({super.key});
 
   @override
   _DraggablePageState createState() => _DraggablePageState();
@@ -20,8 +20,8 @@ class _DraggablePageState extends State<DraggablePage> {
     return Column(
       children: <Widget>[
         Wrap(
-          children: _buildColors(),
           spacing: 10,
+          children: _buildColors(),
         ),
         const SizedBox(
           height: 20,
@@ -48,6 +48,12 @@ class _DraggablePageState extends State<DraggablePage> {
             onDragEnd: (d) => setState(() => _info = '结束拖拽'),
             onDragCompleted: () => _info = '拖拽完成',
             onDraggableCanceled: (v, o) => _info = '拖拽取消',
+          data: e,
+          feedback: Container(
+            width: 25,
+            height: 25,
+            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+          ),
             child: Container(
               width: 30,
               height: 30,
@@ -58,12 +64,6 @@ class _DraggablePageState extends State<DraggablePage> {
                   color: Colors.white, fontWeight: FontWeight.bold,),
             ),
             decoration: BoxDecoration(color: e, shape: BoxShape.circle),
-          ),
-          data: e,
-          feedback: Container(
-            width: 25,
-            height: 25,
-            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
           )),
     )
         .toList();
@@ -71,13 +71,13 @@ class _DraggablePageState extends State<DraggablePage> {
   Widget _buildDragTarget() {
     return DragTarget<Color>(
         onLeave: (data) => print("onLeave: data = $data "),
-        onAccept: (data) {
+        onAcceptWithDetails: (data) {
           print("onAccept: data = $data ");
           setState(() {
             _color = data;
           });
         },
-        onWillAccept: (data) {
+        onWillAcceptWithDetails: (data) {
           print("onWillAccept: data = $data ");
           return data != null;
         },

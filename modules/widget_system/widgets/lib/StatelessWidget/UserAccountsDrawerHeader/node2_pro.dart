@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ProUAGHP extends StatelessWidget {
-  const ProUAGHP({Key? key}) : super(key: key);
+  const ProUAGHP({super.key});
 
   @override
   Widget build(BuildContext context) {

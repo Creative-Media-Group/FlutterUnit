@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class InteractiveViewerDemo3 extends StatefulWidget {
-  const InteractiveViewerDemo3({Key? key}) : super(key: key);
+  const InteractiveViewerDemo3({super.key});
 
   @override
   _InteractiveViewerDemo3State createState() => _InteractiveViewerDemo3State();
@@ -97,25 +97,21 @@ class _InteractiveViewerDemo3State extends State<InteractiveViewerDemo3>
 
   Widget _buildButton() {
     return MaterialButton(
-        child: const Icon(
-          Icons.refresh,
-          color: Colors.white,
-        ),
         color: Colors.green,
         shape: const CircleBorder(
           side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
         ),
-        onPressed: _animateResetInitialize);
+        onPressed: _animateResetInitialize,
+        child: const Icon(
+          Icons.refresh,
+          color: Colors.white,
+        ));
   }
 
   final double _x = 0.0;
 
   Widget _buildButton2() {
     return MaterialButton(
-        child: const Icon(
-          Icons.navigate_before,
-          color: Colors.white,
-        ),
         color: Colors.green,
         shape: const CircleBorder(
           side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
@@ -124,15 +120,15 @@ class _InteractiveViewerDemo3State extends State<InteractiveViewerDemo3>
           var temp = _transformationController.value.clone();
           temp.translate(_x - 4);
           _transformationController.value = temp;
-        });
+        },
+        child: const Icon(
+          Icons.navigate_before,
+          color: Colors.white,
+        ));
   }
 
   Widget _buildButton3() {
     return MaterialButton(
-        child: const Icon(
-          Icons.navigate_next,
-          color: Colors.white,
-        ),
         color: Colors.green,
         shape: const CircleBorder(
           side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
@@ -141,6 +137,10 @@ class _InteractiveViewerDemo3State extends State<InteractiveViewerDemo3>
           var temp = _transformationController.value.clone();
           temp.translate(_x + 4);
           _transformationController.value = temp;
-        });
+        },
+        child: const Icon(
+          Icons.navigate_next,
+          color: Colors.white,
+        ));
   }
 }

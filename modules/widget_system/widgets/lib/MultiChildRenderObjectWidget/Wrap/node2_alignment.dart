@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class WrapAlignmentWrap extends StatelessWidget {
-   WrapAlignmentWrap({Key? key}) : super(key: key);
+   WrapAlignmentWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

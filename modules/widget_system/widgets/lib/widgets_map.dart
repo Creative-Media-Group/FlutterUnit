@@ -1463,7 +1463,7 @@ class WidgetsMap {
 
 class AnotherPage extends StatelessWidget {
   final Widget child;
-  const AnotherPage({Key? key, required this.child}) : super(key: key);
+  const AnotherPage({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -1476,6 +1476,6 @@ class AnotherPage extends StatelessWidget {
                   ),
                   body: child)));
         },
-        child: Text('跳转到新界面查看效果'));
+        child: const Text('跳转到新界面查看效果'));
   }
 }

@@ -17,7 +17,7 @@ import 'dart:ui' as ui;
 import 'building/building_panel.dart';
 
 class ArtifactPage extends StatefulWidget {
-  const ArtifactPage({Key? key}) : super(key: key);
+  const ArtifactPage({super.key});
 
   @override
   State<ArtifactPage> createState() => _ArtifactPageState();
@@ -74,7 +74,7 @@ class _ArtifactPageState extends State<ArtifactPage>
         BlocProvider<ArticleBloc>(create: (_) => ArticleBloc(aRepository)..init()),
       ],
       child: Scaffold(
-        endDrawer: SortSettings(),
+        endDrawer: const SortSettings(),
         backgroundColor: const Color(0xffF2F3F5),
         bottomNavigationBar: Container(height: bottom),
         body: NestedScrollView(
@@ -83,7 +83,7 @@ class _ArtifactPageState extends State<ArtifactPage>
           body: TabBarView(
             controller: controller,
             children: [
-              TolyArticleScrollPage(),
+              const TolyArticleScrollPage(),
               Column(
                 children: [
                   Padding(
@@ -92,7 +92,7 @@ class _ArtifactPageState extends State<ArtifactPage>
                       children: [
                         GestureDetector(
                             onTap: () {
-                              _launchURL('https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/sort/functions/${name}.dart');
+                              _launchURL('https://github.com/toly1994328/FlutterUnit/blob/master/packages/algorithm/lib/src/algorithm/sort/functions/$name.dart');
                             },
                             child: Text(
                               '查看排序源码',
@@ -101,16 +101,16 @@ class _ArtifactPageState extends State<ArtifactPage>
                                 color: Theme.of(context).primaryColor,
                               ),
                             )),
-                        Spacer(),
-                        SortSelector(),
+                        const Spacer(),
+                        const SortSelector(),
                       ],
                     ),
                   ),
-                  Expanded(child: SortPaper()),
+                  const Expanded(child: SortPaper()),
                 ],
               ),
-              BuildingPanel(),
-              BuildingPanel(),
+              const BuildingPanel(),
+              const BuildingPanel(),
             ],
           ),
         ),
@@ -141,7 +141,7 @@ class _ArtifactPageState extends State<ArtifactPage>
         snap: true,
         pinned: true,
         backgroundColor: Colors.white,
-        leading: _curIndex == 1 ? SortButton() : null,
+        leading: _curIndex == 1 ? const SortButton() : null,
 
         // flexibleSpace: Image.network(
         //   'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/448d4eb270f44edab0192a1281141954~tplv-k3u1fbpfcp-watermark.image?',
@@ -152,7 +152,7 @@ class _ArtifactPageState extends State<ArtifactPage>
 
         flexibleSpace: Container(
           // height: 240,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Color(0xffD3D5F5),
             Color(0xffC8EBFA),
@@ -170,7 +170,7 @@ class _ArtifactPageState extends State<ArtifactPage>
 
         title: Column(
           children: [
-            Text(
+            const Text(
               'Flutter 知识宝库',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
@@ -180,7 +180,7 @@ class _ArtifactPageState extends State<ArtifactPage>
             Text(
               kArtifactInfo[_curIndex],
               maxLines: 2,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.normal,
                   color: Colors.purple),
@@ -193,9 +193,9 @@ class _ArtifactPageState extends State<ArtifactPage>
                 onPressed: () {
                   Scaffold.of(context).openEndDrawer();
                 },
-                icon: Icon(Icons.settings)),
+                icon: const Icon(Icons.settings)),
           if (_curIndex != 1)
-            IconButton(onPressed: () {}, icon: Icon(Icons.search_rounded))
+            IconButton(onPressed: () {}, icon: const Icon(Icons.search_rounded))
         ],
         // title: Padding(
         //   padding: const EdgeInsets.only(right: 8.0),
@@ -245,7 +245,7 @@ class _ArtifactPageState extends State<ArtifactPage>
 }
 
 class Doodle extends StatelessWidget {
-  const Doodle({Key? key}) : super(key: key);
+  const Doodle({super.key});
 
   @override
   Widget build(BuildContext context) {

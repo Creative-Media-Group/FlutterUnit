@@ -167,6 +167,7 @@ class ColorSelector extends StatelessWidget {
   Widget _buildCircle(Color color) {
     return CircleAvatar(
       radius: 12,
+      backgroundColor: color,
       child: color == activeColor
           ? const Icon(
               Icons.check,
@@ -174,7 +175,6 @@ class ColorSelector extends StatelessWidget {
               size: 16,
             )
           : null,
-      backgroundColor: color,
     );
   }
 }
@@ -187,7 +187,6 @@ class BoxDecorationWrap extends StatelessWidget {
     final Color color = InheritedCounter.of(context)?.color ?? Colors.black;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      child: const CounterText(),
       decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: color),
@@ -199,6 +198,7 @@ class BoxDecorationWrap extends StatelessWidget {
                 blurRadius: 8,
                 offset: const Offset(0, 0))
           ]),
+      child: const CounterText(),
     );
   }
 }

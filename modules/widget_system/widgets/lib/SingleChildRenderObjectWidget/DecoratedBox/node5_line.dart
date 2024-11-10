@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class UnderlineTabIndicatorDemo extends StatelessWidget {
-  const UnderlineTabIndicatorDemo({Key? key}) : super(key: key);
+  const UnderlineTabIndicatorDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

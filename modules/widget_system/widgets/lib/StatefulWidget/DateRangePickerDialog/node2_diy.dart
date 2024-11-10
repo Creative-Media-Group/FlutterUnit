@@ -7,7 +7,7 @@ import 'toly_date_picker.dart' as toly;
 /// contact me by email 1981462002@qq.com
 
 class DiyDateRangePickerDialogDemo extends StatefulWidget {
-  const DiyDateRangePickerDialogDemo({Key? key}) : super(key: key);
+  const DiyDateRangePickerDialogDemo({super.key});
 
   @override
   _DiyDateRangePickerDialogDemoState createState() =>

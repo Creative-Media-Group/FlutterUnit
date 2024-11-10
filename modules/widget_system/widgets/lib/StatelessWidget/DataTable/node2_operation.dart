@@ -2,6 +2,7 @@
 
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
+library;
 
 
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class _BeanOp {
 }
 
 class SortDataTable extends StatefulWidget {
-  const SortDataTable({Key? key}) : super(key: key);
+  const SortDataTable({super.key});
 
   @override
   _SortDataTableState createState() => _SortDataTableState();

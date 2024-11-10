@@ -8,7 +8,7 @@ import 'package:toly_ui/toly_ui.dart';
 /// 说明:
 
 class ThemeColorSettingPage extends StatelessWidget {
-  const ThemeColorSettingPage({Key? key}) : super(key: key);
+  const ThemeColorSettingPage({super.key});
 
 
   @override

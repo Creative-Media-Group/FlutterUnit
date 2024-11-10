@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:toly_ui/toly_ui.dart';
 
 class BugUnitPage extends StatelessWidget {
-  const BugUnitPage({Key? key}) : super(key: key);
+  const BugUnitPage({super.key});
 
 
   final String info = '【Flutter要点集录】是Unit项目计划的第二阶段的功能之一。'

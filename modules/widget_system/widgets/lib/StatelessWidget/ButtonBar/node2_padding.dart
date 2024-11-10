@@ -7,11 +7,11 @@ import 'package:widgets/utils/dialog_about.dart';
 /// contact me by email 1981462002@qq.com
 
 class PaddingButtonBar extends StatelessWidget {
-  const PaddingButtonBar({Key? key}) : super(key: key);
+  const PaddingButtonBar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ButtonBar(
+    return OverflowBar(
       alignment: MainAxisAlignment.center,
       buttonHeight: 40,
       buttonPadding: const EdgeInsets.only(left: 15,right: 15),

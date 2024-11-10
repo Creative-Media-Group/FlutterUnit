@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoTabScaffold extends StatefulWidget {
-  const CustomCupertinoTabScaffold({Key? key}) : super(key: key);
+  const CustomCupertinoTabScaffold({super.key});
 
   @override
   _CustomCupertinoTabScaffoldState createState() =>

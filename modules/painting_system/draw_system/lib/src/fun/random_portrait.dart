@@ -18,7 +18,7 @@ class Position {
 }
 
 class RandomPortrait extends StatefulWidget {
-  const RandomPortrait({Key? key}) : super(key: key);
+  const RandomPortrait({super.key});
 
   @override
   _RandomPortraitState createState() => _RandomPortraitState();

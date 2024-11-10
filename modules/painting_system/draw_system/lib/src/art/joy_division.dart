@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class JoyDivision extends StatefulWidget {
-  const JoyDivision({Key? key}) : super(key: key);
+  const JoyDivision({super.key});
 
   @override
   _JoyDivisionState createState() => _JoyDivisionState();

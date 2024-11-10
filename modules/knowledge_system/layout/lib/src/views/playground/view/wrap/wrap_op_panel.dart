@@ -43,25 +43,25 @@ class _WrapOpToolState extends State<WrapOpTool> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle labelStyle = TextStyle(color: Color(0xff61666d), fontSize: 12);
+    TextStyle labelStyle = const TextStyle(color: Color(0xff61666d), fontSize: 12);
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
           child: Text(
             'Wrap 操作面板',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
-        Divider(),
+        const Divider(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6),
           child: Row(
             children: [
               Text('增删操作', style: labelStyle.copyWith(fontWeight: FontWeight.bold)),
-              Spacer(),
-              TolyAction(child: Icon(CupertinoIcons.add, size: 18), onTap: _handleAdd),
-              TolyAction(child: Icon(CupertinoIcons.delete, size: 16), onTap: widget.onDelete),
+              const Spacer(),
+              TolyAction(onTap: _handleAdd, child: Icon(CupertinoIcons.add, size: 18)),
+              TolyAction(onTap: widget.onDelete, child: Icon(CupertinoIcons.delete, size: 16)),
             ],
           ),
         ),
@@ -70,15 +70,16 @@ class _WrapOpToolState extends State<WrapOpTool> {
           heightCtrl: heightCtrl,
         ),
         const SizedBox(height: 12),
-        Divider(),
+        const Divider(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6),
           child: Row(
             children: [
               Text('属性操作', style: labelStyle.copyWith(fontWeight: FontWeight.bold)),
-              Spacer(),
+              const Spacer(),
               TolyAction(
-                  child: const Icon(CupertinoIcons.refresh, size: 16), onTap: widget.onReset),
+                  onTap: widget.onReset,
+                  child: const Icon(CupertinoIcons.refresh, size: 16)),
             ],
           ),
         ),

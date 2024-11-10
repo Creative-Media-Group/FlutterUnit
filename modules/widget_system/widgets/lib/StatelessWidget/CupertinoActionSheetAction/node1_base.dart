@@ -7,7 +7,7 @@ import 'package:widgets/utils/dialog_about.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoActionSheetAction extends StatelessWidget {
-  const CustomCupertinoActionSheetAction({Key? key}) : super(key: key);
+  const CustomCupertinoActionSheetAction({super.key});
 
   @override
   Widget build(BuildContext context) {

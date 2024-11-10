@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 
 class CupertinoNavigationBarBackButtonDemo extends StatelessWidget {
-  const CupertinoNavigationBarBackButtonDemo({Key? key}) : super(key: key);
+  const CupertinoNavigationBarBackButtonDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

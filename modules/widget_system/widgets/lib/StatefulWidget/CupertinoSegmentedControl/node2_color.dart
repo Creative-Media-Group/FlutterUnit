@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CupertinoSegmentedControlColor extends StatefulWidget {
-  const CupertinoSegmentedControlColor({Key? key}) : super(key: key);
+  const CupertinoSegmentedControlColor({super.key});
 
   @override
   _CupertinoSegmentedControlColorState createState() =>

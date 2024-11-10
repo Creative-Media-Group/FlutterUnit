@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 ///
 
 class CupertinoPageTransitionDemo extends StatelessWidget {
-  const CupertinoPageTransitionDemo({Key? key}) : super(key: key);
+  const CupertinoPageTransitionDemo({super.key});
 
   final String info =
       '该组件底层基于 SlideTransition 组件实现，主要用途是模仿 iOS 风格，处理页面间跳转的过渡动画。'

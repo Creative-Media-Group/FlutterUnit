@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class SafeAreaDemo extends StatelessWidget {
-  const SafeAreaDemo({Key? key}) : super(key: key);
+  const SafeAreaDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class SafeAreaDemo extends StatelessWidget {
 }
 
 class SafeAreaPage extends StatefulWidget {
-  const SafeAreaPage({Key? key}) : super(key: key);
+  const SafeAreaPage({super.key});
 
   @override
   _SafeAreaPageState createState() => _SafeAreaPageState();

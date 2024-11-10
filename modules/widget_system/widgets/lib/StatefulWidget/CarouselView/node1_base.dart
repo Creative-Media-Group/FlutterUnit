@@ -16,7 +16,7 @@ class _CarouselNode1State extends State<CarouselNode1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Carousel'),),
+      appBar: AppBar(title: const Text('Carousel'),),
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxHeight: 200),

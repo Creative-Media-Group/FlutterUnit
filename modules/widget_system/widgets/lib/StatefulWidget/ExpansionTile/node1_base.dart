@@ -4,7 +4,7 @@ import '../../StatelessWidget/RadioListTile/node1_base.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomExpansionTile extends StatefulWidget {
-  const CustomExpansionTile({Key? key}) : super(key: key);
+  const CustomExpansionTile({super.key});
 
   @override
   _CustomExpansionTileState createState() => _CustomExpansionTileState();

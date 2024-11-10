@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class BlendModeImage extends StatelessWidget {
-  const BlendModeImage({Key? key}) : super(key: key);
+  const BlendModeImage({super.key});
 
   @override
   Widget build(BuildContext context) {

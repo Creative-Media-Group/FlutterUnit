@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomLinearProgressIndicator extends StatefulWidget {
-  const CustomLinearProgressIndicator({Key? key}) : super(key: key);
+  const CustomLinearProgressIndicator({super.key});
 
   @override
   _CustomLinearProgressIndicatorState createState() =>

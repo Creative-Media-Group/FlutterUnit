@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomDraggable extends StatelessWidget {
-  const CustomDraggable({Key? key}) : super(key: key);
+  const CustomDraggable({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,20 +14,20 @@ class CustomDraggable extends StatelessWidget {
         children: axis
             .map((e) => Draggable(
                   axis: e,
+              feedback: Container(
+                width: 30,
+                    height: 30,
+                    decoration: const BoxDecoration(
+                      color: Colors.red,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
                   child: Container(
                     width: 30,
                     height: 30,
                     alignment: Alignment.center,
                     decoration: const BoxDecoration(
                       color: Colors.blue,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-              feedback: Container(
-                width: 30,
-                    height: 30,
-                    decoration: const BoxDecoration(
-                      color: Colors.red,
                       shape: BoxShape.circle,
                     ),
                   ),

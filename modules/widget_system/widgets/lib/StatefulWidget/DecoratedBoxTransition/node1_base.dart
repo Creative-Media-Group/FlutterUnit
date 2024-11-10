@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomDecoratedBoxTransition extends StatefulWidget {
-  const CustomDecoratedBoxTransition({Key? key}) : super(key: key);
+  const CustomDecoratedBoxTransition({super.key});
 
   @override
   _CustomDecoratedBoxTransitionState createState() =>

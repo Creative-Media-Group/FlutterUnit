@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ImageFilteredMatrix extends StatefulWidget {
-  const ImageFilteredMatrix({Key? key}) : super(key: key);
+  const ImageFilteredMatrix({super.key});
 
   @override
   State<ImageFilteredMatrix> createState() => _ImageFilteredMatrixState();
@@ -42,7 +42,7 @@ class _ImageFilteredMatrixState extends State<ImageFilteredMatrix> {
                     max: 90,
                     value: _sigmaX,
                     divisions: 360,
-                    label: 'x:' + _sigmaX.toStringAsFixed(1),
+                    label: 'x:${_sigmaX.toStringAsFixed(1)}',
                     onChanged: (v) => setState(() => _sigmaX = v)),
               ),
             ],
@@ -53,7 +53,7 @@ class _ImageFilteredMatrixState extends State<ImageFilteredMatrix> {
 }
 
 class _TargetContent extends StatelessWidget {
-  const _TargetContent({Key? key}) : super(key: key);
+  const _TargetContent({super.key});
 
   @override
   Widget build(BuildContext context) {

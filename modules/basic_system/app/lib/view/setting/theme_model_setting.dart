@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ThemeModelSetting extends StatelessWidget {
-  const ThemeModelSetting({Key? key}) : super(key: key);
+  const ThemeModelSetting({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +71,5 @@ class ThemeModelSetting extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

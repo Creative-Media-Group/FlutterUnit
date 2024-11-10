@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoPageScaffold extends StatelessWidget {
-  const CustomCupertinoPageScaffold({Key? key}) : super(key: key);
+  const CustomCupertinoPageScaffold({super.key});
 
   @override
   Widget build(BuildContext context) {

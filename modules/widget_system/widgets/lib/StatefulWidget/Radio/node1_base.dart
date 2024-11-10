@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomRadio extends StatefulWidget {
-  const CustomRadio({Key? key}) : super(key: key);
+  const CustomRadio({super.key});
 
   @override
   _CustomRadioState createState() => _CustomRadioState();

@@ -11,7 +11,7 @@ class DefaultTabControllerDemo extends StatelessWidget {
     Tab(text: '混沌战士'),
   ];
 
-  const DefaultTabControllerDemo({Key? key}) : super(key: key);
+  const DefaultTabControllerDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

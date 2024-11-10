@@ -14,7 +14,7 @@ import 'sync/upload_button.dart';
 
 
 class CollectPageAdapter extends StatelessWidget {
-  const CollectPageAdapter({Key? key,}) : super(key: key);
+  const CollectPageAdapter({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class CollectPageAdapter extends StatelessWidget {
 
 class CollectPage extends StatefulWidget {
   final bool canPop;
-  const CollectPage({Key? key, this.canPop=false}) : super(key: key);
+  const CollectPage({super.key, this.canPop=false});
 
   @override
   _CollectPageState createState() => _CollectPageState();
@@ -47,7 +47,7 @@ class _CollectPageState extends State<CollectPage>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    BuildContext _topContext = context;
+    BuildContext topContext = context;
     final Color color = Colors.blue.withAlpha(11);
 
     return Scaffold(
@@ -61,7 +61,7 @@ class _CollectPageState extends State<CollectPage>
                 SliverOverlapAbsorber(
                     handle: NestedScrollView.sliverOverlapAbsorberHandleFor(
                         context),
-                    sliver: _buildAppBar(_topContext, innerBoxIsScrolled)),
+                    sliver: _buildAppBar(topContext, innerBoxIsScrolled)),
               ],
               body: const TabBarView(
                 children: [
@@ -82,7 +82,7 @@ class _CollectPageState extends State<CollectPage>
       systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.light
       ),
-      leading: widget.canPop?BackButton(color: Colors.white,):Container(
+      leading: widget.canPop?const BackButton(color: Colors.white,):Container(
           margin: const EdgeInsets.all(10),
           child: FeedbackWidget(
             onPressed: () {
@@ -94,7 +94,7 @@ class _CollectPageState extends State<CollectPage>
             ),
           )),
       backgroundColor: Theme.of(context).primaryColor,
-      actionsIconTheme: IconThemeData(color: Colors.white),
+      actionsIconTheme: const IconThemeData(color: Colors.white),
       actions: <Widget>[
         SizedBox(
             width: 32,
@@ -109,7 +109,7 @@ class _CollectPageState extends State<CollectPage>
       ],
       title:  Text(
         context.l10n.collectCollection,
-        style: TextStyle(
+        style: const TextStyle(
             color: Colors.white, //标题
             fontSize: 18,
             shadows: [
@@ -147,9 +147,9 @@ class _CollectPageState extends State<CollectPage>
   Widget _buildAddAction(BuildContext context) => GestureDetector(
     behavior: HitTestBehavior.opaque,
     onTap:  () => Scaffold.of(context).openEndDrawer(),
-    child: SizedBox(
+    child: const SizedBox(
       width: 32,
-        child: const Icon(
+        child: Icon(
           Icons.add,
           size: 24,
         ),

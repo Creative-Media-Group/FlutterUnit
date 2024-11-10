@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class FractionalTranslationDemo extends StatefulWidget {
-  const FractionalTranslationDemo({Key? key}) : super(key: key);
+  const FractionalTranslationDemo({super.key});
 
   @override
   _FractionalTranslationDemoState createState() =>

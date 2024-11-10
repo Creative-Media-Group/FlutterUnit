@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomSelectableText extends StatelessWidget {
-  const CustomSelectableText({Key? key}) : super(key: key);
+  const CustomSelectableText({super.key});
 
   final String text = "        始臣之解牛之时，所见无非牛者。三年之后，未尝见全牛也。方今之时，"
       "臣以神遇而不以目视，官知止而神欲行。依乎天理，批大郤，导大窾，因其固然，"

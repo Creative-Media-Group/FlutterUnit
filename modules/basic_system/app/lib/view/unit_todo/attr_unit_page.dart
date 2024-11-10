@@ -6,7 +6,7 @@ class AttrUnitPage extends StatelessWidget {
       '会对所有Widget的所有属性进行收录整理到数据库，进行数据分析和组件关联。'
       '并且对一些重要属性，进行全面讲解。';
 
-  const AttrUnitPage({Key? key}) : super(key: key);
+  const AttrUnitPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +17,10 @@ class AttrUnitPage extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: <Widget>[
-          Positioned(
+          const Positioned(
             top: 50,
             child: Column(
-              children: const [
+              children: [
                 CircleImage(
                   image: AssetImage('assets/images/icon_head.webp'),
                   size: 80,

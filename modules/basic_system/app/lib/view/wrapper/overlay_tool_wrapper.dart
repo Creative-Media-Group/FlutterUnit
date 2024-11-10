@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 class OverlayToolWrapper extends StatefulWidget {
   final Widget child;
 
-  const OverlayToolWrapper({Key? key,required this.child}) : super(key: key);
+  const OverlayToolWrapper({super.key,required this.child});
 
   @override
   OverlayToolWrapperState createState() => OverlayToolWrapperState();
@@ -230,7 +230,7 @@ class OverlayToolWrapperState extends State<OverlayToolWrapper>
 
   void showFloating() {
     if (!show&&entry!=null) {
-      Overlay.of(context)?.insert(entry!);
+      Overlay.of(context).insert(entry!);
       show = true;
     }
   }

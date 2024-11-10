@@ -93,9 +93,9 @@ class _UserItem extends StatelessWidget {
   final User user;
 
   const _UserItem({
-    Key? key,
+    super.key,
     required this.user,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +116,7 @@ class _UserItem extends StatelessWidget {
             children: [
               Text(user.name),
               Text(
-                '性别:'+ (user.man ? '男' : '女'),
+                '性别:${user.man ? '男' : '女'}',
                 style: const TextStyle(color: Colors.grey),
               ),
             ],

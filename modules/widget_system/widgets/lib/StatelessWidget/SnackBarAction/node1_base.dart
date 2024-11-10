@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomSnackBarAction extends StatelessWidget {
-  const CustomSnackBarAction({Key? key}) : super(key: key);
+  const CustomSnackBarAction({super.key});
 
   @override
   Widget build(BuildContext context) {

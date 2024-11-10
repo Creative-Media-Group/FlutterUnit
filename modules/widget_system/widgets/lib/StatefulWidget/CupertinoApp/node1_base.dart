@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 /// contact me by email 1981462002@qq.com
 
 class CustomCupertinoApp extends StatelessWidget {
-  const CustomCupertinoApp({Key? key}) : super(key: key);
+  const CustomCupertinoApp({super.key});
 
   @override
   Widget build(BuildContext context) {

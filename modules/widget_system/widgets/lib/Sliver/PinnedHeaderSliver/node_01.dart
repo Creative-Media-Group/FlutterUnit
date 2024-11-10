@@ -88,7 +88,6 @@ class _PinnedHeaderSliverNode1State extends State<PinnedHeaderSliverNode1> {
 // A placeholder SliverList of 25 items.
 class _ItemList extends StatelessWidget {
   const _ItemList({
-    super.key,
     this.itemCount = 50,
   });
 

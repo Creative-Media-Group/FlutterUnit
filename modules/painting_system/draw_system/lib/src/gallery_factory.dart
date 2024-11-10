@@ -50,55 +50,55 @@ class GalleryFactory {
               author: "张风捷特烈",
               srcUrl: "/base/draw_picture.dart",
               info: context.l10n.drawingOfImages,
-              content: DrawPicture()),
+              content: const DrawPicture()),
           FrameShower(
               title: "数字显示管",
               author: "张风捷特烈",
               srcUrl: "/base/digital",
               info: context.l10n.digitalDisplayTube,
-              content: DigitalShower()),
+              content: const DigitalShower()),
           FrameShower(
               title: "旋转风车",
               author: "张风捷特烈",
               srcUrl: "/base/windmill.dart",
               info: context.l10n.pathDrawing,
-              content: WindmillWidget()),
+              content: const WindmillWidget()),
           FrameShower(
               title: "平面直角坐标系",
               author: "张风捷特烈",
               srcUrl: "/base/draw_grid_axis.dart",
               info: context.l10n.gridCoordinateSystem,
-              content: DrawGridAxis()),
+              content: const DrawGridAxis()),
           FrameShower(
               title: "平面极坐标系",
               author: "张风捷特烈",
               srcUrl: "/base/polar",
               info: context.l10n.polarCoordinateSystemOfFaces,
-              content: PolarPainterWidget()),
+              content: const PolarPainterWidget()),
           FrameShower(
               title: "曲线拟合",
               author: "张风捷特烈",
               srcUrl: "/base/draw_path_fun.dart",
               info: context.l10n.drawFunctionCurvesForPathPairs,
-              content: DrawPathFun()),
+              content: const DrawPathFun()),
           FrameShower(
               title: "圆中取形",
               author: "张风捷特烈",
               srcUrl: "/base/n_side",
               info:  context.l10n.drawRegularPolygons,
-              content: NSidePage()),
+              content: const NSidePage()),
           FrameShower(
               title: "随机对称图",
               author: "张风捷特烈",
               srcUrl: '/fun/random_portrait.dart',
               info: context.l10n.randomNumberProcessing,
-              content: RandomPortrait()),
+              content: const RandomPortrait()),
           FrameShower(
               title: "简单时钟",
               author: "张风捷特烈",
               srcUrl: '/base/clock_widget.dart',
               info: context.l10n.clockDrawing,
-              content: ClockWidget()),
+              content: const ClockWidget()),
         ];
       case GalleryType.anim:
         return  [
@@ -107,43 +107,43 @@ class GalleryFactory {
               author: "张风捷特烈",
               srcUrl: '/anim/spring_widget.dart',
               info: context.l10n.drawSprings,
-              content: SpringWidget()),
+              content: const SpringWidget()),
           FrameShower(
               title: "绕定点旋转",
               author: "张风捷特烈",
               srcUrl: '/anim/rotate_by_point',
               info:  context.l10n.theApplicationOfAnglesInDrawing,
-              content: RotateByPointWidget()),
+              content: const RotateByPointWidget()),
           FrameShower(
               title: "流光",
               author: "张风捷特烈",
               srcUrl: '/anim/circle_halo.dart',
               info: context.l10n.usingShadersAndFilters,
-              content: CircleHalo()),
+              content: const CircleHalo()),
           FrameShower(
               title: "曲线路径动画",
               author: "张风捷特烈",
               srcUrl: '/anim/draw_path.dart',
               info:  context.l10n.pathDrawingFunctionCurve,
-              content: DrawPath()),
+              content: const DrawPath()),
           FrameShower(
               title: "冰墩墩线条动画",
               author: "张风捷特烈",
               srcUrl: '/anim/dundun_path.dart',
               info:  context.l10n.thePathOfBingDwenDwen,
-              content: DunDunPathPage()),
+              content: const DunDunPathPage()),
           FrameShower(
               title: "Bezier3 演示",
               author: "张风捷特烈",
               srcUrl: '/anim/bezier3_player',
               info:  context.l10n.drawCubicBesselCurve,
-              content: Bezier3Player()),
+              content: const Bezier3Player()),
           FrameShower(
               title: "动画曲线散点图",
               author: "张风捷特烈",
               srcUrl: '/anim/curve_shower',
               info: context.l10n.theEffectOfAnimationCurve,
-              content: CurveAnimShower()),
+              content: const CurveAnimShower()),
 
         ];
       case GalleryType.particle:
@@ -153,19 +153,19 @@ class GalleryFactory {
               author: "张风捷特烈",
               srcUrl: '/particle/random',
               info: context.l10n.randomParticlesAndBoundaryBouncing,
-              content: RandomParticle()),
+              content: const RandomParticle()),
           FrameShower(
               title: "粒子分裂",
               author: "张风捷特烈",
               srcUrl: '/particle/split',
               info:  context.l10n.particleCollision,
-              content: ParticleSplit()),
+              content: const ParticleSplit()),
           FrameShower(
               title: "图片粒子分裂",
               author: "张风捷特烈",
               srcUrl: '/particle/split_img',
               info: context.l10n.particle,
-              content: SplitImage()),
+              content: const SplitImage()),
         ];
       case GalleryType.fun:
         return [
@@ -174,25 +174,25 @@ class GalleryFactory {
               author: "张风捷特烈",
                srcUrl: '/fun/random_portrait.dart',
                info: context.l10n.rectangleAndRandomNumbers,
-              content: RandomPortrait()),
+              content: const RandomPortrait()),
           FrameShower(
               title: "冰墩墩",
               author: "张风捷特烈",
               srcUrl: '/fun/dundun_view.dart',
               info: context.l10n.bingDwenDwen,
-              content: DunDunView()),
+              content: const DunDunView()),
           FrameShower(
               title: "蒲丰投针试验",
               author: "张风捷特烈",
               srcUrl: '/fun/bufeng',
               info: context.l10n.pufengInjectionTest,
-              content: BufengPanel()),
+              content: const BufengPanel()),
           FrameShower(
               title: "井字棋",
               author: "张风捷特烈",
               srcUrl: '/fun/stemp',
               info: context.l10n.ticTacToe,
-              content: StampPaper()),
+              content: const StampPaper()),
         ];
       case GalleryType.art:
         return  [
@@ -201,50 +201,50 @@ class GalleryFactory {
             author: "generativeartistry.com",
             srcUrl: '/art/tiled_lines.dart',
             info: context.l10n.tiledLines,
-            content: TiledLines(),
+            content: const TiledLines(),
           ),
           FrameShower(
             title: "Joy Division",
             author: "generativeartistry.com",
             srcUrl: '/art/joy_division.dart',
             info: context.l10n.joyDivision,
-            content: JoyDivision(),
+            content: const JoyDivision(),
           ),
           FrameShower(
             title: "Cubic Disarray",
             author: "generativeartistry.com",
             srcUrl: '/art/cubic_disarray.dart',
-            info: context.l10n.cubicDisarray,  content: CubicDisarray(),
+            info: context.l10n.cubicDisarray,  content: const CubicDisarray(),
           ),
           FrameShower(
             title: "Triangular Mesh",
             author: "generativeartistry.com",
             srcUrl: '/art/triangular_mesh.dart',
-            info: context.l10n.triangularMesh, content: TriangularMesh(),
+            info: context.l10n.triangularMesh, content: const TriangularMesh(),
           ),
           FrameShower(
             title: "Un Deux Trois",
             srcUrl: '/art/un_deux_trois.dart',
             author: "generativeartistry.com",
-            info: context.l10n.unDeuxTrois,  content: UnDeuxTrois(),
+            info: context.l10n.unDeuxTrois,  content: const UnDeuxTrois(),
           ),
           FrameShower(
             title: "Circle Packing",
             author: "generativeartistry.com",
             srcUrl: '/art/circle_packing.dart',
-            info: context.l10n.circlePacking, content: CirclePacking(),
+            info: context.l10n.circlePacking, content: const CirclePacking(),
           ),
           FrameShower(
             title: "Hypnotic Squares",
             author: "generativeartistry.com",
             srcUrl: '/art/hypnotic_squares.dart',
-            info: context.l10n.hypnoticSquares,    content: HypnoticSquares(),
+            info: context.l10n.hypnoticSquares,    content: const HypnoticSquares(),
           ),
           FrameShower(
             title: "Piet Mondrian",
             author: "generativeartistry.com",
             srcUrl: '/art/piet_mondrian.dart',
-            info: context.l10n.pietMondrian, content: PietMondrian(),
+            info: context.l10n.pietMondrian, content: const PietMondrian(),
           )
         ];
       default:

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// contact me by email 1981462002@qq.com
 
 class ReplacementVisibility extends StatelessWidget {
-  const ReplacementVisibility({Key? key}) : super(key: key);
+  const ReplacementVisibility({super.key});
 
   @override
   Widget build(BuildContext context) {
